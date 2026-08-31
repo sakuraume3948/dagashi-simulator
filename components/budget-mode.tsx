@@ -15,7 +15,7 @@ import { cn } from "@/lib/utils";
 const PRESETS = [100, 300, 500, 1000];
 /** 0 は無制限を意味する。 */
 const ITEM_LIMIT_PRESETS = [1, 2, 3, 5, 0];
-const SERIES_LIMIT_PRESETS = [3, 5, 10, 0];
+const SERIES_LIMIT_PRESETS = [1, 2, 3, 5, 10, 0];
 
 export function BudgetMode({ items }: { items: Dagashi[] }) {
   const [budget, setBudget] = useState(500);
