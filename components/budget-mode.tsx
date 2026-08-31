@@ -5,6 +5,13 @@ import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { DagashiCard } from "@/components/dagashi-card";
 import { selectByBudget } from "@/lib/engine/budget";
 import { createRng } from "@/lib/random";
@@ -13,8 +20,15 @@ import type { CartResult, Category, Dagashi } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 const PRESETS = [100, 300, 500, 1000];
-/** 0 は無制限を意味する。 */
-const MAX_PER_ITEM_CHOICES = [1, 2, 3, 5, 0];
+
+/** 個数上限の選択肢。"0" は無制限を意味する。 */
+const MAX_PER_ITEM_ITEMS: Record<string, string> = {
+  "1": "1個まで",
+  "2": "2個まで",
+  "3": "3個まで",
+  "5": "5個まで",
+  "0": "無制限",
+};
 
 export function BudgetMode({ items }: { items: Dagashi[] }) {
   const [budget, setBudget] = useState(500);
@@ -35,7 +49,9 @@ export function BudgetMode({ items }: { items: Dagashi[] }) {
   function handleRun() {
     // 乱数の種はクリック時に決める。エンジン自身は Math.random を触らない。
     const rng = createRng();
-    setResult(selectByBudget(items, budget, { maxPerItem, categories: effectiveCategories }, rng));
+    setResult(
+      selectByBudget(items, budget, { maxPerItem, categories: effectiveCategories }, rng),
+    );
   }
 
   return (
@@ -76,44 +92,27 @@ export function BudgetMode({ items }: { items: Dagashi[] }) {
         {/* 個数上限 */}
         <div className="flex flex-col gap-2">
           <Label>同じ駄菓子の個数上限</Label>
-          <div className="flex flex-wrap gap-1.5">
-            {MAX_PER_ITEM_CHOICES.map((n) => (
-              <Button
-                key={n}
-                type="button"
-                variant={maxPerItem === n ? "default" : "outline"}
-                size="sm"
-                onClick={() => setMaxPerItem(n)}
-              >
-                {n === 0 ? "無制限" : `${n}個まで`}
-              </Button>
-            ))}
-          </div>
+          <Select
+            items={MAX_PER_ITEM_ITEMS}
+            value={String(maxPerItem)}
+            onValueChange={(value) => setMaxPerItem(Number(value))}
+          >
+            <SelectTrigger className="w-36">
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              {Object.entries(MAX_PER_ITEM_ITEMS).map(([value, label]) => (
+                <SelectItem key={value} value={value}>
+                  {label}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
         </div>
 
         {/* カテゴリ */}
         <div className="flex flex-col gap-2">
-          <div className="flex items-center justify-between">
-            <Label>カテゴリ</Label>
-            <div className="flex gap-1.5">
-              <Button
-                type="button"
-                variant="ghost"
-                size="sm"
-                onClick={() => setCategories([...CATEGORIES])}
-              >
-                全部選ぶ
-              </Button>
-              <Button
-                type="button"
-                variant="ghost"
-                size="sm"
-                onClick={() => setCategories([])}
-              >
-                全部外す
-              </Button>
-            </div>
-          </div>
+          <Label>カテゴリ</Label>
           <div className="flex flex-wrap gap-x-4 gap-y-2">
             {CATEGORIES.map((category) => (
               <div key={category} className="flex items-center gap-2">
@@ -165,7 +164,6 @@ function BudgetResult({ result, budget }: { result: CartResult; budget: number }
   return (
     <div className="flex flex-col gap-4">
       <div className="flex flex-wrap items-center gap-x-6 gap-y-2 rounded-xl border bg-card p-4">
-        <Stat label="種類" value={`${result.lines.length}種`} />
         <Stat label="点数" value={`${result.totalCount}点`} />
         <Stat label="合計" value={`${result.totalPrice}円`} />
         <Stat
