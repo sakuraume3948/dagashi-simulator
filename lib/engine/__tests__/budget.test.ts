@@ -5,7 +5,7 @@ import { DAGASHI_DATA } from "../../data";
 import { CATEGORIES } from "../../types";
 import type { BudgetOptions } from "../../types";
 
-const ALL: BudgetOptions = { maxPerItem: 3, categories: [] };
+const ALL: BudgetOptions = { maxPerItem: 3, maxPerSeries: 0, categories: [] };
 const CHEAPEST = Math.min(...DAGASHI_DATA.map((d) => d.price));
 
 describe("予算を絶対に超えない", () => {
@@ -19,7 +19,7 @@ describe("予算を絶対に超えない", () => {
   });
 
   it("8. 個数上限が無制限(0)でも予算を超えない", () => {
-    const unlimited: BudgetOptions = { maxPerItem: 0, categories: [] };
+    const unlimited: BudgetOptions = { maxPerItem: 0, maxPerSeries: 0, categories: [] };
     for (let seed = 0; seed < 500; seed++) {
       const r = selectByBudget(DAGASHI_DATA, 500, unlimited, createRng(seed));
       expect(r.totalPrice).toBeLessThanOrEqual(500);
@@ -47,7 +47,7 @@ describe("予算を絶対に超えない", () => {
 
 describe("オプションが守られる", () => {
   it("7. maxPerItem=2 のとき、どの商品も3個以上入らない", () => {
-    const opts: BudgetOptions = { maxPerItem: 2, categories: [] };
+    const opts: BudgetOptions = { maxPerItem: 2, maxPerSeries: 0, categories: [] };
     for (let seed = 0; seed < 500; seed++) {
       const r = selectByBudget(DAGASHI_DATA, 1000, opts, createRng(seed));
       for (const l of r.lines) expect(l.qty).toBeLessThanOrEqual(2);
@@ -64,7 +64,7 @@ describe("オプションが守られる", () => {
 
   it("9. カテゴリを1つだけ指定したとき、他カテゴリが混入しない", () => {
     for (const category of CATEGORIES) {
-      const opts: BudgetOptions = { maxPerItem: 3, categories: [category] };
+      const opts: BudgetOptions = { maxPerItem: 3, maxPerSeries: 0, categories: [category] };
       for (let seed = 0; seed < 50; seed++) {
         const r = selectByBudget(DAGASHI_DATA, 500, opts, createRng(seed));
         for (const l of r.lines) expect(l.item.category).toBe(category);
@@ -104,7 +104,7 @@ describe("境界ケース", () => {
 
   it("10d. カテゴリ指定の結果が0件なら何も買えない", () => {
     // 「飲料」の最安は20円。10円しか無ければ買えない。
-    const opts: BudgetOptions = { maxPerItem: 3, categories: ["飲料"] };
+    const opts: BudgetOptions = { maxPerItem: 3, maxPerSeries: 0, categories: ["飲料"] };
     const r = selectByBudget(DAGASHI_DATA, 10, opts, createRng(1));
     expect(r.lines).toHaveLength(0);
   });
@@ -136,5 +136,67 @@ describe("体験の妥当性", () => {
     }
     console.log(`  → 20円以下: ${cheap}個 / 100円以上: ${pricey}個`);
     expect(cheap).toBeGreaterThan(pricey);
+  });
+});
+
+describe("シリーズ上限", () => {
+  const UMAIBO = DAGASHI_DATA.filter((d) => d.seriesId === "umaibo");
+
+  /** 結果からシリーズ単位の合計個数を数える。 */
+  function seriesCount(result: { lines: { item: (typeof DAGASHI_DATA)[number]; qty: number }[] }, seriesId: string) {
+    return result.lines
+      .filter((l) => l.item.seriesId === seriesId)
+      .reduce((sum, l) => sum + l.qty, 0);
+  }
+
+  it("23. シリーズ上限3のとき、うまい棒は味を問わず合計3本まで", () => {
+    const opts: BudgetOptions = { maxPerItem: 3, maxPerSeries: 3, categories: [] };
+    for (let seed = 0; seed < 300; seed++) {
+      const r = selectByBudget(DAGASHI_DATA, 2000, opts, createRng(seed));
+      expect(seriesCount(r, "umaibo")).toBeLessThanOrEqual(3);
+      expect(seriesCount(r, "tirol")).toBeLessThanOrEqual(3);
+    }
+  });
+
+  it("24. シリーズ上限が無い(0)なら、味ごとに商品上限まで買える", () => {
+    const opts: BudgetOptions = { maxPerItem: 3, maxPerSeries: 0, categories: [] };
+    // うまい棒3種 × 3本 = 最大9本。巨大予算なら必ず上限まで届く
+    const r = selectByBudget(DAGASHI_DATA, 1_000_000, opts, createRng(1));
+    expect(seriesCount(r, "umaibo")).toBe(UMAIBO.length * 3);
+  });
+
+  it("25. 単独商品も「1人だけのシリーズ」として上限が効く", () => {
+    // 商品上限は無制限だが、シリーズ上限2 → 単独商品も2個までになる
+    const opts: BudgetOptions = { maxPerItem: 0, maxPerSeries: 2, categories: [] };
+    for (let seed = 0; seed < 200; seed++) {
+      const r = selectByBudget(DAGASHI_DATA, 2000, opts, createRng(seed));
+      for (const line of r.lines) {
+        if (line.item.seriesId === null) {
+          expect(line.qty).toBeLessThanOrEqual(2);
+        }
+      }
+      expect(seriesCount(r, "umaibo")).toBeLessThanOrEqual(2);
+    }
+  });
+
+  it("26. シリーズ上限を足しても予算は超えない", () => {
+    const opts: BudgetOptions = { maxPerItem: 2, maxPerSeries: 3, categories: [] };
+    for (const budget of [100, 500, 1000]) {
+      for (let seed = 0; seed < 300; seed++) {
+        const r = selectByBudget(DAGASHI_DATA, budget, opts, createRng(seed));
+        expect(r.totalPrice).toBeLessThanOrEqual(budget);
+        expect(r.totalPrice + r.change).toBe(budget);
+      }
+    }
+  });
+
+  it("27. 商品上限とシリーズ上限は同時に効く（厳しい方が勝つ）", () => {
+    const opts: BudgetOptions = { maxPerItem: 2, maxPerSeries: 3, categories: [] };
+    const r = selectByBudget(DAGASHI_DATA, 1_000_000, opts, createRng(7));
+
+    // 各味は2本まで
+    for (const line of r.lines) expect(line.qty).toBeLessThanOrEqual(2);
+    // うまい棒は3種あるが、シリーズ合計は3本まで（2×3=6ではない）
+    expect(seriesCount(r, "umaibo")).toBe(3);
   });
 });

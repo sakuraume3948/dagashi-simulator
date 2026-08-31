@@ -9,6 +9,16 @@ import type { BudgetOptions, CartLine, CartResult, Dagashi } from "../types";
 const MAX_ITERATIONS = 10000;
 
 /**
+ * シリーズ上限を数えるときのキー。
+ * seriesId を持たない単独商品は、自分のIDを使って「1人だけのシリーズ」として扱う。
+ * こうしないと、商品上限を無制限にしたときに
+ * 単独商品だけ無限に買えてしまい、シリーズ商品との間で挙動がちぐはぐになる。
+ */
+function seriesKeyOf(item: Dagashi): string {
+  return item.seriesId ?? item.id;
+}
+
+/**
  * 指定した予算内で、駄菓子屋でカゴに入れるようにランダムに買い物をする。
  *
  * ★重み付けは一切しない（一様ランダム）。それでも安い駄菓子が自然に多く入る:
@@ -32,7 +42,7 @@ export function selectByBudget(
   options: BudgetOptions,
   rng: Rng,
 ): CartResult {
-  const { maxPerItem, categories } = options;
+  const { maxPerItem, maxPerSeries, categories } = options;
 
   // カテゴリ絞り込み。空配列は「全カテゴリ」を意味する。
   const pool =
@@ -41,14 +51,18 @@ export function selectByBudget(
       : items.filter((it) => categories.includes(it.category));
 
   const qtyById = new Map<string, number>();
+  const qtyBySeries = new Map<string, number>();
   const order: Dagashi[] = []; // 最初に選ばれた順を保ち、表示順を安定させる
   let remaining = Math.max(0, Math.floor(budget));
 
   for (let i = 0; i < MAX_ITERATIONS; i++) {
     const affordable = pool.filter((it) => {
       if (it.price > remaining) return false; // ★これが予算超過を不可能にする
-      if (maxPerItem <= 0) return true; // 0 は無制限
-      return (qtyById.get(it.id) ?? 0) < maxPerItem;
+      if (maxPerItem > 0 && (qtyById.get(it.id) ?? 0) >= maxPerItem) return false;
+      if (maxPerSeries > 0 && (qtyBySeries.get(seriesKeyOf(it)) ?? 0) >= maxPerSeries) {
+        return false;
+      }
+      return true;
     });
 
     if (affordable.length === 0) break;
@@ -57,6 +71,10 @@ export function selectByBudget(
     const prev = qtyById.get(picked.id) ?? 0;
     if (prev === 0) order.push(picked);
     qtyById.set(picked.id, prev + 1);
+
+    const key = seriesKeyOf(picked);
+    qtyBySeries.set(key, (qtyBySeries.get(key) ?? 0) + 1);
+
     remaining -= picked.price;
   }
 
