@@ -19,6 +19,8 @@ function d(
   price: number,
   category: Category,
   unit: string,
+  /** 味違いで束ねるシリーズ。省略すれば単独商品扱い。 */
+  seriesId: string | null = null,
 ): Dagashi {
   return {
     id,
@@ -27,6 +29,7 @@ function d(
     price,
     category,
     unit,
+    seriesId,
     rarity: null,
     weight: null,
     imageUrl: null,
@@ -39,9 +42,9 @@ function d(
 
 export const DAGASHI_DATA: Dagashi[] = [
   // ── スナック (10件) ──────────────────────────────
-  d("umaibo-mentai", "うまい棒 めんたい味", "やおきん", 10, "スナック", "1本"),
-  d("umaibo-corn", "うまい棒 コーンポタージュ味", "やおきん", 10, "スナック", "1本"),
-  d("umaibo-cheese", "うまい棒 チーズ味", "やおきん", 10, "スナック", "1本"),
+  d("umaibo-mentai", "うまい棒 めんたい味", "やおきん", 10, "スナック", "1本", "umaibo"),
+  d("umaibo-corn", "うまい棒 コーンポタージュ味", "やおきん", 10, "スナック", "1本", "umaibo"),
+  d("umaibo-cheese", "うまい棒 チーズ味", "やおきん", 10, "スナック", "1本", "umaibo"),
   d("cabbage-taro", "キャベツ太郎", "菓道", 20, "スナック", "1袋"),
   d("dondon-yaki", "どんどん焼き", "菓道", 20, "スナック", "1袋"),
   d("tamanegi-taro", "玉葱さん太郎", "菓道", 20, "スナック", "1袋"),
@@ -51,8 +54,8 @@ export const DAGASHI_DATA: Dagashi[] = [
   d("babystar-dodekai", "ベビースターラーメン ドデカイラーメン", "おやつカンパニー", 80, "スナック", "1袋"),
 
   // ── チョコ (9件) ────────────────────────────────
-  d("tirol-kinako", "チロルチョコ きなこもち", "チロルチョコ", 20, "チョコ", "1個"),
-  d("tirol-coffee", "チロルチョコ コーヒーヌガー", "チロルチョコ", 20, "チョコ", "1個"),
+  d("tirol-kinako", "チロルチョコ きなこもち", "チロルチョコ", 20, "チョコ", "1個", "tirol"),
+  d("tirol-coffee", "チロルチョコ コーヒーヌガー", "チロルチョコ", 20, "チョコ", "1個", "tirol"),
   d("black-thunder", "ブラックサンダー", "有楽製菓", 30, "チョコ", "1本"),
   d("choco-bat", "チョコバット", "三立製菓", 30, "チョコ", "1本"),
   d("mugi-choco", "麦チョコ", "正栄デリシィ", 40, "チョコ", "1袋"),

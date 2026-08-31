@@ -24,8 +24,41 @@ export const GACHA_EXPONENT = 2;
  * → レア度システムを実装しなくても「この商品だけ極端に出にくくする」が今から可能。
  * 将来レア度システムを入れる場合も、ここと抽選部分を差し替えるだけで済む。
  */
-export function gachaWeightOf(item: Dagashi): number {
-  return item.weight ?? 1 / Math.pow(item.price, GACHA_EXPONENT);
+export function gachaWeightOf(
+  item: Dagashi,
+  seriesCounts: Map<string, number>,
+): number {
+  // 手動指定があれば無条件で優先する（シリーズ補正も掛けない）。
+  if (item.weight !== null) return item.weight;
+
+  const base = 1 / Math.pow(item.price, GACHA_EXPONENT);
+
+  // ★シリーズに属する商品は、その件数で重みを割る。
+  //   うまい棒が20フレーバーあると、素の重みのままでは
+  //   「10円の商品が20個ある」状態になり、うまい棒系だけで60%を超えてしまう。
+  //   件数で割ることで、シリーズ全体の合計が「うまい棒1商品ぶん」に揃う。
+  //   → フレーバーを何種類増やしても、シリーズの出現率は変わらない。
+  const n = item.seriesId !== null ? (seriesCounts.get(item.seriesId) ?? 1) : 1;
+  return base / n;
+}
+
+/** シリーズごとの商品数を数える。seriesId が null のものは対象外。 */
+function countSeries(items: Dagashi[]): Map<string, number> {
+  const counts = new Map<string, number>();
+  for (const item of items) {
+    if (item.seriesId === null) continue;
+    counts.set(item.seriesId, (counts.get(item.seriesId) ?? 0) + 1);
+  }
+  return counts;
+}
+
+/**
+ * 全商品の重みをまとめて計算する。
+ * シリーズの件数を数える必要があるため、1件ずつではなく配列単位で扱う。
+ */
+export function gachaWeights(items: Dagashi[]): number[] {
+  const seriesCounts = countSeries(items);
+  return items.map((item) => gachaWeightOf(item, seriesCounts));
 }
 
 /**
@@ -33,7 +66,7 @@ export function gachaWeightOf(item: Dagashi): number {
  * テストでの検証と、UI での確率表示の両方に使う。
  */
 export function gachaProbabilities(items: Dagashi[]): Map<string, number> {
-  const weights = items.map(gachaWeightOf);
+  const weights = gachaWeights(items);
   const total = weights.reduce((s, w) => s + w, 0);
   return new Map(items.map((it, i) => [it.id, weights[i] / total]));
 }
@@ -63,7 +96,7 @@ export function pullGacha(
 
   // 重みは抽選のたびに計算し直さず、一度だけ求めて使い回す。
   // （10万回の検証テストで Math.pow が数百万回走るのを避けるため）
-  const weights = items.map(gachaWeightOf);
+  const weights = gachaWeights(items);
 
   const results: Dagashi[] = [];
   for (let i = 0; i < count; i++) {

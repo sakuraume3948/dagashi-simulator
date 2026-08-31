@@ -1,11 +1,16 @@
 import { describe, expect, it } from "vitest";
-import { GACHA_EXPONENT, gachaProbabilities, gachaWeightOf, pullGacha } from "../gacha";
+import { GACHA_EXPONENT, gachaProbabilities, gachaWeights, pullGacha } from "../gacha";
 import { createRng } from "../../random";
 import { DAGASHI_DATA } from "../../data";
 import type { Dagashi } from "../../types";
 
 /** テスト専用の最小データを作るヘルパー。 */
-function fake(id: string, price: number, weight: number | null = null): Dagashi {
+function fake(
+  id: string,
+  price: number,
+  weight: number | null = null,
+  seriesId: string | null = null,
+): Dagashi {
   return {
     id,
     name: id,
@@ -13,6 +18,7 @@ function fake(id: string, price: number, weight: number | null = null): Dagashi 
     price,
     category: "スナック",
     unit: "1個",
+    seriesId,
     rarity: null,
     weight,
     imageUrl: null,
@@ -97,8 +103,9 @@ describe("重みの決まり方", () => {
     const auto = fake("auto", 10); // weight = 1/100 = 0.01
     const manual = fake("manual", 10, 0.0001); // 同じ価格だが手動で100分の1に
 
-    expect(gachaWeightOf(auto)).toBeCloseTo(0.01, 10);
-    expect(gachaWeightOf(manual)).toBe(0.0001);
+    const [autoW, manualW] = gachaWeights([auto, manual]);
+    expect(autoW).toBeCloseTo(0.01, 10);
+    expect(manualW).toBe(0.0001);
 
     // 実際の排出にも効くこと
     const rng = createRng(2024);
@@ -110,12 +117,102 @@ describe("重みの決まり方", () => {
   it("5b. GACHA_EXPONENT が価格差を増幅している", () => {
     expect(GACHA_EXPONENT).toBe(2);
     // 10円と100円の重み比は price^2 の比、すなわち 100:1 になる
-    expect(gachaWeightOf(fake("a", 10)) / gachaWeightOf(fake("b", 100))).toBeCloseTo(100, 5);
+    const [wa, wb] = gachaWeights([fake("a", 10), fake("b", 100)]);
+    expect(wa / wb).toBeCloseTo(100, 5);
   });
 
   it("5c. 理論排出率の合計は 1 になる", () => {
     const probs = gachaProbabilities(DAGASHI_DATA);
     const sum = [...probs.values()].reduce((s, p) => s + p, 0);
     expect(sum).toBeCloseTo(1, 10);
+  });
+});
+
+describe("シリーズ（味違い）の重み補正", () => {
+  /** 指定件数のフレーバーを持つシリーズを作る。 */
+  function series(prefix: string, price: number, count: number): Dagashi[] {
+    return Array.from({ length: count }, (_, i) =>
+      fake(`${prefix}-${i}`, price, null, prefix),
+    );
+  }
+
+  it("18. シリーズ内の重みは件数で割られる", () => {
+    const items = [...series("umaibo", 10, 4), fake("solo", 10)];
+    const [w0, , , , soloW] = gachaWeights(items);
+
+    // 単独商品は 1/10^2 = 0.01、シリーズは4件なので 0.01/4 = 0.0025
+    expect(soloW).toBeCloseTo(0.01, 10);
+    expect(w0).toBeCloseTo(0.0025, 10);
+  });
+
+  it("19. ★フレーバーを増やしてもシリーズ全体の出現率は変わらない", () => {
+    const rateOf = (count: number) => {
+      const items = [...series("umaibo", 10, count), fake("solo", 100)];
+      const probs = gachaProbabilities(items);
+      return [...probs.entries()]
+        .filter(([id]) => id.startsWith("umaibo"))
+        .reduce((sum, [, p]) => sum + p, 0);
+    };
+
+    // 3種でも20種でも100種でも、うまい棒シリーズ全体の確率は同じ
+    expect(rateOf(3)).toBeCloseTo(rateOf(20), 10);
+    expect(rateOf(3)).toBeCloseTo(rateOf(100), 10);
+  });
+
+  it("19b. 補正が無ければ確率は歪む（対比）", () => {
+    // seriesId を付けない＝補正されない場合、件数を増やすと確率が上がってしまう
+    const rateOf = (count: number) => {
+      const items = [
+        ...Array.from({ length: count }, (_, i) => fake(`umaibo-${i}`, 10)),
+        fake("solo", 100),
+      ];
+      const probs = gachaProbabilities(items);
+      return [...probs.entries()]
+        .filter(([id]) => id.startsWith("umaibo"))
+        .reduce((sum, [, p]) => sum + p, 0);
+    };
+
+    expect(rateOf(20)).toBeGreaterThan(rateOf(3));
+  });
+
+  it("20. seriesId が null の商品は補正を受けない", () => {
+    const items = [...series("umaibo", 10, 5), fake("solo", 10)];
+    const [, , , , , soloW] = gachaWeights(items);
+    expect(soloW).toBeCloseTo(1 / 100, 10);
+  });
+
+  it("21. weight の手動指定はシリーズ補正より優先される", () => {
+    const items = [
+      fake("umaibo-a", 10, 0.5, "umaibo"), // 手動指定あり
+      fake("umaibo-b", 10, null, "umaibo"), // 補正される
+      fake("umaibo-c", 10, null, "umaibo"),
+    ];
+    const [a, b] = gachaWeights(items);
+
+    expect(a).toBe(0.5); // 3で割られない
+    expect(b).toBeCloseTo(0.01 / 3, 10);
+  });
+
+  it("22. 実データのうまい棒とチロルにシリーズが設定されている", () => {
+    const umaibo = DAGASHI_DATA.filter((d) => d.seriesId === "umaibo");
+    const tirol = DAGASHI_DATA.filter((d) => d.seriesId === "tirol");
+
+    expect(umaibo.length).toBeGreaterThanOrEqual(2);
+    expect(tirol.length).toBeGreaterThanOrEqual(2);
+
+    const probs = gachaProbabilities(DAGASHI_DATA);
+    const umaiboTotal = umaibo.reduce((s, d) => s + probs.get(d.id)!, 0);
+    const oneUmaibo = probs.get(umaibo[0].id)!;
+
+    // うまい棒1本ぶんの確率 × 件数 = シリーズ合計
+    expect(oneUmaibo * umaibo.length).toBeCloseTo(umaiboTotal, 10);
+
+    // きなこ棒は「10円・単独」。うまい棒と同価格なので、
+    // 補正が効いていればうまい棒1本はちょうど 1/3 になっているはず。
+    const solo10yen = probs.get("kinako-bou")!;
+    expect(oneUmaibo).toBeCloseTo(solo10yen / umaibo.length, 12);
+
+    // シリーズ合計は、10円の単独商品1つぶんとちょうど同じ
+    expect(umaiboTotal).toBeCloseTo(solo10yen, 12);
   });
 });
