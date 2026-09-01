@@ -193,26 +193,44 @@ describe("シリーズ（味違い）の重み補正", () => {
     expect(b).toBeCloseTo(0.01 / 3, 10);
   });
 
-  it("22. 実データのうまい棒とチロルにシリーズが設定されている", () => {
-    const umaibo = DAGASHI_DATA.filter((d) => d.seriesId === "umaibo");
-    const tirol = DAGASHI_DATA.filter((d) => d.seriesId === "tirol");
+  it("22. 実データでシリーズ内の重みが件数で割られている", () => {
+    // ★シリーズ内の価格が揃っている必要はない。
+    //   実データのうまい棒には 12円（クリスマス味）15円（通常）25円（プレミアム）が
+    //   混在する。そのため「1件ぶん × 件数 = 合計」は成立しない。
+    //   検証すべきなのは「各商品が、単独だった場合の重みの 1/件数 になっているか」。
+    const seriesIds = [...new Set(DAGASHI_DATA.map((d) => d.seriesId).filter((s) => s !== null))];
+    expect(seriesIds.length).toBeGreaterThan(0);
 
-    expect(umaibo.length).toBeGreaterThanOrEqual(2);
-    expect(tirol.length).toBeGreaterThanOrEqual(2);
+    const weights = gachaWeights(DAGASHI_DATA);
+    const indexById = new Map(DAGASHI_DATA.map((d, i) => [d.id, i]));
 
-    const probs = gachaProbabilities(DAGASHI_DATA);
-    const umaiboTotal = umaibo.reduce((s, d) => s + probs.get(d.id)!, 0);
-    const oneUmaibo = probs.get(umaibo[0].id)!;
+    for (const seriesId of seriesIds) {
+      const members = DAGASHI_DATA.filter((d) => d.seriesId === seriesId);
 
-    // うまい棒1本ぶんの確率 × 件数 = シリーズ合計
-    expect(oneUmaibo * umaibo.length).toBeCloseTo(umaiboTotal, 10);
+      for (const item of members) {
+        const actual = weights[indexById.get(item.id)!];
+        const asSingle = 1 / Math.pow(item.price, GACHA_EXPONENT); // 単独だった場合の重み
+        expect(actual, `${item.name} の重みが件数で割られていない`).toBeCloseTo(
+          asSingle / members.length,
+          12,
+        );
+      }
+    }
+  });
 
-    // きなこ棒は「10円・単独」。うまい棒と同価格なので、
-    // 補正が効いていればうまい棒1本はちょうど 1/3 になっているはず。
-    const solo10yen = probs.get("kinako-bou")!;
-    expect(oneUmaibo).toBeCloseTo(solo10yen / umaibo.length, 12);
+  it("22b. 価格が混在するシリーズでも、単独商品との関係が保たれる", () => {
+    // 同じシリーズに違う価格が入っていても、各商品は「その価格の単独商品 ÷ 件数」になる
+    const items = [
+      fake("s-a", 10, null, "mixed"),
+      fake("s-b", 20, null, "mixed"),
+      fake("s-c", 50, null, "mixed"),
+      fake("solo10", 10),
+      fake("solo20", 20),
+    ];
+    const [a, b, c, solo10, solo20] = gachaWeights(items);
 
-    // シリーズ合計は、10円の単独商品1つぶんとちょうど同じ
-    expect(umaiboTotal).toBeCloseTo(solo10yen, 12);
+    expect(a).toBeCloseTo(solo10 / 3, 12);
+    expect(b).toBeCloseTo(solo20 / 3, 12);
+    expect(c).toBeCloseTo(1 / 50 ** 2 / 3, 12);
   });
 });
