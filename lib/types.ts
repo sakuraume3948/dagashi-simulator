@@ -15,6 +15,8 @@ export const CATEGORIES = [
   "せんべい・おつまみ",
   "飲料",
   "くじ・当たり付き",
+  /** 分類が付けられなかった商品の受け皿。自動取得で推定に失敗したものが入る。 */
+  "その他",
 ] as const;
 
 export type Category = (typeof CATEGORIES)[number];
@@ -22,15 +24,24 @@ export type Category = (typeof CATEGORIES)[number];
 /** 将来のレア度システム用。今は未使用（全商品 null）。 */
 export type Rarity = "N" | "R" | "SR" | "SSR";
 
+/**
+ * 必須なのは id / name / price / category の4つだけ。
+ *
+ * price は予算モードもガチャも成立しなくなるため絶対に必要。
+ * maker と unit は「分かれば嬉しい」程度なので、取得できない情報源
+ * （井ノ口商店など、商品名と価格しか持たないサイト）からのデータも
+ * 受け入れられるよう null を許容する。
+ */
 export type Dagashi = {
   id: string;
   name: string;
-  maker: string;
+  /** メーカー名。取得できない情報源があるため null 許容。 */
+  maker: string | null;
   /** 税込・円・整数。10円20円の世界なので端数を持たない。 */
   price: number;
   category: Category;
-  /** 販売単位。"1本" "1袋(4個入)" など。 */
-  unit: string;
+  /** 販売単位。"1本" "1袋(4個入)" など。取得できない場合は null。 */
+  unit: string | null;
   /**
    * 同一シリーズ（味違い・バリエーション違い）の識別子。単独商品は null。
    *

@@ -11,6 +11,7 @@ const CATEGORY_EMOJI: Record<Category, string> = {
   "せんべい・おつまみ": "🍘",
   飲料: "🥤",
   "くじ・当たり付き": "🎯",
+  その他: "🍡",
 };
 
 /**
@@ -56,7 +57,10 @@ export function DagashiCard({ item, qty }: Props) {
 
       <div className="flex-1">
         <p className="text-sm leading-snug font-medium">{item.name}</p>
-        <p className="mt-0.5 text-xs text-muted-foreground">{item.maker}</p>
+        {/* メーカー名は取得できない情報源があるため、無ければ行ごと出さない */}
+        {item.maker && (
+          <p className="mt-0.5 text-xs text-muted-foreground">{item.maker}</p>
+        )}
       </div>
 
       <div className="flex items-center justify-between gap-2">

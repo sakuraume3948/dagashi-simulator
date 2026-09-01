@@ -130,13 +130,15 @@ function validate(items: Merged[]): { valid: Merged[]; rejected: Rejected[] } {
       reject("IDが重複している");
       continue;
     }
-    if (!item.name || !item.maker || !item.unit) {
-      reject("name / maker / unit のいずれかが空");
+    // ★必須なのは name と price だけ。
+    //   maker / unit は取得できない情報源があるため、無ければ null のまま通す。
+    if (!item.name) {
+      reject("商品名が空");
       continue;
     }
+    // カテゴリが決まらないものは「その他」に寄せる（除外はしない）
     if (!item.category || !(CATEGORIES as readonly string[]).includes(item.category)) {
-      reject(`カテゴリが不正: ${item.category ?? "(未設定)"}`);
-      continue;
+      item.category = "その他";
     }
     // ★価格が決まらない商品は使わない
     if (item.price === undefined || item.price === null) {
@@ -189,10 +191,10 @@ function generateTypeScript(items: Merged[], sources: SourceFile[]): string {
       const args = [
         quote(item.id),
         quote(item.name!),
-        quote(item.maker!),
+        item.maker ? quote(item.maker) : "null",
         String(item.price),
         quote(item.category!),
-        quote(item.unit!),
+        item.unit ? quote(item.unit) : "null",
       ];
       if (item.seriesId) args.push(quote(item.seriesId));
       return `  d(${args.join(", ")}),`;
@@ -223,10 +225,10 @@ ${sourceLines.join("\n")}
 function d(
   id: string,
   name: string,
-  maker: string,
+  maker: string | null,
   price: number,
   category: Category,
-  unit: string,
+  unit: string | null,
   /** 味違いで束ねるシリーズ。省略すれば単独商品扱い。 */
   seriesId: string | null = null,
 ): Dagashi {

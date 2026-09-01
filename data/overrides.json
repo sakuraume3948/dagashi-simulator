@@ -12,5 +12,47 @@
     "  \"tirol-kinako\":  { \"price\": 25, \"seriesId\": \"tirol\" }",
     "  \"some-item\":     { \"exclude\": true }"
   ],
-  "items": {}
+  "items": {
+    "inokuchi-48621": {
+      "exclude": true,
+      "_reason": "キララメシールバインダー。シール用バインダーで菓子ではない"
+    },
+    "inokuchi-48616": {
+      "exclude": true,
+      "_reason": "キララメシールバインダーmini。同上"
+    },
+    "inokuchi-34363": {
+      "exclude": true,
+      "_reason": "サッカースクラッチ。スクラッチくじで菓子ではない"
+    },
+
+    "inokuchi-18848": {
+      "exclude": true,
+      "_reason": "ぐるぐるゼリー 700円。24本入りのセット価格で1個の単価ではない"
+    },
+    "inokuchi-46630": {
+      "exclude": true,
+      "_reason": "東京ニコニコラムネ 300円。4個入りのセット価格"
+    },
+    "inokuchi-47112": {
+      "exclude": true,
+      "_reason": "マカロンクッキー 270円。180g入りの大袋で単品ではない"
+    },
+    "inokuchi-46453": {
+      "exclude": true,
+      "_reason": "フルーツポップ 250円。6入りのセット価格"
+    },
+    "inokuchi-49843": {
+      "exclude": true,
+      "_reason": "カンロ ザ・ストロンググミ 220円。6入りのセット価格"
+    },
+    "inokuchi-33782": {
+      "exclude": true,
+      "_reason": "手づくりキャンディー 200円。6入りのセット価格"
+    },
+    "inokuchi-19891": {
+      "exclude": true,
+      "_reason": "東京下町あんこ玉 300円。駄菓子屋の店頭価格として高すぎる"
+    }
+  }
 }

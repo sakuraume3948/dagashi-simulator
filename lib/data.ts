@@ -11,9 +11,10 @@ import type { Category, Dagashi } from "./types";
  *     - 手で決めた値     → data/overrides.json
  *
  * 情報源:
+ *   - 井ノ口商店（希望小売価格）（153件 / 取得日: 2026-09-01）
  *   - 手入力（実在の定番駄菓子）（60件）
  *
- * 価格帯の分布: 10〜20円: 20件 / 30〜50円: 19件 / 60〜100円: 14件 / 101円〜: 7件
+ * 価格帯の分布: 30〜50円: 86件 / 101円〜: 10件 / 60〜100円: 36件 / 10〜20円: 71件
  * （ガチャの重みは 1/price^2 なので、価格帯が偏ると「高いものが出にくい」が成立しない）
  */
 
@@ -21,10 +22,10 @@ import type { Category, Dagashi } from "./types";
 function d(
   id: string,
   name: string,
-  maker: string,
+  maker: string | null,
   price: number,
   category: Category,
-  unit: string,
+  unit: string | null,
   /** 味違いで束ねるシリーズ。省略すれば単独商品扱い。 */
   seriesId: string | null = null,
 ): Dagashi {
@@ -47,7 +48,41 @@ function d(
 }
 
 export const DAGASHI_DATA: Dagashi[] = [
-  // ── スナック (10件) ──────────────────────────
+  // ── スナック (44件) ──────────────────────────
+  d("inokuchi-49742", "ココナッツクッキー", null, 12, "スナック", null),
+  d("inokuchi-47544", "プチドーナッツビスケット", null, 13, "スナック", null),
+  d("inokuchi-47224", "ミルメーク ムギスナック", null, 10, "スナック", null),
+  d("inokuchi-46451", "うま辛パンチみそラーメン", null, 100, "スナック", null),
+  d("inokuchi-45410", "中村製菓 ポテトフライ", null, 40, "スナック", null),
+  d("inokuchi-18401", "餅太郎・塩", null, 15, "スナック", null),
+  d("inokuchi-19550", "うまい棒 牛タン塩味", null, 15, "スナック", null, "umaibo"),
+  d("inokuchi-35219", "うまい棒 のり塩味", null, 15, "スナック", null, "umaibo"),
+  d("inokuchi-44678", "カステラドーナツ太郎", null, 30, "スナック", null),
+  d("inokuchi-43273", "ハニーバター太郎", null, 30, "スナック", null),
+  d("inokuchi-18429", "もろこし輪太郎", null, 30, "スナック", null),
+  d("inokuchi-18428", "キャベツ太郎", null, 30, "スナック", null),
+  d("inokuchi-18431", "アメリカンフライドポテト", null, 30, "スナック", null),
+  d("inokuchi-24317", "東豊ポテトフライ チキン味", null, 40, "スナック", null, "toho-potato-fry"),
+  d("inokuchi-36594", "東豊ポテトフライ カルビ焼きの味", null, 40, "スナック", null, "toho-potato-fry"),
+  d("inokuchi-36591", "東豊ポテトフライ じゃが塩バター味", null, 40, "スナック", null, "toho-potato-fry"),
+  d("inokuchi-18483", "ヤングドーナツ", null, 58, "スナック", null),
+  d("inokuchi-19268", "ど〜ん太郎 うどん", null, 20, "スナック", null),
+  d("inokuchi-19272", "わさびのり太郎", null, 15, "スナック", null),
+  d("inokuchi-18388", "うまい棒 チーズ味", null, 15, "スナック", null, "umaibo"),
+  d("inokuchi-28100", "うまい棒コーンポタージュ", null, 15, "スナック", null, "umaibo"),
+  d("inokuchi-18387", "うまい棒 めんたい味", null, 15, "スナック", null, "umaibo"),
+  d("inokuchi-19972", "うまい棒 シュガーラスク味", null, 15, "スナック", null, "umaibo"),
+  d("inokuchi-21110", "うまい棒 やきとり味", null, 15, "スナック", null, "umaibo"),
+  d("inokuchi-19959", "うまい棒 なっとう味", null, 15, "スナック", null, "umaibo"),
+  d("inokuchi-27358", "ぱんだろ〜クッキー", null, 12, "スナック", null),
+  d("inokuchi-18390", "うまい棒 とんかつソース味", null, 15, "スナック", null, "umaibo"),
+  d("inokuchi-20067", "ポップコーン塩味", null, 40, "スナック", null),
+  d("inokuchi-29060", "メロンぱんだろ〜クッキー", null, 12, "スナック", null),
+  d("inokuchi-18391", "うまい棒 テリヤキバーガー味", null, 15, "スナック", null, "umaibo"),
+  d("inokuchi-22560", "うまい棒プレミアム和風ステーキ味", null, 25, "スナック", null, "umaibo"),
+  d("inokuchi-21434", "うまい棒プレミアムめんたいこ味", null, 25, "スナック", null, "umaibo"),
+  d("inokuchi-21429", "うまい棒プレミアムチーズ味", null, 25, "スナック", null, "umaibo"),
+  d("inokuchi-34331", "ガリボリラーメン", null, 30, "スナック", null),
   d("umaibo-mentai", "うまい棒 めんたい味", "やおきん", 10, "スナック", "1本", "umaibo"),
   d("umaibo-corn", "うまい棒 コーンポタージュ味", "やおきん", 10, "スナック", "1本", "umaibo"),
   d("umaibo-cheese", "うまい棒 チーズ味", "やおきん", 10, "スナック", "1本", "umaibo"),
@@ -59,7 +94,12 @@ export const DAGASHI_DATA: Dagashi[] = [
   d("kappa-ebisen-mini", "かっぱえびせん ミニ", "カルビー", 60, "スナック", "1袋"),
   d("babystar-dodekai", "ベビースターラーメン ドデカイラーメン", "おやつカンパニー", 80, "スナック", "1袋"),
 
-  // ── チョコ (9件) ────────────────────────────
+  // ── チョコ (14件) ────────────────────────────
+  d("inokuchi-47318", "しみチョココーン全粒粉スティック", null, 45, "チョコ", null),
+  d("inokuchi-39283", "クリスマスうまい棒チョコレート", null, 12, "チョコ", null, "umaibo"),
+  d("inokuchi-18458", "プチプチうらないチョコ", null, 30, "チョコ", null),
+  d("inokuchi-19181", "月の小石チョコ", null, 25, "チョコ", null),
+  d("inokuchi-19320", "どらチョコ", null, 50, "チョコ", null),
   d("tirol-kinako", "チロルチョコ きなこもち", "チロルチョコ", 20, "チョコ", "1個", "tirol"),
   d("tirol-coffee", "チロルチョコ コーヒーヌガー", "チロルチョコ", 20, "チョコ", "1個", "tirol"),
   d("black-thunder", "ブラックサンダー", "有楽製菓", 30, "チョコ", "1本"),
@@ -70,7 +110,35 @@ export const DAGASHI_DATA: Dagashi[] = [
   d("kinoko-no-yama", "きのこの山", "明治", 120, "チョコ", "1箱"),
   d("takenoko-no-sato", "たけのこの里", "明治", 120, "チョコ", "1箱"),
 
-  // ── グミ・キャンディ (9件) ──────────────────
+  // ── グミ・キャンディ (37件) ──────────────────
+  d("inokuchi-49575", "サワーペーパーキャンディ ホワイトソーダ", null, 25, "グミ・キャンディ", null),
+  d("inokuchi-49528", "サワーペーパーキャンディ", null, 25, "グミ・キャンディ", null),
+  d("inokuchi-49526", "プレミアムガブリチュウ 焦がしキャラメル味", null, 50, "グミ・キャンディ", null),
+  d("inokuchi-48881", "サンリオキャラクターズ ドーナッツグミ", null, 38, "グミ・キャンディ", null),
+  d("inokuchi-45231", "キャンディーボックス", null, 50, "グミ・キャンディ", null),
+  d("inokuchi-44767", "のむのむゼリー パイン味", null, 45, "グミ・キャンディ", null),
+  d("inokuchi-39932", "のむのむゼリー 各種", null, 45, "グミ・キャンディ", null),
+  d("inokuchi-44592", "サワーコーラグミ", null, 20, "グミ・キャンディ", null),
+  d("inokuchi-44590", "グレープソーダグミ", null, 20, "グミ・キャンディ", null),
+  d("inokuchi-43853", "アンパンマン ペロペロキャンディ", null, 40, "グミ・キャンディ", null),
+  d("inokuchi-42585", "ガブリチュウ", null, 30, "グミ・キャンディ", null),
+  d("inokuchi-42136", "すみっコぐらし つりグミ", null, 80, "グミ・キャンディ", null),
+  d("inokuchi-40722", "魚ギョッと釣りグミ", null, 70, "グミ・キャンディ", null),
+  d("inokuchi-39792", "こんにゃくゼリー", null, 15, "グミ・キャンディ", null),
+  d("inokuchi-39019", "ロールキャンディ", null, 60, "グミ・キャンディ", null),
+  d("inokuchi-19337", "森永ハイチュウ", null, 12, "グミ・キャンディ", null),
+  d("inokuchi-33775", "うずまきキャンディー", null, 100, "グミ・キャンディ", null),
+  d("inokuchi-33767", "りんごあめ", null, 100, "グミ・キャンディ", null),
+  d("inokuchi-21426", "ドリコ 棒きなこ飴連続当て", null, 12, "グミ・キャンディ", null),
+  d("inokuchi-39984", "鈴ノ屋 棒きなこ飴 連続当て", null, 12, "グミ・キャンディ", null),
+  d("inokuchi-18501", "カップ入りねり水飴", null, 80, "グミ・キャンディ", null),
+  d("inokuchi-18439", "やおきん きなこ棒飴箱入", null, 30, "グミ・キャンディ", null),
+  d("inokuchi-18426", "どんぐりガム", null, 12, "グミ・キャンディ", null),
+  d("inokuchi-18440", "あんずボー", null, 30, "グミ・キャンディ", null),
+  d("inokuchi-28026", "ダイヤモンドリングキャンディ", null, 40, "グミ・キャンディ", null),
+  d("inokuchi-18425", "あわ玉 飴", null, 12, "グミ・キャンディ", null),
+  d("inokuchi-19219", "不二家棒付き ポップキャンディ", null, 11, "グミ・キャンディ", null),
+  d("inokuchi-23990", "ねり水あめ大当て", null, 40, "グミ・キャンディ", null),
   d("kinako-bou", "きなこ棒", "共親製菓", 10, "グミ・キャンディ", "1本"),
   d("anzu-bou", "あんずボー", "港常", 20, "グミ・キャンディ", "1本"),
   d("neriame", "ねりあめ", "山田製菓", 30, "グミ・キャンディ", "1個"),
@@ -81,7 +149,12 @@ export const DAGASHI_DATA: Dagashi[] = [
   d("kaju-gummy", "果汁グミ ぶどう", "明治", 100, "グミ・キャンディ", "1袋"),
   d("pine-ame", "パインアメ", "パイン", 100, "グミ・キャンディ", "1袋"),
 
-  // ── ラムネ・タブレット (8件) ────────────────
+  // ── ラムネ・タブレット (13件) ────────────────
+  d("inokuchi-49938", "ラムネもち", null, 120, "ラムネ・タブレット", null),
+  d("inokuchi-49381", "この人だ～れ？DXミンツ", null, 30, "ラムネ・タブレット", null),
+  d("inokuchi-19095", "ビンラムネ（モナカ）", null, 100, "ラムネ・タブレット", null),
+  d("inokuchi-19969", "クッピーラムネ", null, 30, "ラムネ・タブレット", null),
+  d("inokuchi-18423", "あべっ子ラムネアソート", null, 15, "ラムネ・タブレット", null),
   d("funmatsu-juice", "粉末ジュース ソーダ味", "松山製菓", 10, "ラムネ・タブレット", "1袋"),
   d("odama-ramune", "大玉ラムネ", "カクダイ製菓", 20, "ラムネ・タブレット", "1個"),
   d("kuppy-ramune", "クッピーラムネ", "カクダイ製菓", 30, "ラムネ・タブレット", "1袋"),
@@ -91,7 +164,28 @@ export const DAGASHI_DATA: Dagashi[] = [
   d("hi-lemon", "ハイレモン", "明治", 110, "ラムネ・タブレット", "1本"),
   d("morinaga-ramune", "森永ラムネ", "森永製菓", 120, "ラムネ・タブレット", "1本"),
 
-  // ── せんべい・おつまみ (11件) ────────────────
+  // ── せんべい・おつまみ (32件) ────────────────
+  d("inokuchi-49386", "おやつカルパス 旨辛味", null, 15, "せんべい・おつまみ", null),
+  d("inokuchi-47227", "ペヤングソース焼きそばカツ", null, 12, "せんべい・おつまみ", null),
+  d("inokuchi-19342", "カットよっちゃんいか", null, 50, "せんべい・おつまみ", null),
+  d("inokuchi-18847", "おやつカルパス", null, 15, "せんべい・おつまみ", null),
+  d("inokuchi-42865", "うまい棒 スパイシービーフカレー味", null, 15, "せんべい・おつまみ", null, "umaibo"),
+  d("inokuchi-18430", "玉葱さん太郎", null, 30, "せんべい・おつまみ", null),
+  d("inokuchi-18405", "ラーメン屋さん太郎", null, 20, "せんべい・おつまみ", null),
+  d("inokuchi-18406", "やきそば屋さん太郎", null, 20, "せんべい・おつまみ", null),
+  d("inokuchi-18432", "どんどん焼あられ", null, 30, "せんべい・おつまみ", null),
+  d("inokuchi-34423", "梅ジャム タカミ製菓", null, 20, "せんべい・おつまみ", null),
+  d("inokuchi-18463", "ビッグカツとんかつソース味", null, 40, "せんべい・おつまみ", null),
+  d("inokuchi-18409", "蒲焼さん太郎", null, 15, "せんべい・おつまみ", null),
+  d("inokuchi-18410", "焼肉さん太郎", null, 15, "せんべい・おつまみ", null),
+  d("inokuchi-18412", "のし梅さん太郎", null, 15, "せんべい・おつまみ", null),
+  d("inokuchi-18411", "酢だこさん太郎", null, 15, "せんべい・おつまみ", null),
+  d("inokuchi-18394", "うまい棒 たこ焼味", null, 15, "せんべい・おつまみ", null, "umaibo"),
+  d("inokuchi-19142", "中村製菓 なつかしカレー味せんべい", null, 40, "せんべい・おつまみ", null),
+  d("inokuchi-18479", "ソースせんべい佐藤製菓", null, 50, "せんべい・おつまみ", null),
+  d("inokuchi-18435", "甘いか太郎 キムチ味", null, 30, "せんべい・おつまみ", null),
+  d("inokuchi-18473", "中村製菓 チーズあられ", null, 40, "せんべい・おつまみ", null),
+  d("inokuchi-18437", "ミルクせんべい佐藤製菓", null, 35, "せんべい・おつまみ", null),
   d("kabayaki-taro", "蒲焼さん太郎", "菓道", 10, "せんべい・おつまみ", "1枚"),
   d("wasabi-nori-taro", "わさびのり太郎", "菓道", 10, "せんべい・おつまみ", "1枚"),
   d("noshiume-taro", "のし梅さん太郎", "菓道", 10, "せんべい・おつまみ", "1枚"),
@@ -104,7 +198,11 @@ export const DAGASHI_DATA: Dagashi[] = [
   d("miyako-konbu", "都こんぶ", "中野物産", 100, "せんべい・おつまみ", "1箱"),
   d("cut-atarime", "カットあたりめ", "なとり", 100, "せんべい・おつまみ", "1袋"),
 
-  // ── 飲料 (6件) ──────────────────────────────
+  // ── 飲料 (10件) ──────────────────────────────
+  d("inokuchi-49773", "コーラスプラッシュ", null, 100, "飲料", null),
+  d("inokuchi-46303", "ポット入りフラワーヨーグル", null, 40, "飲料", null),
+  d("inokuchi-18842", "オリオン ミニ コーラ", null, 30, "飲料", null, "orion-mini"),
+  d("inokuchi-19644", "フルーツパウダージュース(松山製菓)", null, 22, "飲料", null),
   d("mini-cola", "ミニコーラ", "オリオン", 20, "飲料", "1本"),
   d("nyusankin", "乳酸菌飲料 ミニ", "ヤクルト", 30, "飲料", "1本"),
   d("chupet", "チューペット", "前田産業", 40, "飲料", "2本1組"),
@@ -112,7 +210,13 @@ export const DAGASHI_DATA: Dagashi[] = [
   d("coffee-gyunyu", "コーヒー牛乳 (瓶)", "地元乳業", 120, "飲料", "1本"),
   d("bin-ramune", "ラムネ (瓶)", "ハタ鉱泉", 130, "飲料", "1本"),
 
-  // ── くじ・当たり付き (7件) ──────────────────
+  // ── くじ・当たり付き (13件) ──────────────────
+  d("inokuchi-45501", "推しの子フーセンガム 当り付", null, 12, "くじ・当たり付き", null),
+  d("inokuchi-19295", "ポケモンガム(当り付き）", null, 12, "くじ・当たり付き", null),
+  d("inokuchi-18451", "マルカワ マーブルガム当たり付", null, 20, "くじ・当たり付き", null),
+  d("inokuchi-19332", "コーラガム(当り付き）", null, 12, "くじ・当たり付き", null),
+  d("inokuchi-18418", "フィリックスガム当たり付", null, 12, "くじ・当たり付き", null),
+  d("inokuchi-18916", "ヤッターめん 金券くじ当て", null, 15, "くじ・当たり付き", null),
   d("kinako-ame-atari", "きなこ飴 (当たり付き)", "セイカ食品", 20, "くじ・当たり付き", "1本"),
   d("soda-ame-atari", "ソーダあめ (当たり付き)", "共親製菓", 20, "くじ・当たり付き", "1本"),
   d("ito-hiki-ame", "糸引き飴", "西島製菓", 30, "くじ・当たり付き", "1回"),
@@ -120,4 +224,46 @@ export const DAGASHI_DATA: Dagashi[] = [
   d("okashi-kuji", "お菓子くじ 30円", "駄菓子屋", 30, "くじ・当たり付き", "1回"),
   d("kata-nuki", "型抜き (カタヌキ)", "駄菓子屋", 60, "くじ・当たり付き", "1枚"),
   d("superball-kuji", "スーパーボールくじ", "駄菓子屋", 150, "くじ・当たり付き", "1回"),
+
+  // ── その他 (40件) ────────────────────────────
+  d("inokuchi-49941", "ちゅるりんジェリー", null, 50, "その他", null),
+  d("inokuchi-49936", "ぶどうのもっちゃん", null, 120, "その他", null),
+  d("inokuchi-48874", "マンテンデビュー", null, 30, "その他", null),
+  d("inokuchi-48013", "プリッツ うまサラダ", null, 100, "その他", null),
+  d("inokuchi-48012", "プリッツ", null, 80, "その他", null),
+  d("inokuchi-48009", "コアラのマーチ ミニパック", null, 60, "その他", null),
+  d("inokuchi-47599", "アニマルヨーチ", null, 15, "その他", null),
+  d("inokuchi-47443", "チューキャン", null, 40, "その他", null),
+  d("inokuchi-47221", "ポテコロン", null, 22, "その他", null),
+  d("inokuchi-46195", "ポリッキー", null, 25, "その他", null),
+  d("inokuchi-32859", "タラタラしてんじゃねーよ", null, 50, "その他", null),
+  d("inokuchi-46024", "セブンスティック", null, 35, "その他", null),
+  d("inokuchi-44770", "どうぶつマシュマロ", null, 120, "その他", null),
+  d("inokuchi-44675", "うどん屋しんちゃん", null, 90, "その他", null),
+  d("inokuchi-44113", "やおきん にんじん", null, 40, "その他", null),
+  d("inokuchi-43153", "にこにこにっこり わたがし 佐藤製菓", null, 70, "その他", null),
+  d("inokuchi-42079", "花コンペイ糖", null, 10, "その他", null),
+  d("inokuchi-38662", "ロングチュー", null, 30, "その他", null),
+  d("inokuchi-19299", "味カレー大和製菓", null, 30, "その他", null),
+  d("inokuchi-18504", "ペペロンチーノ", null, 90, "その他", null),
+  d("inokuchi-36988", "ソフトマドロス", null, 50, "その他", null),
+  d("inokuchi-34367", "焼たら", null, 15, "その他", null),
+  d("inokuchi-19229", "DXお菓子大当て台紙付き(数字合わせ)", null, 100, "その他", null),
+  d("inokuchi-19591", "お菓子大当て台紙付き(数字合せ)", null, 50, "その他", null),
+  d("inokuchi-19433", "ブタメン", null, 98, "その他", null),
+  d("inokuchi-32110", "4個入りトンガリ菓子", null, 50, "その他", null),
+  d("inokuchi-23160", "ふがし（角）", null, 30, "その他", null),
+  d("inokuchi-19966", "ぷくぷくたい", null, 80, "その他", null),
+  d("inokuchi-18841", "オリオン ミニ サワー", null, 30, "その他", null, "orion-mini"),
+  d("inokuchi-19304", "不二家ミルキー", null, 70, "その他", null),
+  d("inokuchi-18480", "ココアシガレット", null, 40, "その他", null),
+  d("inokuchi-19270", "オリオンシガレット各種", null, 40, "その他", null),
+  d("inokuchi-29685", "パチパチパニック", null, 40, "その他", null),
+  d("inokuchi-19143", "フルーツの森", null, 40, "その他", null),
+  d("inokuchi-18498", "さくら大根", null, 75, "その他", null),
+  d("inokuchi-18436", "みつあんず", null, 30, "その他", null),
+  d("inokuchi-18500", "うぐいすあんず", null, 85, "その他", null),
+  d("inokuchi-19599", "チーズおやつ", null, 12, "その他", null),
+  d("inokuchi-18443", "こざくら餅", null, 25, "その他", null),
+  d("inokuchi-18482", "たかみにんじん", null, 40, "その他", null),
 ];

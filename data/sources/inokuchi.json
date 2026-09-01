@@ -1,0 +1,1538 @@
+{
+  "source": "inokuchi",
+  "sourceName": "井ノ口商店（希望小売価格）",
+  "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/",
+  "fetchedAt": "2026-09-01T20:50:00.153Z",
+  "items": [
+    {
+      "id": "inokuchi-49941",
+      "name": "ちゅるりんジェリー",
+      "price": 50,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/49941.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-49938",
+      "name": "ラムネもち",
+      "price": 120,
+      "packSize": 8,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/49938.html",
+      "seriesId": null,
+      "category": "ラムネ・タブレット",
+      "categoryHint": "ラムネ"
+    },
+    {
+      "id": "inokuchi-49936",
+      "name": "ぶどうのもっちゃん",
+      "price": 120,
+      "packSize": 8,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/49936.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-49843",
+      "name": "カンロ ザ・ストロンググミ ソーダ",
+      "price": 220,
+      "packSize": 6,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/49843.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "グミ"
+    },
+    {
+      "id": "inokuchi-49773",
+      "name": "コーラスプラッシュ",
+      "price": 100,
+      "packSize": 20,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/49773.html",
+      "seriesId": null,
+      "category": "飲料",
+      "categoryHint": "コーラ"
+    },
+    {
+      "id": "inokuchi-49742",
+      "name": "ココナッツクッキー",
+      "price": 12,
+      "packSize": 100,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/49742.html",
+      "seriesId": null,
+      "category": "スナック",
+      "categoryHint": "クッキー"
+    },
+    {
+      "id": "inokuchi-49575",
+      "name": "サワーペーパーキャンディ ホワイトソーダ",
+      "price": 25,
+      "packSize": 36,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/49575.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "キャンディ"
+    },
+    {
+      "id": "inokuchi-49528",
+      "name": "サワーペーパーキャンディ",
+      "price": 25,
+      "packSize": 36,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/49528.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "キャンディ"
+    },
+    {
+      "id": "inokuchi-49526",
+      "name": "プレミアムガブリチュウ 焦がしキャラメル味",
+      "price": 50,
+      "packSize": 20,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/49526.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "チュウ"
+    },
+    {
+      "id": "inokuchi-49386",
+      "name": "おやつカルパス 旨辛味",
+      "price": 15,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/49386.html",
+      "seriesId": null,
+      "category": "せんべい・おつまみ",
+      "categoryHint": "カルパス"
+    },
+    {
+      "id": "inokuchi-49381",
+      "name": "この人だ～れ？DXミンツ",
+      "price": 30,
+      "packSize": 40,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/49381.html",
+      "seriesId": null,
+      "category": "ラムネ・タブレット",
+      "categoryHint": "ミンツ"
+    },
+    {
+      "id": "inokuchi-48881",
+      "name": "サンリオキャラクターズ ドーナッツグミ",
+      "price": 38,
+      "packSize": 36,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/48881.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "グミ"
+    },
+    {
+      "id": "inokuchi-48874",
+      "name": "マンテンデビュー",
+      "price": 30,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/48874.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-48621",
+      "name": "キララメシールバインダー",
+      "price": 550,
+      "packSize": 6,
+      "sourceUrl": "https://www.inokuchi.net/item/toy/48621.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-48616",
+      "name": "キララメシールバインダーmini",
+      "price": 500,
+      "packSize": 6,
+      "sourceUrl": "https://www.inokuchi.net/item/toy/48616.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-48013",
+      "name": "プリッツ うまサラダ",
+      "price": 100,
+      "packSize": 20,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/48013.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-48012",
+      "name": "プリッツ",
+      "price": 80,
+      "packSize": 10,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/48012.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-48009",
+      "name": "コアラのマーチ ミニパック",
+      "price": 60,
+      "packSize": 10,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/48009.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-47599",
+      "name": "アニマルヨーチ",
+      "price": 15,
+      "packSize": 100,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/47599.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-47544",
+      "name": "プチドーナッツビスケット",
+      "price": 13,
+      "packSize": 100,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/47544.html",
+      "seriesId": null,
+      "category": "スナック",
+      "categoryHint": "ビスケット"
+    },
+    {
+      "id": "inokuchi-47443",
+      "name": "チューキャン",
+      "price": 40,
+      "packSize": 20,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/47443.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-47318",
+      "name": "しみチョココーン全粒粉スティック",
+      "price": 45,
+      "packSize": 15,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/47318.html",
+      "seriesId": null,
+      "category": "チョコ",
+      "categoryHint": "チョコ"
+    },
+    {
+      "id": "inokuchi-47227",
+      "name": "ペヤングソース焼きそばカツ",
+      "price": 12,
+      "packSize": 50,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/47227.html",
+      "seriesId": null,
+      "category": "せんべい・おつまみ",
+      "categoryHint": "カツ"
+    },
+    {
+      "id": "inokuchi-47224",
+      "name": "ミルメーク ムギスナック",
+      "price": 10,
+      "packSize": 50,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/47224.html",
+      "seriesId": null,
+      "category": "スナック",
+      "categoryHint": "スナック"
+    },
+    {
+      "id": "inokuchi-47221",
+      "name": "ポテコロン",
+      "price": 22,
+      "packSize": 50,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/47221.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-47112",
+      "name": "マカロンクッキー",
+      "price": 270,
+      "packSize": 180,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/47112.html",
+      "seriesId": null,
+      "category": "スナック",
+      "categoryHint": "クッキー"
+    },
+    {
+      "id": "inokuchi-46630",
+      "name": "東京ニコニコラムネ",
+      "price": 300,
+      "packSize": 4,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/46630.html",
+      "seriesId": null,
+      "category": "ラムネ・タブレット",
+      "categoryHint": "ラムネ"
+    },
+    {
+      "id": "inokuchi-46453",
+      "name": "フルーツポップ",
+      "price": 250,
+      "packSize": 6,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/46453.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-46451",
+      "name": "うま辛パンチみそラーメン",
+      "price": 100,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/46451.html",
+      "seriesId": null,
+      "category": "スナック",
+      "categoryHint": "ラーメン"
+    },
+    {
+      "id": "inokuchi-46303",
+      "name": "ポット入りフラワーヨーグル",
+      "price": 40,
+      "packSize": 12,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/46303.html",
+      "seriesId": null,
+      "category": "飲料",
+      "categoryHint": "ヨーグル"
+    },
+    {
+      "id": "inokuchi-46195",
+      "name": "ポリッキー",
+      "price": 25,
+      "packSize": 24,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/46195.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-19342",
+      "name": "カットよっちゃんいか",
+      "price": 50,
+      "packSize": 20,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/19342.html",
+      "seriesId": null,
+      "category": "せんべい・おつまみ",
+      "categoryHint": "いか"
+    },
+    {
+      "id": "inokuchi-32859",
+      "name": "タラタラしてんじゃねーよ",
+      "price": 50,
+      "packSize": 20,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/32859.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-18847",
+      "name": "おやつカルパス",
+      "price": 15,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/18847.html",
+      "seriesId": null,
+      "category": "せんべい・おつまみ",
+      "categoryHint": "カルパス"
+    },
+    {
+      "id": "inokuchi-46024",
+      "name": "セブンスティック",
+      "price": 35,
+      "packSize": 12,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/46024.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-45501",
+      "name": "推しの子フーセンガム 当り付",
+      "price": 12,
+      "packSize": 55,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/45501.html",
+      "seriesId": null,
+      "category": "くじ・当たり付き",
+      "categoryHint": "当り"
+    },
+    {
+      "id": "inokuchi-45410",
+      "name": "中村製菓 ポテトフライ",
+      "price": 40,
+      "packSize": 20,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/45410.html",
+      "seriesId": null,
+      "category": "スナック",
+      "categoryHint": "ポテト"
+    },
+    {
+      "id": "inokuchi-45231",
+      "name": "キャンディーボックス",
+      "price": 50,
+      "packSize": 15,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/45231.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "キャンディ"
+    },
+    {
+      "id": "inokuchi-42865",
+      "name": "うまい棒 スパイシービーフカレー味",
+      "price": 15,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/42865.html",
+      "seriesId": "umaibo",
+      "category": "せんべい・おつまみ",
+      "categoryHint": "ビーフ"
+    },
+    {
+      "id": "inokuchi-18401",
+      "name": "餅太郎・塩",
+      "price": 15,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/18401.html",
+      "seriesId": null,
+      "category": "スナック",
+      "categoryHint": "太郎"
+    },
+    {
+      "id": "inokuchi-19550",
+      "name": "うまい棒 牛タン塩味",
+      "price": 15,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/19550.html",
+      "seriesId": "umaibo",
+      "category": "スナック",
+      "categoryHint": "うまい棒"
+    },
+    {
+      "id": "inokuchi-35219",
+      "name": "うまい棒 のり塩味",
+      "price": 15,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/35219.html",
+      "seriesId": "umaibo",
+      "category": "スナック",
+      "categoryHint": "うまい棒"
+    },
+    {
+      "id": "inokuchi-44770",
+      "name": "どうぶつマシュマロ",
+      "price": 120,
+      "packSize": 12,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/44770.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-44767",
+      "name": "のむのむゼリー パイン味",
+      "price": 45,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/44767.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "ゼリー"
+    },
+    {
+      "id": "inokuchi-39932",
+      "name": "のむのむゼリー 各種",
+      "price": 45,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/39932.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "ゼリー"
+    },
+    {
+      "id": "inokuchi-44678",
+      "name": "カステラドーナツ太郎",
+      "price": 30,
+      "packSize": 20,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/44678.html",
+      "seriesId": null,
+      "category": "スナック",
+      "categoryHint": "太郎"
+    },
+    {
+      "id": "inokuchi-44675",
+      "name": "うどん屋しんちゃん",
+      "price": 90,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/44675.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-44592",
+      "name": "サワーコーラグミ",
+      "price": 20,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/44592.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "グミ"
+    },
+    {
+      "id": "inokuchi-44590",
+      "name": "グレープソーダグミ",
+      "price": 20,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/44590.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "グミ"
+    },
+    {
+      "id": "inokuchi-44113",
+      "name": "やおきん にんじん",
+      "price": 40,
+      "packSize": 20,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/44113.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-43853",
+      "name": "アンパンマン ペロペロキャンディ",
+      "price": 40,
+      "packSize": 25,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/43853.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "キャンディ"
+    },
+    {
+      "id": "inokuchi-43273",
+      "name": "ハニーバター太郎",
+      "price": 30,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/43273.html",
+      "seriesId": null,
+      "category": "スナック",
+      "categoryHint": "太郎"
+    },
+    {
+      "id": "inokuchi-43153",
+      "name": "にこにこにっこり わたがし 佐藤製菓",
+      "price": 70,
+      "packSize": 10,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/43153.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-42585",
+      "name": "ガブリチュウ",
+      "price": 30,
+      "packSize": 20,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/42585.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "チュウ"
+    },
+    {
+      "id": "inokuchi-42136",
+      "name": "すみっコぐらし つりグミ",
+      "price": 80,
+      "packSize": 10,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/42136.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "グミ"
+    },
+    {
+      "id": "inokuchi-40722",
+      "name": "魚ギョッと釣りグミ",
+      "price": 70,
+      "packSize": 10,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/40722.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "グミ"
+    },
+    {
+      "id": "inokuchi-42079",
+      "name": "花コンペイ糖",
+      "price": 10,
+      "packSize": 50,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/42079.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-18429",
+      "name": "もろこし輪太郎",
+      "price": 30,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/18429.html",
+      "seriesId": null,
+      "category": "スナック",
+      "categoryHint": "太郎"
+    },
+    {
+      "id": "inokuchi-18428",
+      "name": "キャベツ太郎",
+      "price": 30,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/18428.html",
+      "seriesId": null,
+      "category": "スナック",
+      "categoryHint": "太郎"
+    },
+    {
+      "id": "inokuchi-18430",
+      "name": "玉葱さん太郎",
+      "price": 30,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/18430.html",
+      "seriesId": null,
+      "category": "せんべい・おつまみ",
+      "categoryHint": "さん太郎"
+    },
+    {
+      "id": "inokuchi-18431",
+      "name": "アメリカンフライドポテト",
+      "price": 30,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/18431.html",
+      "seriesId": null,
+      "category": "スナック",
+      "categoryHint": "ポテト"
+    },
+    {
+      "id": "inokuchi-18405",
+      "name": "ラーメン屋さん太郎",
+      "price": 20,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/18405.html",
+      "seriesId": null,
+      "category": "せんべい・おつまみ",
+      "categoryHint": "さん太郎"
+    },
+    {
+      "id": "inokuchi-18406",
+      "name": "やきそば屋さん太郎",
+      "price": 20,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/18406.html",
+      "seriesId": null,
+      "category": "せんべい・おつまみ",
+      "categoryHint": "さん太郎"
+    },
+    {
+      "id": "inokuchi-39792",
+      "name": "こんにゃくゼリー",
+      "price": 15,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/39792.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "ゼリー"
+    },
+    {
+      "id": "inokuchi-39283",
+      "name": "クリスマスうまい棒チョコレート",
+      "price": 12,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/39283.html",
+      "seriesId": "umaibo",
+      "category": "チョコ",
+      "categoryHint": "チョコ"
+    },
+    {
+      "id": "inokuchi-39019",
+      "name": "ロールキャンディ",
+      "price": 60,
+      "packSize": 24,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/39019.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "キャンディ"
+    },
+    {
+      "id": "inokuchi-38662",
+      "name": "ロングチュー",
+      "price": 30,
+      "packSize": 36,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/38662.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-19095",
+      "name": "ビンラムネ（モナカ）",
+      "price": 100,
+      "packSize": 20,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/19095.html",
+      "seriesId": null,
+      "category": "ラムネ・タブレット",
+      "categoryHint": "ラムネ"
+    },
+    {
+      "id": "inokuchi-18432",
+      "name": "どんどん焼あられ",
+      "price": 30,
+      "packSize": 15,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/18432.html",
+      "seriesId": null,
+      "category": "せんべい・おつまみ",
+      "categoryHint": "あられ"
+    },
+    {
+      "id": "inokuchi-19299",
+      "name": "味カレー大和製菓",
+      "price": 30,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/19299.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-24317",
+      "name": "東豊ポテトフライ チキン味",
+      "price": 40,
+      "packSize": 20,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/24317.html",
+      "seriesId": "toho-potato-fry",
+      "category": "スナック",
+      "categoryHint": "ポテト"
+    },
+    {
+      "id": "inokuchi-36594",
+      "name": "東豊ポテトフライ カルビ焼きの味",
+      "price": 40,
+      "packSize": 20,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/36594.html",
+      "seriesId": "toho-potato-fry",
+      "category": "スナック",
+      "categoryHint": "ポテト"
+    },
+    {
+      "id": "inokuchi-36591",
+      "name": "東豊ポテトフライ じゃが塩バター味",
+      "price": 40,
+      "packSize": 20,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/36591.html",
+      "seriesId": "toho-potato-fry",
+      "category": "スナック",
+      "categoryHint": "ポテト"
+    },
+    {
+      "id": "inokuchi-18504",
+      "name": "ペペロンチーノ",
+      "price": 90,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/18504.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-36988",
+      "name": "ソフトマドロス",
+      "price": 50,
+      "packSize": 24,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/36988.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-34423",
+      "name": "梅ジャム タカミ製菓",
+      "price": 20,
+      "packSize": 40,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/34423.html",
+      "seriesId": null,
+      "category": "せんべい・おつまみ",
+      "categoryHint": "梅"
+    },
+    {
+      "id": "inokuchi-34367",
+      "name": "焼たら",
+      "price": 15,
+      "packSize": 36,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/34367.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-19229",
+      "name": "DXお菓子大当て台紙付き(数字合わせ)",
+      "price": 100,
+      "packSize": 40,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/19229.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-19591",
+      "name": "お菓子大当て台紙付き(数字合せ)",
+      "price": 50,
+      "packSize": 60,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/19591.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-19337",
+      "name": "森永ハイチュウ",
+      "price": 12,
+      "packSize": 100,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/19337.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "チュウ"
+    },
+    {
+      "id": "inokuchi-19433",
+      "name": "ブタメン",
+      "price": 98,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/19433.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-33782",
+      "name": "手づくりキャンディー",
+      "price": 200,
+      "packSize": 6,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/33782.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "キャンディ"
+    },
+    {
+      "id": "inokuchi-33775",
+      "name": "うずまきキャンディー",
+      "price": 100,
+      "packSize": 20,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/33775.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "キャンディ"
+    },
+    {
+      "id": "inokuchi-33767",
+      "name": "りんごあめ",
+      "price": 100,
+      "packSize": 20,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/33767.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "あめ"
+    },
+    {
+      "id": "inokuchi-32110",
+      "name": "4個入りトンガリ菓子",
+      "price": 50,
+      "packSize": 50,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/32110.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-18483",
+      "name": "ヤングドーナツ",
+      "price": 58,
+      "packSize": 20,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/18483.html",
+      "seriesId": null,
+      "category": "スナック",
+      "categoryHint": "ドーナ"
+    },
+    {
+      "id": "inokuchi-19969",
+      "name": "クッピーラムネ",
+      "price": 30,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/19969.html",
+      "seriesId": null,
+      "category": "ラムネ・タブレット",
+      "categoryHint": "ラムネ"
+    },
+    {
+      "id": "inokuchi-18463",
+      "name": "ビッグカツとんかつソース味",
+      "price": 40,
+      "packSize": 20,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/18463.html",
+      "seriesId": null,
+      "category": "せんべい・おつまみ",
+      "categoryHint": "カツ"
+    },
+    {
+      "id": "inokuchi-18848",
+      "name": "ぐるぐるゼリー",
+      "price": 700,
+      "packSize": 24,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/18848.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "ゼリー"
+    },
+    {
+      "id": "inokuchi-23160",
+      "name": "ふがし（角）",
+      "price": 30,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/23160.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-19268",
+      "name": "ど〜ん太郎 うどん",
+      "price": 20,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/19268.html",
+      "seriesId": null,
+      "category": "スナック",
+      "categoryHint": "太郎"
+    },
+    {
+      "id": "inokuchi-18409",
+      "name": "蒲焼さん太郎",
+      "price": 15,
+      "packSize": 60,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/18409.html",
+      "seriesId": null,
+      "category": "せんべい・おつまみ",
+      "categoryHint": "さん太郎"
+    },
+    {
+      "id": "inokuchi-18410",
+      "name": "焼肉さん太郎",
+      "price": 15,
+      "packSize": 60,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/18410.html",
+      "seriesId": null,
+      "category": "せんべい・おつまみ",
+      "categoryHint": "さん太郎"
+    },
+    {
+      "id": "inokuchi-18412",
+      "name": "のし梅さん太郎",
+      "price": 15,
+      "packSize": 60,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/18412.html",
+      "seriesId": null,
+      "category": "せんべい・おつまみ",
+      "categoryHint": "さん太郎"
+    },
+    {
+      "id": "inokuchi-19272",
+      "name": "わさびのり太郎",
+      "price": 15,
+      "packSize": 60,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/19272.html",
+      "seriesId": null,
+      "category": "スナック",
+      "categoryHint": "太郎"
+    },
+    {
+      "id": "inokuchi-18411",
+      "name": "酢だこさん太郎",
+      "price": 15,
+      "packSize": 60,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/18411.html",
+      "seriesId": null,
+      "category": "せんべい・おつまみ",
+      "categoryHint": "さん太郎"
+    },
+    {
+      "id": "inokuchi-18458",
+      "name": "プチプチうらないチョコ",
+      "price": 30,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/18458.html",
+      "seriesId": null,
+      "category": "チョコ",
+      "categoryHint": "チョコ"
+    },
+    {
+      "id": "inokuchi-19181",
+      "name": "月の小石チョコ",
+      "price": 25,
+      "packSize": 50,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/19181.html",
+      "seriesId": null,
+      "category": "チョコ",
+      "categoryHint": "チョコ"
+    },
+    {
+      "id": "inokuchi-19320",
+      "name": "どらチョコ",
+      "price": 50,
+      "packSize": 20,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/19320.html",
+      "seriesId": null,
+      "category": "チョコ",
+      "categoryHint": "チョコ"
+    },
+    {
+      "id": "inokuchi-19966",
+      "name": "ぷくぷくたい",
+      "price": 80,
+      "packSize": 10,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/19966.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-21426",
+      "name": "ドリコ 棒きなこ飴連続当て",
+      "price": 12,
+      "packSize": 40,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/21426.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "飴"
+    },
+    {
+      "id": "inokuchi-39984",
+      "name": "鈴ノ屋 棒きなこ飴 連続当て",
+      "price": 12,
+      "packSize": 40,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/39984.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "飴"
+    },
+    {
+      "id": "inokuchi-18841",
+      "name": "オリオン ミニ サワー",
+      "price": 30,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/18841.html",
+      "seriesId": "orion-mini",
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-18842",
+      "name": "オリオン ミニ コーラ",
+      "price": 30,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/18842.html",
+      "seriesId": "orion-mini",
+      "category": "飲料",
+      "categoryHint": "コーラ"
+    },
+    {
+      "id": "inokuchi-19304",
+      "name": "不二家ミルキー",
+      "price": 70,
+      "packSize": 10,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/19304.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-19295",
+      "name": "ポケモンガム(当り付き）",
+      "price": 12,
+      "packSize": 55,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/19295.html",
+      "seriesId": null,
+      "category": "くじ・当たり付き",
+      "categoryHint": "当り"
+    },
+    {
+      "id": "inokuchi-18501",
+      "name": "カップ入りねり水飴",
+      "price": 80,
+      "packSize": 12,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/18501.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "飴"
+    },
+    {
+      "id": "inokuchi-18480",
+      "name": "ココアシガレット",
+      "price": 40,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/18480.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-19270",
+      "name": "オリオンシガレット各種",
+      "price": 40,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/19270.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-18388",
+      "name": "うまい棒 チーズ味",
+      "price": 15,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/18388.html",
+      "seriesId": "umaibo",
+      "category": "スナック",
+      "categoryHint": "うまい棒"
+    },
+    {
+      "id": "inokuchi-28100",
+      "name": "うまい棒コーンポタージュ",
+      "price": 15,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/28100.html",
+      "seriesId": "umaibo",
+      "category": "スナック",
+      "categoryHint": "コーン"
+    },
+    {
+      "id": "inokuchi-18387",
+      "name": "うまい棒 めんたい味",
+      "price": 15,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/18387.html",
+      "seriesId": "umaibo",
+      "category": "スナック",
+      "categoryHint": "うまい棒"
+    },
+    {
+      "id": "inokuchi-18394",
+      "name": "うまい棒 たこ焼味",
+      "price": 15,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/18394.html",
+      "seriesId": "umaibo",
+      "category": "せんべい・おつまみ",
+      "categoryHint": "たこ"
+    },
+    {
+      "id": "inokuchi-19972",
+      "name": "うまい棒 シュガーラスク味",
+      "price": 15,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/19972.html",
+      "seriesId": "umaibo",
+      "category": "スナック",
+      "categoryHint": "うまい棒"
+    },
+    {
+      "id": "inokuchi-18451",
+      "name": "マルカワ マーブルガム当たり付",
+      "price": 20,
+      "packSize": 33,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/18451.html",
+      "seriesId": null,
+      "category": "くじ・当たり付き",
+      "categoryHint": "当たり"
+    },
+    {
+      "id": "inokuchi-21110",
+      "name": "うまい棒 やきとり味",
+      "price": 15,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/21110.html",
+      "seriesId": "umaibo",
+      "category": "スナック",
+      "categoryHint": "うまい棒"
+    },
+    {
+      "id": "inokuchi-19959",
+      "name": "うまい棒 なっとう味",
+      "price": 15,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/19959.html",
+      "seriesId": "umaibo",
+      "category": "スナック",
+      "categoryHint": "うまい棒"
+    },
+    {
+      "id": "inokuchi-19332",
+      "name": "コーラガム(当り付き）",
+      "price": 12,
+      "packSize": 55,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/19332.html",
+      "seriesId": null,
+      "category": "くじ・当たり付き",
+      "categoryHint": "当り"
+    },
+    {
+      "id": "inokuchi-18418",
+      "name": "フィリックスガム当たり付",
+      "price": 12,
+      "packSize": 55,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/18418.html",
+      "seriesId": null,
+      "category": "くじ・当たり付き",
+      "categoryHint": "当たり"
+    },
+    {
+      "id": "inokuchi-27358",
+      "name": "ぱんだろ〜クッキー",
+      "price": 12,
+      "packSize": 24,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/27358.html",
+      "seriesId": null,
+      "category": "スナック",
+      "categoryHint": "クッキー"
+    },
+    {
+      "id": "inokuchi-18439",
+      "name": "やおきん きなこ棒飴箱入",
+      "price": 30,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/18439.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "飴"
+    },
+    {
+      "id": "inokuchi-19142",
+      "name": "中村製菓 なつかしカレー味せんべい",
+      "price": 40,
+      "packSize": 20,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/19142.html",
+      "seriesId": null,
+      "category": "せんべい・おつまみ",
+      "categoryHint": "せんべい"
+    },
+    {
+      "id": "inokuchi-29685",
+      "name": "パチパチパニック",
+      "price": 40,
+      "packSize": 24,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/29685.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-18426",
+      "name": "どんぐりガム",
+      "price": 12,
+      "packSize": 100,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/18426.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "ガム"
+    },
+    {
+      "id": "inokuchi-18440",
+      "name": "あんずボー",
+      "price": 30,
+      "packSize": 20,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/18440.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "ボー"
+    },
+    {
+      "id": "inokuchi-19143",
+      "name": "フルーツの森",
+      "price": 40,
+      "packSize": 24,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/19143.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-18479",
+      "name": "ソースせんべい佐藤製菓",
+      "price": 50,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/18479.html",
+      "seriesId": null,
+      "category": "せんべい・おつまみ",
+      "categoryHint": "せんべい"
+    },
+    {
+      "id": "inokuchi-18390",
+      "name": "うまい棒 とんかつソース味",
+      "price": 15,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/18390.html",
+      "seriesId": "umaibo",
+      "category": "スナック",
+      "categoryHint": "うまい棒"
+    },
+    {
+      "id": "inokuchi-18435",
+      "name": "甘いか太郎 キムチ味",
+      "price": 30,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/18435.html",
+      "seriesId": null,
+      "category": "せんべい・おつまみ",
+      "categoryHint": "いか"
+    },
+    {
+      "id": "inokuchi-18916",
+      "name": "ヤッターめん 金券くじ当て",
+      "price": 15,
+      "packSize": 100,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/18916.html",
+      "seriesId": null,
+      "category": "くじ・当たり付き",
+      "categoryHint": "くじ"
+    },
+    {
+      "id": "inokuchi-20067",
+      "name": "ポップコーン塩味",
+      "price": 40,
+      "packSize": 20,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/20067.html",
+      "seriesId": null,
+      "category": "スナック",
+      "categoryHint": "コーン"
+    },
+    {
+      "id": "inokuchi-28026",
+      "name": "ダイヤモンドリングキャンディ",
+      "price": 40,
+      "packSize": 24,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/28026.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "キャンディ"
+    },
+    {
+      "id": "inokuchi-18423",
+      "name": "あべっ子ラムネアソート",
+      "price": 15,
+      "packSize": 50,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/18423.html",
+      "seriesId": null,
+      "category": "ラムネ・タブレット",
+      "categoryHint": "ラムネ"
+    },
+    {
+      "id": "inokuchi-18498",
+      "name": "さくら大根",
+      "price": 75,
+      "packSize": 20,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/18498.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-18436",
+      "name": "みつあんず",
+      "price": 30,
+      "packSize": 25,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/18436.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-18473",
+      "name": "中村製菓 チーズあられ",
+      "price": 40,
+      "packSize": 20,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/18473.html",
+      "seriesId": null,
+      "category": "せんべい・おつまみ",
+      "categoryHint": "あられ"
+    },
+    {
+      "id": "inokuchi-18500",
+      "name": "うぐいすあんず",
+      "price": 85,
+      "packSize": 12,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/18500.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-19599",
+      "name": "チーズおやつ",
+      "price": 12,
+      "packSize": 48,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/19599.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-18437",
+      "name": "ミルクせんべい佐藤製菓",
+      "price": 35,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/18437.html",
+      "seriesId": null,
+      "category": "せんべい・おつまみ",
+      "categoryHint": "せんべい"
+    },
+    {
+      "id": "inokuchi-29060",
+      "name": "メロンぱんだろ〜クッキー",
+      "price": 12,
+      "packSize": 24,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/29060.html",
+      "seriesId": null,
+      "category": "スナック",
+      "categoryHint": "クッキー"
+    },
+    {
+      "id": "inokuchi-18425",
+      "name": "あわ玉 飴",
+      "price": 12,
+      "packSize": 100,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/18425.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "飴"
+    },
+    {
+      "id": "inokuchi-19644",
+      "name": "フルーツパウダージュース(松山製菓)",
+      "price": 22,
+      "packSize": 50,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/19644.html",
+      "seriesId": null,
+      "category": "飲料",
+      "categoryHint": "ジュース"
+    },
+    {
+      "id": "inokuchi-18391",
+      "name": "うまい棒 テリヤキバーガー味",
+      "price": 15,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/18391.html",
+      "seriesId": "umaibo",
+      "category": "スナック",
+      "categoryHint": "うまい棒"
+    },
+    {
+      "id": "inokuchi-18443",
+      "name": "こざくら餅",
+      "price": 25,
+      "packSize": 40,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/18443.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-19219",
+      "name": "不二家棒付き ポップキャンディ",
+      "price": 11,
+      "packSize": 120,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/19219.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "キャンディ"
+    },
+    {
+      "id": "inokuchi-23990",
+      "name": "ねり水あめ大当て",
+      "price": 40,
+      "packSize": 80,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/23990.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "あめ"
+    },
+    {
+      "id": "inokuchi-34363",
+      "name": "サッカースクラッチ",
+      "price": 15,
+      "packSize": 100,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/34363.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-22560",
+      "name": "うまい棒プレミアム和風ステーキ味",
+      "price": 25,
+      "packSize": 10,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/22560.html",
+      "seriesId": "umaibo",
+      "category": "スナック",
+      "categoryHint": "うまい棒"
+    },
+    {
+      "id": "inokuchi-21434",
+      "name": "うまい棒プレミアムめんたいこ味",
+      "price": 25,
+      "packSize": 10,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/21434.html",
+      "seriesId": "umaibo",
+      "category": "スナック",
+      "categoryHint": "うまい棒"
+    },
+    {
+      "id": "inokuchi-21429",
+      "name": "うまい棒プレミアムチーズ味",
+      "price": 25,
+      "packSize": 10,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/21429.html",
+      "seriesId": "umaibo",
+      "category": "スナック",
+      "categoryHint": "うまい棒"
+    },
+    {
+      "id": "inokuchi-34331",
+      "name": "ガリボリラーメン",
+      "price": 30,
+      "packSize": 21,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/34331.html",
+      "seriesId": null,
+      "category": "スナック",
+      "categoryHint": "ラーメン"
+    },
+    {
+      "id": "inokuchi-19891",
+      "name": "東京下町あんこ玉",
+      "price": 300,
+      "packSize": null,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/19891.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-18482",
+      "name": "たかみにんじん",
+      "price": 40,
+      "packSize": 20,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/18482.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    }
+  ]
+}
