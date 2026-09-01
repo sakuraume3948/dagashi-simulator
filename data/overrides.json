@@ -1,0 +1,16 @@
+{
+  "_readme": [
+    "自動取得した値を手動で上書きするファイル。scripts/ は絶対にこのファイルを書き換えない。",
+    "ここに書いた項目だけが勝つ。書かなかった商品・書かなかった項目は自動取得のままになる。",
+    "",
+    "使える項目: price / name / maker / unit / category / seriesId / weight / exclude",
+    "exclude: true にすると、その商品をシミュレータから除外する。",
+    "seriesId: null と書けば、自動で付いたシリーズを打ち消せる。",
+    "",
+    "例:",
+    "  \"umaibo-mentai\": { \"price\": 16 }",
+    "  \"tirol-kinako\":  { \"price\": 25, \"seriesId\": \"tirol\" }",
+    "  \"some-item\":     { \"exclude\": true }"
+  ],
+  "items": {}
+}
