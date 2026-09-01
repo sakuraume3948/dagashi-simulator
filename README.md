@@ -1,36 +1,209 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 駄菓子シミュレータ
 
-## Getting Started
+駄菓子屋での買い物を再現する Web アプリケーション。予算を決めてお任せで買い物をする「予算モード」と、10連ガチャのように駄菓子を引く「ガチャモード」の 2 つがある。
 
-First, run the development server:
+## 機能
+
+### 予算モード
+
+指定した金額の範囲内で、駄菓子屋のカゴに入れていくようにランダムで商品を選ぶ。
+
+| 設定項目 | 内容 |
+| --- | --- |
+| 予算 | 数値入力またはプリセット（100 / 300 / 500 / 1000 円） |
+| 商品の個数上限 | 味単位の上限。「うまい棒 めんたい味は 3 本まで」 |
+| シリーズの個数上限 | 味をまたいだ上限。「うまい棒は全部で 3 本まで」 |
+| カテゴリ | 7 カテゴリから対象を選択 |
+
+- 合計金額が予算を超えることはない。おつりは出る
+- 2 つの個数上限は同時に適用され、厳しい方が効く
+- 2 つの上限は双方向に連動する。商品上限を上げるとシリーズ上限が追従して上がり、シリーズ上限を下げると商品上限が追従して下がる（`0` = 無制限は常に成立するため連動しない）
+- 味違いを持たない商品は「自分ひとりだけのシリーズ」として数える。そうしないと、商品上限を無制限にしたときに単独商品だけが無制限に買える状態になる
+
+### ガチャモード
+
+1 連または 10 連で駄菓子を引く。高価な商品ほど出にくい。天井や確定枠はない。
+
+## 技術スタック
+
+| | |
+| --- | --- |
+| フレームワーク | Next.js 16.3.3 (App Router) |
+| 言語 | TypeScript 5 |
+| UI | React 19.2.8 |
+| スタイル | Tailwind CSS 4 |
+| コンポーネント | shadcn/ui（Base UI ベース） |
+| テスト | Vitest 4 |
+| Lint | ESLint 9 |
+
+動作確認環境: Node.js 22.17.0 / npm 11.6.2
+
+## セットアップ
+
+```bash
+npm install
+```
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+http://localhost:3000 で起動する。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## コマンド
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| コマンド | 内容 |
+| --- | --- |
+| `npm run dev` | 開発サーバー |
+| `npm run build` | 本番ビルド |
+| `npm start` | 本番サーバー（要 `build`） |
+| `npm test` | テスト実行 |
+| `npm run test:watch` | テスト監視実行 |
+| `npm run lint` | ESLint |
+| `npx tsc --noEmit` | 型チェック |
 
-## Learn More
+## ディレクトリ構成
 
-To learn more about Next.js, take a look at the following resources:
+```
+app/
+  page.tsx                タブ 2 つの画面。起動時にデータを読み込む
+components/
+  budget-mode.tsx         予算モードのフォームと結果
+  gacha-mode.tsx          ガチャモードの操作と結果
+  dagashi-card.tsx        商品カード（両モード共用）
+  ui/                     shadcn/ui コンポーネント
+lib/
+  types.ts                Dagashi 型・カテゴリ定義
+  data.ts                 駄菓子マスタ（ダミーデータ 60 件）
+  repository.ts           データ取得の唯一の入口
+  random.ts               シード指定可能な擬似乱数
+  engine/
+    budget.ts             予算モードの選定ロジック
+    gacha.ts              ガチャの抽選ロジック
+  engine/__tests__/       エンジンのテスト
+  __tests__/              データ整合性のテスト
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 設計方針
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### エンジンは純粋関数にする
 
-## Deploy on Vercel
+`lib/engine/` の関数は、駄菓子データも乱数も引数で受け取り、結果を返すだけにしてある。React・DOM・データ取得のいずれにも依存しない。
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- シードを固定できるため、確率の検証とテスト失敗の再現ができる
+- テスト専用の小さなデータを渡せるため、理論値を手計算で検算できる
+- `document` を触らないため Node.js 上で動き、10 万回規模のシミュレーションが数百ミリ秒で完了する
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### データ取得は `repository.ts` に集約する
+
+`lib/data.ts` を直接 import するのは `lib/repository.ts` のみ。それ以外は必ず `getAllDagashi()` を経由する。
+
+この関数は中身が静的配列であるにもかかわらず `async` として定義してある。将来 DB へ移行した際、この関数の中身を差し替えるだけで済ませるため。
+
+### 将来の拡張はフィールドとして先に用意する
+
+`Dagashi` 型には、現時点では未使用のフィールドを含めてある。
+
+| フィールド | 用途 |
+| --- | --- |
+| `rarity` | レア度システム。値が入ると価格ベースの判定より優先される |
+| `weight` | ガチャ重みの手動上書き。**現時点で有効** |
+| `imageUrl` | 商品画像。`null` の場合はカテゴリ絵文字を表示 |
+| `source` / `sourceId` / `sourceUrl` / `fetchedAt` | スクレイピングした際の出所と取得日時 |
+
+## データ
+
+`lib/data.ts` に 60 件。価格帯は意図的に散らしてある（ガチャの重みに差を出すため）。
+
+| 価格帯 | 件数 |
+| --- | --- |
+| 10〜20 円 | 20 |
+| 30〜50 円 | 19 |
+| 60〜100 円 | 14 |
+| 101〜150 円 | 7 |
+
+カテゴリは 7 種類（スナック 10 / チョコ 9 / グミ・キャンディ 9 / ラムネ・タブレット 8 / せんべい・おつまみ 11 / 飲料 6 / くじ・当たり付き 7）。
+
+## ガチャの確率設計
+
+### 重み
+
+```
+weight = item.weight ?? (1 / price ^ GACHA_EXPONENT) / 同一シリーズの商品数
+```
+
+`GACHA_EXPONENT` は `lib/engine/gacha.ts` の定数で、現在は `2`。手応えの調整はこの数値ひとつで行う。
+
+指数を 2 にしているのは、価格差を増幅するため。10 円と 150 円の重み比は、指数 1 では 15 : 1 にしかならないが、指数 2 では 225 : 1 になる。
+
+現在のデータ 60 件で、指数を変えた場合の排出率は次のようになる。
+
+| 価格帯 | 指数 1 | **指数 2（採用）** | 指数 2.5 |
+| --- | --- | --- | --- |
+| 10〜20 円 | 58.2% | **80.6%** | 87.6% |
+| 30〜50 円 | 29.3% | **16.5%** | 11.1% |
+| 60〜100 円 | 9.6% | **2.5%** | 1.1% |
+| 101〜150 円 | 2.9% | **0.43%** | 0.15% |
+
+### シリーズによる重み補正
+
+うまい棒のように味違いが多数存在する商品は、フラットに並べると同じ重みの商品が大量に並ぶことになり、そのシリーズだけで排出率を占有してしまう。実際、うまい棒を 20 種に増やすとシリーズ合計が 60% を超え、最高額帯が 0.43% から 0.14% まで沈む。
+
+そのため、シリーズに属する商品はシリーズ内の商品数で重みを割っている。これによりシリーズ全体の合計重みが単独商品 1 つぶんに揃い、**味を何種類増やしてもシリーズの出現率は変わらない**。
+
+現在のデータでの実測値:
+
+| | 排出率 |
+| --- | --- |
+| うまい棒シリーズ（3 種の合計） | 9.21% |
+| きなこ棒（10 円・単独商品） | 9.21% |
+| 101 円以上の商品（合計） | 0.43% |
+
+## 予算モードのアルゴリズム
+
+一様ランダムの貪欲法。重み付けは行わない。
+
+```
+1. カテゴリで候補を絞る
+2. 残り予算で買えて、かつ両方の個数上限に達していない商品を抽出
+3. その中から一様ランダムに 1 つ選び、残り予算を減らす
+4. 抽出結果が空になったら終了
+```
+
+予算超過は、候補を抽出する段階で `価格 <= 残り予算` を満たす商品しか対象にしないため、構造的に発生しない。
+
+重み付けをしていないにもかかわらず安価な商品が多く選ばれるのは、残り予算が減るにつれて高価な商品が候補から脱落していくため。安価な商品ほど候補に残る期間が長く、また 1 回あたりの予算消費が小さいぶん購入回数自体も多くなる。
+
+予算 500 円で 500 回試行した実測では、20 円以下の商品が 2380 個に対し 100 円以上が 798 個。1 回あたりの平均購入点数は 11.86 点だった。
+
+## テスト
+
+```bash
+npm test
+```
+
+43 件。すべて `lib/` 配下の純粋なロジックが対象で、ブラウザは起動しない。
+
+| 対象 | 主な検証内容 |
+| --- | --- |
+| ガチャの確率 | 10 万回試行の実測排出率が理論値と一致すること。シードによる再現性 |
+| シリーズ補正 | 味を 3 → 20 → 100 種に増やしてもシリーズ全体の出現率が変わらないこと |
+| 予算超過 | 4 種類の予算 × 1000 回試行で一度も超過しないこと |
+| 個数上限 | 商品上限・シリーズ上限が単独でも併用でも守られること |
+| 境界値 | 予算 0 円 / 最安値未満 / 100 万円 |
+| データ整合性 | ID の一意性、価格帯の分布、全カテゴリが 3 件以上あること |
+
+理論値との比較は、10 円と 100 円の 2 件のみのデータでも行っている。件数を絞ることで期待値（99% : 1%）を手計算で確認できるようにするため。
+
+## 今後の予定
+
+| 項目 | 準備済みの受け皿 |
+| --- | --- |
+| スクレイピングによる実データ取得 | `source` / `sourceId` / `sourceUrl` / `fetchedAt` フィールド、および Next.js の Route Handler |
+| Supabase + Prisma への移行 | `repository.ts` の `async` インターフェース |
+| ユーザー評価 | `repository.ts` に取得関数を追加。認証は Supabase Auth |
+| レア度システム | `Dagashi.rarity` フィールドと `gachaWeightOf()` の分岐 |
+| 天井・確定枠 | `pullGacha()` の `options` 引数 |
+| 商品画像 | `imageUrl` フィールドと `DagashiCard` のフォールバック分岐 |
+
+商品画像をスクレイピングで取得して公開する場合は、著作権の確認が必要。
