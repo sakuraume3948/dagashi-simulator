@@ -1,0 +1,2236 @@
+{
+  "source": "rakuten",
+  "sourceName": "楽天プロダクト製品検索API（メーカー名・JANコードの補完）",
+  "fetchedAt": "2026-09-02T08:23:47.113Z",
+  "items": [
+    {
+      "id": "inokuchi-49941",
+      "source": "rakuten",
+      "_review": {
+        "query": "ちゅるりんジェリー",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-49938",
+      "maker": "セイカ食品",
+      "sourceId": "4973260301094",
+      "source": "rakuten",
+      "_review": {
+        "query": "ラムネもち",
+        "hits": 4,
+        "foodHits": 2,
+        "topFoodName": "セイカ食品 ラムネもち 32g",
+        "genre": "その他",
+        "makerAgreement": "1/2",
+        "yahooMaker": "SEIKA",
+        "agreesWithYahoo": true
+      }
+    },
+    {
+      "id": "inokuchi-49936",
+      "source": "rakuten",
+      "_review": {
+        "query": "ぶどうのもっちゃん",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-49843",
+      "maker": "カンロ",
+      "sourceId": "4901351026786",
+      "source": "rakuten",
+      "_review": {
+        "query": "カンロ ザ・ストロンググミ ソーダ",
+        "hits": 2,
+        "foodHits": 2,
+        "topFoodName": "カンロ ザ・ストロンググミ ソーダ 70g",
+        "genre": "グミ",
+        "makerAgreement": "2/2",
+        "yahooMaker": "Kanro",
+        "agreesWithYahoo": true
+      }
+    },
+    {
+      "id": "inokuchi-49773",
+      "source": "rakuten",
+      "_review": {
+        "query": "コーラスプラッシュ",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-49742",
+      "sourceId": "4589704434893",
+      "source": "rakuten",
+      "_review": {
+        "query": "ココナッツクッキー",
+        "hits": 2,
+        "foodHits": 2,
+        "topFoodName": "リアライズ ココナッツクッキー",
+        "genre": "各種駄菓子セット",
+        "makerAgreement": "1/2",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-49575",
+      "source": "rakuten",
+      "_review": {
+        "query": "サワーペーパーキャンディ ホワイトソーダ",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-49528",
+      "sourceId": "4903013357276",
+      "source": "rakuten",
+      "_review": {
+        "query": "サワーペーパーキャンディ",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "サワーペーパーキャンディ　サイダー味",
+        "genre": "駄菓子キャンディ",
+        "makerAgreement": "1/1",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-49526",
+      "sourceId": "4902744037266",
+      "source": "rakuten",
+      "_review": {
+        "query": "プレミアムガブリチュウ 焦がしキャラメル味",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "メイチュー プレミアムガブリチュウ 焦がしキャラメル味",
+        "genre": "ソフトキャンディ",
+        "makerAgreement": "1/1",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-49386",
+      "maker": "ヤガイ",
+      "sourceId": "4903020005870",
+      "source": "rakuten",
+      "_review": {
+        "query": "おやつカルパス 旨辛味",
+        "hits": 2,
+        "foodHits": 2,
+        "topFoodName": "ヤガイ おやつ カルパス 旨辛味",
+        "genre": "駄菓子珍味",
+        "makerAgreement": "2/2",
+        "yahooMaker": "ヤガイ",
+        "agreesWithYahoo": true
+      }
+    },
+    {
+      "id": "inokuchi-49381",
+      "source": "rakuten",
+      "_review": {
+        "query": "この人だ～れ？DXミンツ",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-48881",
+      "source": "rakuten",
+      "_review": {
+        "query": "サンリオキャラクターズ ドーナッツグミ",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-48874",
+      "maker": "オリオン",
+      "sourceId": "49598605",
+      "source": "rakuten",
+      "_review": {
+        "query": "マンテンデビュー",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "オリオン マンテンデビュー ラムネ",
+        "genre": "ラムネ",
+        "makerAgreement": "1/1",
+        "yahooMaker": "オリオン",
+        "agreesWithYahoo": true
+      }
+    },
+    {
+      "id": "inokuchi-48621",
+      "source": "rakuten",
+      "_review": {
+        "query": "キララメシールバインダー",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-48616",
+      "source": "rakuten",
+      "_review": {
+        "query": "キララメシールバインダーmini",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-48013",
+      "source": "rakuten",
+      "_review": {
+        "query": "プリッツ うまサラダ",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": "グリコ",
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-48012",
+      "sourceId": "4901005521179",
+      "source": "rakuten",
+      "_review": {
+        "query": "プリッツ",
+        "hits": 10,
+        "foodHits": 10,
+        "topFoodName": "プリッツ 旨サラダ(8袋入)",
+        "genre": "その他",
+        "makerAgreement": "9/10",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-48009",
+      "maker": "ロッテ",
+      "sourceId": "4903333129034",
+      "source": "rakuten",
+      "_review": {
+        "query": "コアラのマーチ ミニパック",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "ロッテ コアラのマーチ ミニパック チョコ 12g",
+        "genre": "チョコレートスナック",
+        "makerAgreement": "1/1",
+        "yahooMaker": "ロッテ",
+        "agreesWithYahoo": true
+      }
+    },
+    {
+      "id": "inokuchi-47599",
+      "sourceId": "4582218057558",
+      "source": "rakuten",
+      "_review": {
+        "query": "アニマルヨーチ",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "アニマルヨーチ(100個入)",
+        "genre": "小袋菓子",
+        "makerAgreement": "1/1",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-47544",
+      "source": "rakuten",
+      "_review": {
+        "query": "プチドーナッツビスケット",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-47443",
+      "sourceId": "4902744036917",
+      "source": "rakuten",
+      "_review": {
+        "query": "チューキャン",
+        "hits": 2,
+        "foodHits": 2,
+        "topFoodName": "明治 チューキャン ソーダ 13g",
+        "genre": "ソフトキャンディ",
+        "makerAgreement": "2/2",
+        "yahooMaker": "明治",
+        "agreesWithYahoo": false
+      }
+    },
+    {
+      "id": "inokuchi-47318",
+      "source": "rakuten",
+      "_review": {
+        "query": "しみチョココーン全粒粉スティック",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": "ギンビス",
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-47227",
+      "source": "rakuten",
+      "_review": {
+        "query": "ペヤングソース焼きそばカツ",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-47224",
+      "source": "rakuten",
+      "_review": {
+        "query": "ミルメーク ムギスナック",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-47221",
+      "sourceId": "45203398",
+      "source": "rakuten",
+      "_review": {
+        "query": "ポテコロン",
+        "hits": 2,
+        "foodHits": 2,
+        "topFoodName": "ポテコロン のり塩味",
+        "genre": "各種駄菓子セット",
+        "makerAgreement": "2/2",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-47112",
+      "source": "rakuten",
+      "_review": {
+        "query": "マカロンクッキー",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-46630",
+      "source": "rakuten",
+      "_review": {
+        "query": "東京ニコニコラムネ",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-46453",
+      "sourceId": "4903013790035",
+      "source": "rakuten",
+      "_review": {
+        "query": "フルーツポップ",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "やおきん フルーツポップ 棒キャンディ",
+        "genre": "あめ・キャンディ",
+        "makerAgreement": "1/1",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-46451",
+      "source": "rakuten",
+      "_review": {
+        "query": "うま辛パンチみそラーメン",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-46303",
+      "source": "rakuten",
+      "_review": {
+        "query": "ポット入りフラワーヨーグル",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-46195",
+      "sourceId": "4903013246563",
+      "source": "rakuten",
+      "_review": {
+        "query": "ポリッキー",
+        "hits": 4,
+        "foodHits": 4,
+        "topFoodName": "やおきん ポリッキー スナック菓子 バーベキュー味 16g",
+        "genre": "その他",
+        "makerAgreement": "4/4",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-19342",
+      "source": "rakuten",
+      "_review": {
+        "query": "カットよっちゃんいか",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": "よっちゃん",
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-32859",
+      "source": "rakuten",
+      "_review": {
+        "query": "タラタラしてんじゃねーよ",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": "よっちゃん",
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18847",
+      "maker": "ヤガイ",
+      "sourceId": "4903020305857",
+      "source": "rakuten",
+      "_review": {
+        "query": "おやつカルパス",
+        "hits": 10,
+        "foodHits": 9,
+        "topFoodName": "おやつカルパスBOX(102g)",
+        "genre": "駄菓子珍味",
+        "makerAgreement": "9/9",
+        "yahooMaker": "ヤガイ",
+        "agreesWithYahoo": true
+      }
+    },
+    {
+      "id": "inokuchi-46024",
+      "sourceId": "4903013431525",
+      "source": "rakuten",
+      "_review": {
+        "query": "セブンスティック",
+        "hits": 3,
+        "foodHits": 3,
+        "topFoodName": "やおきん セブンスティック チョコクリーム",
+        "genre": "チョコレートスナック",
+        "makerAgreement": "2/3",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-45501",
+      "source": "rakuten",
+      "_review": {
+        "query": "推しの子フーセンガム 当り付",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-45410",
+      "sourceId": "4904052011365",
+      "source": "rakuten",
+      "_review": {
+        "query": "中村製菓 ポテトフライ",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "中村 ポテトフライ しお味 20g",
+        "genre": "駄菓子スナック",
+        "makerAgreement": "1/1",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-45231",
+      "sourceId": "9784098637393",
+      "source": "rakuten",
+      "_review": {
+        "query": "キャンディーボックス",
+        "hits": 10,
+        "foodHits": 10,
+        "topFoodName": "太田垣康男珠玉短編集 Candy Box Creations",
+        "genre": "プリザーブドフラワー",
+        "makerAgreement": "5/10",
+        "yahooMaker": "共親製菓",
+        "agreesWithYahoo": false
+      }
+    },
+    {
+      "id": "inokuchi-42865",
+      "source": "rakuten",
+      "_review": {
+        "query": "うまい棒 スパイシービーフカレー味",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18401",
+      "sourceId": "49870312",
+      "source": "rakuten",
+      "_review": {
+        "query": "餅太郎・塩",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "餅太郎（塩）",
+        "genre": "駄菓子スナック",
+        "makerAgreement": "1/1",
+        "yahooMaker": "カルビー",
+        "agreesWithYahoo": false
+      }
+    },
+    {
+      "id": "inokuchi-19550",
+      "sourceId": "45132872",
+      "source": "rakuten",
+      "_review": {
+        "query": "うまい棒 牛タン塩味",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "やおきん うまい棒 駄菓子 牛タン塩味",
+        "genre": "駄菓子スナック",
+        "makerAgreement": "1/1",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-35219",
+      "sourceId": "4903013270353",
+      "source": "rakuten",
+      "_review": {
+        "query": "うまい棒 のり塩味",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "やおきん うまい棒のり塩味",
+        "genre": "駄菓子スナック",
+        "makerAgreement": "1/1",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-44770",
+      "sourceId": "4903013799946",
+      "source": "rakuten",
+      "_review": {
+        "query": "どうぶつマシュマロ",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "やおきん どうぶつ マシュマロ",
+        "genre": "マシュマロ",
+        "makerAgreement": "1/1",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-44767",
+      "source": "rakuten",
+      "_review": {
+        "query": "のむのむゼリー パイン味",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-39932",
+      "source": "rakuten",
+      "_review": {
+        "query": "のむのむゼリー 各種",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-44678",
+      "source": "rakuten",
+      "_review": {
+        "query": "カステラドーナツ太郎",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-44675",
+      "source": "rakuten",
+      "_review": {
+        "query": "うどん屋しんちゃん",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": "東京拉麺",
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-44592",
+      "source": "rakuten",
+      "_review": {
+        "query": "サワーコーラグミ",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": "Trolli",
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-44590",
+      "sourceId": "4903013247317",
+      "source": "rakuten",
+      "_review": {
+        "query": "グレープソーダグミ",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "やおきん グレープソーダ グミ ボトル ボトル型 10g",
+        "genre": "その他",
+        "makerAgreement": "1/1",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-44113",
+      "sourceId": "4903013060091",
+      "source": "rakuten",
+      "_review": {
+        "query": "やおきん にんじん",
+        "hits": 2,
+        "foodHits": 2,
+        "topFoodName": "やおきん にんじん 11g",
+        "genre": "その他",
+        "makerAgreement": "2/2",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-43853",
+      "sourceId": "4580798040267",
+      "source": "rakuten",
+      "_review": {
+        "query": "アンパンマン ペロペロキャンディ",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "不二家 アンパンマンペロペロ キャンディ BL",
+        "genre": "駄菓子スナック",
+        "makerAgreement": "1/1",
+        "yahooMaker": "不二家",
+        "agreesWithYahoo": false
+      }
+    },
+    {
+      "id": "inokuchi-43273",
+      "sourceId": "4971749112063",
+      "source": "rakuten",
+      "_review": {
+        "query": "ハニーバター太郎",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "菓道 ハニーバター太郎 駄菓子 もろこし輪太郎",
+        "genre": "駄菓子スナック",
+        "makerAgreement": "1/1",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-43153",
+      "source": "rakuten",
+      "_review": {
+        "query": "にこにこにっこり わたがし 佐藤製菓",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-42585",
+      "sourceId": "4902744031851",
+      "source": "rakuten",
+      "_review": {
+        "query": "ガブリチュウ",
+        "hits": 10,
+        "foodHits": 10,
+        "topFoodName": "明治 ガブリチュウ ソフトキャンディ ラムネ",
+        "genre": "ソフトキャンディ",
+        "makerAgreement": "10/10",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-42136",
+      "maker": "バンダイ",
+      "sourceId": "4549660836537",
+      "source": "rakuten",
+      "_review": {
+        "query": "すみっコぐらし つりグミ",
+        "hits": 2,
+        "foodHits": 2,
+        "topFoodName": "すみっコぐらし　つりグミ",
+        "genre": "駄菓子キャンディ",
+        "makerAgreement": "2/2",
+        "yahooMaker": "BANDAI",
+        "agreesWithYahoo": true
+      }
+    },
+    {
+      "id": "inokuchi-40722",
+      "source": "rakuten",
+      "_review": {
+        "query": "魚ギョッと釣りグミ",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": "BANDAI",
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-42079",
+      "maker": "マルタ食品",
+      "sourceId": "4977831201134",
+      "source": "rakuten",
+      "_review": {
+        "query": "花コンペイ糖",
+        "hits": 2,
+        "foodHits": 2,
+        "topFoodName": "マルタ食品 花コンペイ糖詰合せ 金平糖 4g",
+        "genre": "こんぺいとう",
+        "makerAgreement": "2/2",
+        "yahooMaker": "マルタ",
+        "agreesWithYahoo": true
+      }
+    },
+    {
+      "id": "inokuchi-18429",
+      "sourceId": "4971749110397",
+      "source": "rakuten",
+      "_review": {
+        "query": "もろこし輪太郎",
+        "hits": 6,
+        "foodHits": 4,
+        "topFoodName": "菓道 もろこし輪太郎 88g",
+        "genre": "駄菓子スナック",
+        "makerAgreement": "4/4",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18428",
+      "sourceId": "4582398324969",
+      "source": "rakuten",
+      "_review": {
+        "query": "キャベツ太郎",
+        "hits": 7,
+        "foodHits": 6,
+        "topFoodName": "リタル｜RITARU お弁当箱 500ml 1段 レトロダガシ GEL-COOL SG キャベツ太郎",
+        "genre": "大人用弁当箱",
+        "makerAgreement": "3/6",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18430",
+      "sourceId": "4971749110298",
+      "source": "rakuten",
+      "_review": {
+        "query": "玉葱さん太郎",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "菓道 玉葱さん太郎 15g",
+        "genre": "駄菓子スナック",
+        "makerAgreement": "1/1",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18431",
+      "source": "rakuten",
+      "_review": {
+        "query": "アメリカンフライドポテト",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18405",
+      "sourceId": "4971749110410",
+      "source": "rakuten",
+      "_review": {
+        "query": "ラーメン屋さん太郎",
+        "hits": 2,
+        "foodHits": 1,
+        "topFoodName": "ラーメン屋さん太郎とり味",
+        "genre": "ミニラーメン",
+        "makerAgreement": "1/1",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18406",
+      "sourceId": "4971749110403",
+      "source": "rakuten",
+      "_review": {
+        "query": "やきそば屋さん太郎",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "やきそば屋さん太郎",
+        "genre": "駄菓子スナック",
+        "makerAgreement": "1/1",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-39792",
+      "maker": "オリヒロ",
+      "sourceId": "4571157254494",
+      "source": "rakuten",
+      "_review": {
+        "query": "こんにゃくゼリー",
+        "hits": 10,
+        "foodHits": 10,
+        "topFoodName": "ぷるんと蒟蒻ゼリー スタンディング マスカット(130g)",
+        "genre": "ゼリー",
+        "makerAgreement": "9/10",
+        "yahooMaker": "ORIHIRO",
+        "agreesWithYahoo": true
+      }
+    },
+    {
+      "id": "inokuchi-39283",
+      "source": "rakuten",
+      "_review": {
+        "query": "クリスマスうまい棒チョコレート",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-39019",
+      "sourceId": "4903013246303",
+      "source": "rakuten",
+      "_review": {
+        "query": "ロールキャンディ",
+        "hits": 5,
+        "foodHits": 5,
+        "topFoodName": "やおきん ロールキャンディ レモネード味",
+        "genre": "駄菓子キャンディ",
+        "makerAgreement": "5/5",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-38662",
+      "sourceId": "4903013431730",
+      "source": "rakuten",
+      "_review": {
+        "query": "ロングチュー",
+        "hits": 4,
+        "foodHits": 4,
+        "topFoodName": "やおきん ロングチュー チューイングキャンディ コーラ 25g",
+        "genre": "駄菓子キャンディ",
+        "makerAgreement": "4/4",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-19095",
+      "source": "rakuten",
+      "_review": {
+        "query": "ビンラムネ（モナカ）",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18432",
+      "source": "rakuten",
+      "_review": {
+        "query": "どんどん焼あられ",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-19299",
+      "source": "rakuten",
+      "_review": {
+        "query": "味カレー大和製菓",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-24317",
+      "source": "rakuten",
+      "_review": {
+        "query": "東豊ポテトフライ チキン味",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": "東豊製菓",
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-36594",
+      "source": "rakuten",
+      "_review": {
+        "query": "東豊ポテトフライ カルビ焼きの味",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": "東豊製菓",
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-36591",
+      "source": "rakuten",
+      "_review": {
+        "query": "東豊ポテトフライ じゃが塩バター味",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": "東豊製菓",
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18504",
+      "sourceId": "4901002115494",
+      "source": "rakuten",
+      "_review": {
+        "query": "ペペロンチーノ",
+        "hits": 10,
+        "foodHits": 10,
+        "topFoodName": "S＆B シーズニング ペペロンチーノ ボトル(53g)",
+        "genre": "パスタソース",
+        "makerAgreement": "2/10",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-36988",
+      "source": "rakuten",
+      "_review": {
+        "query": "ソフトマドロス",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-34423",
+      "sourceId": "4979446010514",
+      "source": "rakuten",
+      "_review": {
+        "query": "梅ジャム タカミ製菓",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "タカミ製菓 梅ジャム 40入り",
+        "genre": "小袋菓子",
+        "makerAgreement": "1/1",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-34367",
+      "sourceId": "4520716001710",
+      "source": "rakuten",
+      "_review": {
+        "query": "焼たら",
+        "hits": 5,
+        "foodHits": 5,
+        "topFoodName": "博多焼たら 明太子明太風味 O.K菓子 めんたいこ土産みやげ",
+        "genre": "ソフトルアー",
+        "makerAgreement": "2/5",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-19229",
+      "source": "rakuten",
+      "_review": {
+        "query": "DXお菓子大当て台紙付き(数字合わせ)",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-19591",
+      "source": "rakuten",
+      "_review": {
+        "query": "お菓子大当て台紙付き(数字合せ)",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-19337",
+      "sourceId": "4951232101118",
+      "source": "rakuten",
+      "_review": {
+        "query": "森永ハイチュウ",
+        "hits": 5,
+        "foodHits": 5,
+        "topFoodName": "森永 ハイチュウ ソフトキャンディー",
+        "genre": "ソフトキャンディ",
+        "makerAgreement": "4/5",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-19433",
+      "sourceId": "4902775076807",
+      "source": "rakuten",
+      "_review": {
+        "query": "ブタメン",
+        "hits": 10,
+        "foodHits": 10,
+        "topFoodName": "おやつカンパニー ブタメン インスタント麺 シーフード味",
+        "genre": "ミニラーメン",
+        "makerAgreement": "7/10",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-33782",
+      "source": "rakuten",
+      "_review": {
+        "query": "手づくりキャンディー",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-33775",
+      "source": "rakuten",
+      "_review": {
+        "query": "うずまきキャンディー",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-33767",
+      "sourceId": "4931760842103",
+      "source": "rakuten",
+      "_review": {
+        "query": "りんごあめ",
+        "hits": 10,
+        "foodHits": 10,
+        "topFoodName": "ドールハウスキット 縁日屋台キット  りんご飴",
+        "genre": "のぼり",
+        "makerAgreement": "5/10",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-32110",
+      "source": "rakuten",
+      "_review": {
+        "query": "4個入りトンガリ菓子",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18483",
+      "maker": "宮田製菓",
+      "sourceId": "4977821321491",
+      "source": "rakuten",
+      "_review": {
+        "query": "ヤングドーナツ",
+        "hits": 8,
+        "foodHits": 6,
+        "topFoodName": "ヤングドーナツ",
+        "genre": "ドーナツ",
+        "makerAgreement": "2/6",
+        "yahooMaker": "宮田製菓",
+        "agreesWithYahoo": true
+      }
+    },
+    {
+      "id": "inokuchi-19969",
+      "sourceId": "4901365824002",
+      "source": "rakuten",
+      "_review": {
+        "query": "クッピーラムネ",
+        "hits": 10,
+        "foodHits": 6,
+        "topFoodName": "カクダイ製菓 クッピーラムネ 8連 4g",
+        "genre": "靴下",
+        "makerAgreement": "3/6",
+        "yahooMaker": "カクダイ製菓",
+        "agreesWithYahoo": false
+      }
+    },
+    {
+      "id": "inokuchi-18463",
+      "source": "rakuten",
+      "_review": {
+        "query": "ビッグカツとんかつソース味",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18848",
+      "sourceId": "4903013436094",
+      "source": "rakuten",
+      "_review": {
+        "query": "ぐるぐるゼリー",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "やおきん ぐるぐるゼリー 50g",
+        "genre": "ゼリー",
+        "makerAgreement": "1/1",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-23160",
+      "source": "rakuten",
+      "_review": {
+        "query": "ふがし（角）",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-19268",
+      "source": "rakuten",
+      "_review": {
+        "query": "ど〜ん太郎 うどん",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18409",
+      "source": "rakuten",
+      "_review": {
+        "query": "蒲焼さん太郎",
+        "hits": 1,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18410",
+      "source": "rakuten",
+      "_review": {
+        "query": "焼肉さん太郎",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18412",
+      "source": "rakuten",
+      "_review": {
+        "query": "のし梅さん太郎",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-19272",
+      "sourceId": "4971749110984",
+      "source": "rakuten",
+      "_review": {
+        "query": "わさびのり太郎",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "菓道 わさびのり太郎",
+        "genre": "駄菓子珍味",
+        "makerAgreement": "1/1",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18411",
+      "sourceId": "4971749110328",
+      "source": "rakuten",
+      "_review": {
+        "query": "酢だこさん太郎",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "酢だこさん太郎",
+        "genre": "駄菓子珍味",
+        "makerAgreement": "1/1",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18458",
+      "maker": "チーリン製菓",
+      "sourceId": "45024405",
+      "source": "rakuten",
+      "_review": {
+        "query": "プチプチうらないチョコ",
+        "hits": 2,
+        "foodHits": 2,
+        "topFoodName": "チーリン製菓 プチプチうらない チョコ玉 18粒",
+        "genre": "その他",
+        "makerAgreement": "2/2",
+        "yahooMaker": "チーリン製菓",
+        "agreesWithYahoo": true
+      }
+    },
+    {
+      "id": "inokuchi-19181",
+      "source": "rakuten",
+      "_review": {
+        "query": "月の小石チョコ",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-19320",
+      "source": "rakuten",
+      "_review": {
+        "query": "どらチョコ",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-19966",
+      "maker": "meito",
+      "sourceId": "4902757113704",
+      "source": "rakuten",
+      "_review": {
+        "query": "ぷくぷくたい",
+        "hits": 9,
+        "foodHits": 9,
+        "topFoodName": "meito ぷくぷくたい やきいも",
+        "genre": "チョコレートスナック",
+        "makerAgreement": "7/9",
+        "yahooMaker": "meito",
+        "agreesWithYahoo": true
+      }
+    },
+    {
+      "id": "inokuchi-21426",
+      "source": "rakuten",
+      "_review": {
+        "query": "ドリコ 棒きなこ飴連続当て",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-39984",
+      "source": "rakuten",
+      "_review": {
+        "query": "鈴ノ屋 棒きなこ飴 連続当て",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18841",
+      "source": "rakuten",
+      "_review": {
+        "query": "オリオン ミニ サワー",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": "オリオン",
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18842",
+      "maker": "オリオン",
+      "sourceId": "49598544",
+      "source": "rakuten",
+      "_review": {
+        "query": "オリオン ミニ コーラ",
+        "hits": 2,
+        "foodHits": 2,
+        "topFoodName": "オリオン ミニコーラ 8g",
+        "genre": "ラムネ",
+        "makerAgreement": "2/2",
+        "yahooMaker": "オリオン",
+        "agreesWithYahoo": true
+      }
+    },
+    {
+      "id": "inokuchi-19304",
+      "sourceId": "4902555117492",
+      "source": "rakuten",
+      "_review": {
+        "query": "不二家ミルキー",
+        "hits": 10,
+        "foodHits": 7,
+        "topFoodName": "不二家 ミルキー 6粒",
+        "genre": "ソフトキャンディ",
+        "makerAgreement": "4/7",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-19295",
+      "source": "rakuten",
+      "_review": {
+        "query": "ポケモンガム(当り付き）",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18501",
+      "source": "rakuten",
+      "_review": {
+        "query": "カップ入りねり水飴",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18480",
+      "sourceId": "4548626157150",
+      "source": "rakuten",
+      "_review": {
+        "query": "ココアシガレット",
+        "hits": 10,
+        "foodHits": 7,
+        "topFoodName": "ティーズファクトリー｜T’S FACTORY お菓子シリーズ 鉛筆2B ココアシガレット OC-5540533CC",
+        "genre": "ラムネ",
+        "makerAgreement": "2/7",
+        "yahooMaker": "オリオン",
+        "agreesWithYahoo": false
+      }
+    },
+    {
+      "id": "inokuchi-19270",
+      "source": "rakuten",
+      "_review": {
+        "query": "オリオンシガレット各種",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18388",
+      "sourceId": "4580433070666",
+      "source": "rakuten",
+      "_review": {
+        "query": "うまい棒 チーズ味",
+        "hits": 5,
+        "foodHits": 3,
+        "topFoodName": "ジェイズプランニング｜J’s PLANNING お菓子パッケージシリーズ ソックス うまい棒 チーズ味 JGS0102",
+        "genre": "靴下",
+        "makerAgreement": "1/3",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-28100",
+      "sourceId": "49415780",
+      "source": "rakuten",
+      "_review": {
+        "query": "うまい棒コーンポタージュ",
+        "hits": 7,
+        "foodHits": 5,
+        "topFoodName": "うまい棒　コーンポタージュ味",
+        "genre": "駄菓子スナック",
+        "makerAgreement": "2/5",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18387",
+      "sourceId": "4538290614097",
+      "source": "rakuten",
+      "_review": {
+        "query": "うまい棒 めんたい味",
+        "hits": 8,
+        "foodHits": 4,
+        "topFoodName": "駄菓子 うまい棒 めんたい味",
+        "genre": "各種駄菓子セット",
+        "makerAgreement": "1/4",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18394",
+      "source": "rakuten",
+      "_review": {
+        "query": "うまい棒 たこ焼味",
+        "hits": 2,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-19972",
+      "sourceId": "49415735",
+      "source": "rakuten",
+      "_review": {
+        "query": "うまい棒 シュガーラスク味",
+        "hits": 3,
+        "foodHits": 1,
+        "topFoodName": "うまい棒シュガーラスク味",
+        "genre": "駄菓子スナック",
+        "makerAgreement": "1/1",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18451",
+      "source": "rakuten",
+      "_review": {
+        "query": "マルカワ マーブルガム当たり付",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": "マルカワ",
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-21110",
+      "sourceId": "4903013270322",
+      "source": "rakuten",
+      "_review": {
+        "query": "うまい棒 やきとり味",
+        "hits": 2,
+        "foodHits": 1,
+        "topFoodName": "うまい棒 やきとり味(1本入)",
+        "genre": "駄菓子スナック",
+        "makerAgreement": "1/1",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-19959",
+      "sourceId": "49480771",
+      "source": "rakuten",
+      "_review": {
+        "query": "うまい棒 なっとう味",
+        "hits": 2,
+        "foodHits": 1,
+        "topFoodName": "うまい棒　納豆味",
+        "genre": "駄菓子スナック",
+        "makerAgreement": "1/1",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-19332",
+      "source": "rakuten",
+      "_review": {
+        "query": "コーラガム(当り付き）",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18418",
+      "source": "rakuten",
+      "_review": {
+        "query": "フィリックスガム当たり付",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": "マルカワ",
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-27358",
+      "source": "rakuten",
+      "_review": {
+        "query": "ぱんだろ〜クッキー",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18439",
+      "source": "rakuten",
+      "_review": {
+        "query": "やおきん きなこ棒飴箱入",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-19142",
+      "source": "rakuten",
+      "_review": {
+        "query": "中村製菓 なつかしカレー味せんべい",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-29685",
+      "sourceId": "4902797237095",
+      "source": "rakuten",
+      "_review": {
+        "query": "パチパチパニック",
+        "hits": 7,
+        "foodHits": 7,
+        "topFoodName": "明治産業 パチパチパニックソーダ5g",
+        "genre": "駄菓子キャンディ",
+        "makerAgreement": "7/7",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18426",
+      "maker": "パイン",
+      "sourceId": "49707502",
+      "source": "rakuten",
+      "_review": {
+        "query": "どんぐりガム",
+        "hits": 10,
+        "foodHits": 9,
+        "topFoodName": "どんぐりガムサイダー",
+        "genre": "ガム",
+        "makerAgreement": "9/9",
+        "yahooMaker": "Pine",
+        "agreesWithYahoo": true
+      }
+    },
+    {
+      "id": "inokuchi-18440",
+      "sourceId": "4902762771739",
+      "source": "rakuten",
+      "_review": {
+        "query": "あんずボー",
+        "hits": 3,
+        "foodHits": 3,
+        "topFoodName": "やおきん あんずボー45g",
+        "genre": "各種駄菓子セット",
+        "makerAgreement": "3/3",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-19143",
+      "sourceId": "4517161166101",
+      "source": "rakuten",
+      "_review": {
+        "query": "フルーツの森",
+        "hits": 10,
+        "foodHits": 10,
+        "topFoodName": "フルーツの森 ハンドソープ 完熟キウイ",
+        "genre": "ハンドソープ",
+        "makerAgreement": "7/10",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18479",
+      "source": "rakuten",
+      "_review": {
+        "query": "ソースせんべい佐藤製菓",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18390",
+      "sourceId": "4991863511115",
+      "source": "rakuten",
+      "_review": {
+        "query": "うまい棒 とんかつソース味",
+        "hits": 4,
+        "foodHits": 2,
+        "topFoodName": "おやつマーケット　鉛筆２Ｂ　うまい棒（とんかつソース味）",
+        "genre": "鉛筆",
+        "makerAgreement": "1/2",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18435",
+      "source": "rakuten",
+      "_review": {
+        "query": "甘いか太郎 キムチ味",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18916",
+      "source": "rakuten",
+      "_review": {
+        "query": "ヤッターめん 金券くじ当て",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-20067",
+      "source": "rakuten",
+      "_review": {
+        "query": "ポップコーン塩味",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-28026",
+      "sourceId": "4903013241247",
+      "source": "rakuten",
+      "_review": {
+        "query": "ダイヤモンドリングキャンディ",
+        "hits": 2,
+        "foodHits": 2,
+        "topFoodName": "やおきん ダイヤモンドリング キャンディー",
+        "genre": "あめ・キャンディ",
+        "makerAgreement": "2/2",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18423",
+      "source": "rakuten",
+      "_review": {
+        "query": "あべっ子ラムネアソート",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18498",
+      "sourceId": "4970450115578",
+      "source": "rakuten",
+      "_review": {
+        "query": "さくら大根",
+        "hits": 2,
+        "foodHits": 2,
+        "topFoodName": "遠藤食品 さくら大根 45g",
+        "genre": "駄菓子珍味",
+        "makerAgreement": "1/2",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18436",
+      "sourceId": "4902762721833",
+      "source": "rakuten",
+      "_review": {
+        "query": "みつあんず",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "港常 25gみつあんず",
+        "genre": "あんず",
+        "makerAgreement": "1/1",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18473",
+      "sourceId": "4904052011389",
+      "source": "rakuten",
+      "_review": {
+        "query": "中村製菓 チーズあられ",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "中村 チーズあられ 18g",
+        "genre": "駄菓子スナック",
+        "makerAgreement": "1/1",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18500",
+      "sourceId": "4902762850137",
+      "source": "rakuten",
+      "_review": {
+        "query": "うぐいすあんず",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "港常 うぐいすあんず アンズ 28g",
+        "genre": "その他",
+        "makerAgreement": "1/1",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-19599",
+      "sourceId": "1001000014812008",
+      "source": "rakuten",
+      "_review": {
+        "query": "チーズおやつ",
+        "hits": 8,
+        "foodHits": 8,
+        "topFoodName": "扇屋食品 チーズおやつカマンベール入り",
+        "genre": "駄菓子珍味",
+        "makerAgreement": "3/8",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18437",
+      "source": "rakuten",
+      "_review": {
+        "query": "ミルクせんべい佐藤製菓",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-29060",
+      "source": "rakuten",
+      "_review": {
+        "query": "メロンぱんだろ〜クッキー",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18425",
+      "source": "rakuten",
+      "_review": {
+        "query": "あわ玉 飴",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": "Pine",
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-19644",
+      "source": "rakuten",
+      "_review": {
+        "query": "フルーツパウダージュース(松山製菓)",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18391",
+      "source": "rakuten",
+      "_review": {
+        "query": "うまい棒 テリヤキバーガー味",
+        "hits": 1,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18443",
+      "sourceId": "4980937000310",
+      "source": "rakuten",
+      "_review": {
+        "query": "こざくら餅",
+        "hits": 2,
+        "foodHits": 2,
+        "topFoodName": "明光製菓 こざくら餅 餅飴 15粒",
+        "genre": "グミ",
+        "makerAgreement": "2/2",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-19219",
+      "source": "rakuten",
+      "_review": {
+        "query": "不二家棒付き ポップキャンディ",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": "不二家",
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-23990",
+      "source": "rakuten",
+      "_review": {
+        "query": "ねり水あめ大当て",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-34363",
+      "sourceId": "4973887810382",
+      "source": "rakuten",
+      "_review": {
+        "query": "サッカースクラッチ",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "ジャック製菓 サッカースクラッチ 駄菓子",
+        "genre": "ラムネ",
+        "makerAgreement": "1/1",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-22560",
+      "source": "rakuten",
+      "_review": {
+        "query": "うまい棒プレミアム和風ステーキ味",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-21434",
+      "source": "rakuten",
+      "_review": {
+        "query": "うまい棒プレミアムめんたいこ味",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-21429",
+      "source": "rakuten",
+      "_review": {
+        "query": "うまい棒プレミアムチーズ味",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-34331",
+      "sourceId": "4903013090531",
+      "source": "rakuten",
+      "_review": {
+        "query": "ガリボリラーメン",
+        "hits": 2,
+        "foodHits": 2,
+        "topFoodName": "やおきん ガリボリラーメン ピリカラニンニク 21入り",
+        "genre": "ミニラーメン",
+        "makerAgreement": "2/2",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-19891",
+      "source": "rakuten",
+      "_review": {
+        "query": "東京下町あんこ玉",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    },
+    {
+      "id": "inokuchi-18482",
+      "source": "rakuten",
+      "_review": {
+        "query": "たかみにんじん",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null
+      }
+    }
+  ]
+}

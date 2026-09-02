@@ -1,7 +1,7 @@
 {
   "source": "yahoo",
   "sourceName": "Yahoo!ショッピング商品検索API（メーカー名・JANコードの補完）",
-  "fetchedAt": "2026-09-01T21:29:01.962Z",
+  "fetchedAt": "2026-09-02T08:22:00.509Z",
   "items": [
     {
       "id": "inokuchi-49941",
@@ -19,7 +19,7 @@
     },
     {
       "id": "inokuchi-49938",
-      "maker": "SEIKA",
+      "_makerCandidate": "SEIKA",
       "sourceId": "4973260301094",
       "source": "yahoo",
       "_review": {
@@ -48,7 +48,7 @@
     },
     {
       "id": "inokuchi-49843",
-      "maker": "Kanro",
+      "_makerCandidate": "Kanro",
       "sourceId": "4901351026793",
       "source": "yahoo",
       "_review": {
@@ -132,7 +132,7 @@
     },
     {
       "id": "inokuchi-49386",
-      "maker": "ヤガイ",
+      "_makerCandidate": "ヤガイ",
       "sourceId": "4903020005870",
       "source": "yahoo",
       "_review": {
@@ -173,7 +173,7 @@
     },
     {
       "id": "inokuchi-48874",
-      "maker": "オリオン",
+      "_makerCandidate": "オリオン",
       "sourceId": "49598605",
       "source": "yahoo",
       "_review": {
@@ -215,7 +215,7 @@
     },
     {
       "id": "inokuchi-48013",
-      "maker": "グリコ",
+      "_makerCandidate": "グリコ",
       "sourceId": "4901005521308",
       "source": "yahoo",
       "_review": {
@@ -244,7 +244,7 @@
     },
     {
       "id": "inokuchi-48009",
-      "maker": "ロッテ",
+      "_makerCandidate": "ロッテ",
       "sourceId": "4903333129034",
       "source": "yahoo",
       "_review": {
@@ -287,7 +287,7 @@
     },
     {
       "id": "inokuchi-47443",
-      "maker": "明治",
+      "_makerCandidate": "明治",
       "sourceId": "4902744036900",
       "source": "yahoo",
       "_review": {
@@ -302,7 +302,7 @@
     },
     {
       "id": "inokuchi-47318",
-      "maker": "ギンビス",
+      "_makerCandidate": "ギンビス",
       "sourceId": "4901588617511",
       "source": "yahoo",
       "_review": {
@@ -442,7 +442,7 @@
     },
     {
       "id": "inokuchi-19342",
-      "maker": "よっちゃん",
+      "_makerCandidate": "よっちゃん",
       "sourceId": "4903041018132",
       "source": "yahoo",
       "_review": {
@@ -457,7 +457,7 @@
     },
     {
       "id": "inokuchi-32859",
-      "maker": "よっちゃん",
+      "_makerCandidate": "よっちゃん",
       "sourceId": "4903041201206",
       "source": "yahoo",
       "_review": {
@@ -472,7 +472,7 @@
     },
     {
       "id": "inokuchi-18847",
-      "maker": "ヤガイ",
+      "_makerCandidate": "ヤガイ",
       "sourceId": "4903020005894",
       "source": "yahoo",
       "_review": {
@@ -528,7 +528,7 @@
     },
     {
       "id": "inokuchi-45231",
-      "maker": "共親製菓",
+      "_makerCandidate": "共親製菓",
       "sourceId": "4971646010554",
       "source": "yahoo",
       "_review": {
@@ -557,7 +557,7 @@
     },
     {
       "id": "inokuchi-18401",
-      "maker": "カルビー",
+      "_makerCandidate": "カルビー",
       "sourceId": "49870312",
       "source": "yahoo",
       "_review": {
@@ -655,7 +655,7 @@
     },
     {
       "id": "inokuchi-44675",
-      "maker": "東京拉麺",
+      "_makerCandidate": "東京拉麺",
       "sourceId": "4906871022249",
       "source": "yahoo",
       "_review": {
@@ -670,7 +670,7 @@
     },
     {
       "id": "inokuchi-44592",
-      "maker": "Trolli",
+      "_makerCandidate": "Trolli",
       "sourceId": "8437000482093",
       "source": "yahoo",
       "_review": {
@@ -713,7 +713,7 @@
     },
     {
       "id": "inokuchi-43853",
-      "maker": "不二家",
+      "_makerCandidate": "不二家",
       "sourceId": "49755190",
       "source": "yahoo",
       "_review": {
@@ -770,7 +770,7 @@
     },
     {
       "id": "inokuchi-42136",
-      "maker": "BANDAI",
+      "_makerCandidate": "BANDAI",
       "sourceId": "4570117913730",
       "source": "yahoo",
       "_review": {
@@ -785,7 +785,7 @@
     },
     {
       "id": "inokuchi-40722",
-      "maker": "BANDAI",
+      "_makerCandidate": "BANDAI",
       "sourceId": "4549660424024",
       "source": "yahoo",
       "_review": {
@@ -800,7 +800,7 @@
     },
     {
       "id": "inokuchi-42079",
-      "maker": "マルタ",
+      "_makerCandidate": "マルタ",
       "sourceId": "4977831003134",
       "source": "yahoo",
       "_review": {
@@ -899,7 +899,7 @@
     },
     {
       "id": "inokuchi-39792",
-      "maker": "ORIHIRO",
+      "_makerCandidate": "ORIHIRO",
       "sourceId": "4571157258096",
       "source": "yahoo",
       "_review": {
@@ -998,7 +998,7 @@
     },
     {
       "id": "inokuchi-24317",
-      "maker": "東豊製菓",
+      "_makerCandidate": "東豊製菓",
       "sourceId": "4901984088267",
       "source": "yahoo",
       "_review": {
@@ -1013,7 +1013,7 @@
     },
     {
       "id": "inokuchi-36594",
-      "maker": "東豊製菓",
+      "_makerCandidate": "東豊製菓",
       "sourceId": "4901984088281",
       "source": "yahoo",
       "_review": {
@@ -1028,7 +1028,7 @@
     },
     {
       "id": "inokuchi-36591",
-      "maker": "東豊製菓",
+      "_makerCandidate": "東豊製菓",
       "sourceId": "4901984088281",
       "source": "yahoo",
       "_review": {
@@ -1209,7 +1209,7 @@
     },
     {
       "id": "inokuchi-18483",
-      "maker": "宮田製菓",
+      "_makerCandidate": "宮田製菓",
       "sourceId": "4977821321491",
       "source": "yahoo",
       "_review": {
@@ -1224,7 +1224,7 @@
     },
     {
       "id": "inokuchi-19969",
-      "maker": "カクダイ製菓",
+      "_makerCandidate": "カクダイ製菓",
       "sourceId": "49635775",
       "source": "yahoo",
       "_review": {
@@ -1364,7 +1364,7 @@
     },
     {
       "id": "inokuchi-18458",
-      "maker": "チーリン製菓",
+      "_makerCandidate": "チーリン製菓",
       "sourceId": "45024405",
       "source": "yahoo",
       "_review": {
@@ -1407,7 +1407,7 @@
     },
     {
       "id": "inokuchi-19966",
-      "maker": "meito",
+      "_makerCandidate": "meito",
       "sourceId": "4902757111304",
       "source": "yahoo",
       "_review": {
@@ -1448,7 +1448,7 @@
     },
     {
       "id": "inokuchi-18841",
-      "maker": "オリオン",
+      "_makerCandidate": "オリオン",
       "sourceId": "49598742",
       "source": "yahoo",
       "_review": {
@@ -1463,7 +1463,7 @@
     },
     {
       "id": "inokuchi-18842",
-      "maker": "オリオン",
+      "_makerCandidate": "オリオン",
       "sourceId": "49598636",
       "source": "yahoo",
       "_review": {
@@ -1520,7 +1520,7 @@
     },
     {
       "id": "inokuchi-18480",
-      "maker": "オリオン",
+      "_makerCandidate": "オリオン",
       "sourceId": "49151558",
       "source": "yahoo",
       "_review": {
@@ -1618,7 +1618,7 @@
     },
     {
       "id": "inokuchi-18451",
-      "maker": "マルカワ",
+      "_makerCandidate": "マルカワ",
       "sourceId": "49438185",
       "source": "yahoo",
       "_review": {
@@ -1675,7 +1675,7 @@
     },
     {
       "id": "inokuchi-18418",
-      "maker": "マルカワ",
+      "_makerCandidate": "マルカワ",
       "sourceId": "49459319",
       "source": "yahoo",
       "_review": {
@@ -1745,7 +1745,7 @@
     },
     {
       "id": "inokuchi-18426",
-      "maker": "Pine",
+      "_makerCandidate": "Pine",
       "sourceId": "49751970",
       "source": "yahoo",
       "_review": {
@@ -1983,7 +1983,7 @@
     },
     {
       "id": "inokuchi-18425",
-      "maker": "Pine",
+      "_makerCandidate": "Pine",
       "sourceId": "49707243",
       "source": "yahoo",
       "_review": {
@@ -2040,7 +2040,7 @@
     },
     {
       "id": "inokuchi-19219",
-      "maker": "不二家",
+      "_makerCandidate": "不二家",
       "sourceId": "4902555126142",
       "source": "yahoo",
       "_review": {

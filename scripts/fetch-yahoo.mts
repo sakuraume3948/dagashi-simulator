@@ -161,7 +161,8 @@ function normalizeJan(raw: string | number | undefined): string | undefined {
 
 type Enriched = {
   id: string;
-  maker?: string;
+  /** 楽天との突き合わせ材料。"_" 始まりなので最終データには入らない。 */
+  _makerCandidate?: string;
   sourceId?: string;
   source: "yahoo";
   /** 人間が確認するための情報。build-data は "_" 始まりのキーを無視する。 */
@@ -220,9 +221,14 @@ async function main(): Promise<void> {
     if (maker) makerFound++;
     if (jan.value) janFound++;
 
+    // ★maker は最終データに出さない。楽天との突き合わせ材料としてのみ使う。
+    //   単独の情報源だけでメーカー名を決めると誤りが混入するため
+    //   （HIーCHEW を 9/10 の一致率で誤採用した実績がある）。
+    //   採用の判断は scripts/fetch-rakuten.mts が両者の一致を見て行う。
     enriched.push({
       id: item.id,
-      ...(maker ? { maker } : {}),
+      // "_" 始まりなので build-data はこれを商品データに取り込まない。
+      ...(maker ? { _makerCandidate: maker } : {}),
       ...(jan.value ? { sourceId: jan.value } : {}),
       source: "yahoo",
       _review: {

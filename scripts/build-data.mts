@@ -23,13 +23,16 @@ const OUTPUT_PATH = path.join(ROOT, "lib/data.ts");
 /**
  * 情報源の優先順位。後ろにあるものが勝つ。
  *
- * yahoo は maker と sourceId だけを持つ補完用の情報源なので最後に置く。
+ * yahoo と rakuten は maker と sourceId だけを持つ補完用の情報源なので後ろに置く。
+ * rakuten を yahoo より後にしているのは、楽天プロダクトの makerName が
+ * 製品マスタ由来の会社名であり、Yahoo! の brand（店舗が付けたブランド名）より
+ * 構造的に正確なため。
  * 価格を持たないため、井ノ口の希望小売価格を上書きすることはない
  * （assignDefined が undefined のキーを無視するため）。
  *
  * さらに強い上書きが必要なら data/overrides.json を使う。
  */
-const SOURCE_PRIORITY = ["inokuchi", "yaokin", "yahoo"];
+const SOURCE_PRIORITY = ["inokuchi", "yaokin", "yahoo", "rakuten"];
 
 type SourceItem = {
   id: string;

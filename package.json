@@ -11,7 +11,8 @@
     "test:watch": "vitest",
     "build:data": "node --experimental-strip-types --disable-warning=ExperimentalWarning --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/build-data.mts",
     "fetch:inokuchi": "node --experimental-strip-types --disable-warning=ExperimentalWarning --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/fetch-inokuchi.mts",
-    "fetch:yahoo": "node --env-file-if-exists=.env.local --experimental-strip-types --disable-warning=ExperimentalWarning --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/fetch-yahoo.mts"
+    "fetch:yahoo": "node --env-file-if-exists=.env.local --experimental-strip-types --disable-warning=ExperimentalWarning --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/fetch-yahoo.mts",
+    "fetch:rakuten": "node --env-file-if-exists=.env.local --experimental-strip-types --disable-warning=ExperimentalWarning --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/fetch-rakuten.mts"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
