@@ -1,0 +1,2168 @@
+{
+  "source": "yahoo",
+  "sourceName": "Yahoo!ショッピング商品検索API（メーカー名・JANコードの補完）",
+  "fetchedAt": "2026-09-01T21:29:01.962Z",
+  "items": [
+    {
+      "id": "inokuchi-49941",
+      "sourceId": "4550433081924",
+      "source": "yahoo",
+      "_review": {
+        "query": "ちゅるりんジェリー",
+        "topName": "ちゅるりんジェリーぶどう味 ３０入　駄菓子 子供会 景品 お祭り くじ引き 縁日",
+        "janAgreement": "4/10",
+        "brandAgreement": "1/10",
+        "brandRaw": "カミオジャパン",
+        "brandRejected": "一致率が低い (1/10)",
+        "genre": "シール"
+      }
+    },
+    {
+      "id": "inokuchi-49938",
+      "maker": "SEIKA",
+      "sourceId": "4973260301094",
+      "source": "yahoo",
+      "_review": {
+        "query": "ラムネもち",
+        "topName": "セイカ食品 ラムネもち 32g×8個入×(2ケース)｜ 送料無料",
+        "janAgreement": "5/10",
+        "brandAgreement": "4/10",
+        "brandRaw": "SEIKA（食品）",
+        "brandRejected": null,
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-49936",
+      "sourceId": "4973260301032",
+      "source": "yahoo",
+      "_review": {
+        "query": "ぶどうのもっちゃん",
+        "topName": "セイカ食品 ぶどうのもっちゃん32g ８袋入　駄菓子 子供会 景品 お祭り くじ引き 縁日",
+        "janAgreement": "5/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-49843",
+      "maker": "Kanro",
+      "sourceId": "4901351026793",
+      "source": "yahoo",
+      "_review": {
+        "query": "カンロ ザ・ストロンググミ ソーダ",
+        "topName": "カンロ ザ・ストロンググミ マスカットソーダ 70g×6入 (最短当日出荷) (ポイント消化) (np) (賞味期限2027.2月末) メール便全国送料無料",
+        "janAgreement": "4/10",
+        "brandAgreement": "10/10",
+        "brandRaw": "Kanro",
+        "brandRejected": null,
+        "genre": "グミ、ジェリービーンズ"
+      }
+    },
+    {
+      "id": "inokuchi-49773",
+      "sourceId": "4903013799823",
+      "source": "yahoo",
+      "_review": {
+        "query": "コーラスプラッシュ",
+        "topName": "コーラスプラッシュ　30ｍｌ入×20個　1BOX　（株)やおきん　【原産国：中国】",
+        "janAgreement": "3/5",
+        "brandAgreement": "1/5",
+        "brandRaw": "コリス",
+        "brandRejected": "一致率が低い (1/5)",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-49742",
+      "sourceId": "8938517587047",
+      "source": "yahoo",
+      "_review": {
+        "query": "ココナッツクッキー",
+        "topName": "TOPCOCO ココナッツクッキー 150g（10個セット ）　BANH DUA NUONG TRUYEN THONG COCO",
+        "janAgreement": "1/10",
+        "brandAgreement": "1/10",
+        "brandRaw": "WINGRAM",
+        "brandRejected": "一致率が低い (1/10)",
+        "genre": "クッキー、ビスケット"
+      }
+    },
+    {
+      "id": "inokuchi-49575",
+      "sourceId": "4903013357207",
+      "source": "yahoo",
+      "_review": {
+        "query": "サワーペーパーキャンディ ホワイトソーダ",
+        "topName": "サワーペーパーキャンディ　ホワイトソーダ味　36個入　1BOX（株)やおきん　【原産国：タイ】",
+        "janAgreement": "10/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-49528",
+      "sourceId": "4903013357276",
+      "source": "yahoo",
+      "_review": {
+        "query": "サワーペーパーキャンディ",
+        "topName": "駄菓子 サワーペーパー 計３２枚 4種 各8枚 コーラ グレープ アップル サイダー",
+        "janAgreement": "3/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "飴、ソフトキャンディ"
+      }
+    },
+    {
+      "id": "inokuchi-49526",
+      "source": "yahoo",
+      "_review": {
+        "query": "プレミアムガブリチュウ 焦がしキャラメル味",
+        "topName": null,
+        "janAgreement": "0/0",
+        "brandAgreement": "0/0",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": null
+      }
+    },
+    {
+      "id": "inokuchi-49386",
+      "maker": "ヤガイ",
+      "sourceId": "4903020005870",
+      "source": "yahoo",
+      "_review": {
+        "query": "おやつカルパス 旨辛味",
+        "topName": "クーポン利用で354.8円/1箱 [10箱]ヤガイ おやつカルパス 旨辛味BOX 90g",
+        "janAgreement": "5/10",
+        "brandAgreement": "7/10",
+        "brandRaw": "ヤガイ",
+        "brandRejected": null,
+        "genre": "肉のおつまみ珍味"
+      }
+    },
+    {
+      "id": "inokuchi-49381",
+      "source": "yahoo",
+      "_review": {
+        "query": "この人だ～れ？DXミンツ",
+        "topName": null,
+        "janAgreement": "0/0",
+        "brandAgreement": "0/0",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": null
+      }
+    },
+    {
+      "id": "inokuchi-48881",
+      "source": "yahoo",
+      "_review": {
+        "query": "サンリオキャラクターズ ドーナッツグミ",
+        "topName": null,
+        "janAgreement": "0/0",
+        "brandAgreement": "0/0",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": null
+      }
+    },
+    {
+      "id": "inokuchi-48874",
+      "maker": "オリオン",
+      "sourceId": "49598605",
+      "source": "yahoo",
+      "_review": {
+        "query": "マンテンデビュー",
+        "topName": "オリオン ミニ缶ラムネ マンテンデビュー 30個入 駄菓子 お菓子 おかし 縁日 景品 問屋 お祭り 子供 おもちゃ 祭り 縁日用品 屋台 イベント",
+        "janAgreement": "4/10",
+        "brandAgreement": "3/10",
+        "brandRaw": "オリオン（お菓子）",
+        "brandRejected": null,
+        "genre": "食玩、カプセル"
+      }
+    },
+    {
+      "id": "inokuchi-48621",
+      "sourceId": "4570160333202",
+      "source": "yahoo",
+      "_review": {
+        "query": "キララメシールバインダー",
+        "topName": "キララメシールバインダー　６個入",
+        "janAgreement": "1/9",
+        "brandAgreement": "1/9",
+        "brandRaw": "CRUX",
+        "brandRejected": "一致率が低い (1/9)",
+        "genre": "手帳（文具）"
+      }
+    },
+    {
+      "id": "inokuchi-48616",
+      "source": "yahoo",
+      "_review": {
+        "query": "キララメシールバインダーmini",
+        "topName": null,
+        "janAgreement": "0/0",
+        "brandAgreement": "0/0",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": null
+      }
+    },
+    {
+      "id": "inokuchi-48013",
+      "maker": "グリコ",
+      "sourceId": "4901005521308",
+      "source": "yahoo",
+      "_review": {
+        "query": "プリッツ うまサラダ",
+        "topName": "お菓子 詰め合わせ スナック菓子 詰め合わせ 20種類 ギフト スナック菓子 箱入り カール アソート プレゼント ポテトチップス 九州しょうゆ",
+        "janAgreement": "5/10",
+        "brandAgreement": "4/10",
+        "brandRaw": "グリコ",
+        "brandRejected": null,
+        "genre": "クッキー、ビスケット"
+      }
+    },
+    {
+      "id": "inokuchi-48012",
+      "sourceId": "4901005521193",
+      "source": "yahoo",
+      "_review": {
+        "query": "プリッツ",
+        "topName": "十六穀プリッツうす塩味＜6袋＞ 3個 江崎グリコ プレッチェル おつまみ",
+        "janAgreement": "2/10",
+        "brandAgreement": "8/10",
+        "brandRaw": "PRETZ",
+        "brandRejected": "商品ブランド名でありメーカーではない",
+        "genre": "その他スイーツ、洋菓子"
+      }
+    },
+    {
+      "id": "inokuchi-48009",
+      "maker": "ロッテ",
+      "sourceId": "4903333129034",
+      "source": "yahoo",
+      "_review": {
+        "query": "コアラのマーチ ミニパック",
+        "topName": "駄菓子 詰め合わせ ワンコイン お菓子 子供 人気 菓子 スナック菓子",
+        "janAgreement": "4/10",
+        "brandAgreement": "7/10",
+        "brandRaw": "ロッテ",
+        "brandRejected": null,
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-47599",
+      "sourceId": "4582218057558",
+      "source": "yahoo",
+      "_review": {
+        "query": "アニマルヨーチ",
+        "topName": "アニマルヨーチ 100個入 動物クラッカー 個包装 業務用お菓子 まとめ買い アニマルクッキー アイシングクッキー お配り 運動会",
+        "janAgreement": "7/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "クッキー、ビスケット"
+      }
+    },
+    {
+      "id": "inokuchi-47544",
+      "sourceId": "4582218055929",
+      "source": "yahoo",
+      "_review": {
+        "query": "プチドーナッツビスケット",
+        "topName": "プチドーナッツビスケット 100個装入 駄菓子 お菓子 おかし 縁日 景品 問屋 お祭り 子供 おもちゃ 祭り 縁日用品 屋台 イベント",
+        "janAgreement": "2/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "クッキー、ビスケット"
+      }
+    },
+    {
+      "id": "inokuchi-47443",
+      "maker": "明治",
+      "sourceId": "4902744036900",
+      "source": "yahoo",
+      "_review": {
+        "query": "チューキャン",
+        "topName": "チューイングキャンデー ソーダ 5粒×20袋 チューキャン 明治チューインガム ちゅーきゃん チューキャン",
+        "janAgreement": "5/10",
+        "brandAgreement": "6/10",
+        "brandRaw": "明治",
+        "brandRejected": null,
+        "genre": "飴、ソフトキャンディ"
+      }
+    },
+    {
+      "id": "inokuchi-47318",
+      "maker": "ギンビス",
+      "sourceId": "4901588617511",
+      "source": "yahoo",
+      "_review": {
+        "query": "しみチョココーン全粒粉スティック",
+        "topName": "ギンビス しみチョココーン全粒粉スティック 1本×15個",
+        "janAgreement": "6/10",
+        "brandAgreement": "7/10",
+        "brandRaw": "ギンビス",
+        "brandRejected": null,
+        "genre": "チョコスナック、チョコバー"
+      }
+    },
+    {
+      "id": "inokuchi-47227",
+      "sourceId": "4589704432264",
+      "source": "yahoo",
+      "_review": {
+        "query": "ペヤングソース焼きそばカツ",
+        "topName": "ペヤング やきそばソースカツ 50個入",
+        "janAgreement": "6/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-47224",
+      "sourceId": "4589704435050",
+      "source": "yahoo",
+      "_review": {
+        "query": "ミルメーク ムギスナック",
+        "topName": "ミルメークコーヒー味 ムギスナック ５０入　駄菓子 子供会 景品 お祭り くじ引き 縁日",
+        "janAgreement": "2/4",
+        "brandAgreement": "2/4",
+        "brandRaw": "ミルメーク",
+        "brandRejected": "一致率が低い (2/4)",
+        "genre": "スナック菓子"
+      }
+    },
+    {
+      "id": "inokuchi-47221",
+      "sourceId": "45203329",
+      "source": "yahoo",
+      "_review": {
+        "query": "ポテコロン",
+        "topName": "ポテコロン コンソメ味 3g 50個装入 駄菓子 お菓子 おかし 縁日 景品 問屋 お祭り 子供 おもちゃ 祭り 縁日用品 屋台 イベント",
+        "janAgreement": "4/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-47112",
+      "sourceId": "4903013790042",
+      "source": "yahoo",
+      "_review": {
+        "query": "マカロンクッキー",
+        "topName": "500円 送料無料 やおきん マカロンクッキー イチゴ 180g（約27個入）　 メール便 送料無料 500えん 送料無料 ポイント消化 お試し 訳あり",
+        "janAgreement": "3/10",
+        "brandAgreement": "1/10",
+        "brandRaw": "わらいみらい",
+        "brandRejected": "一致率が低い (1/10)",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-46630",
+      "sourceId": "10211038",
+      "source": "yahoo",
+      "_review": {
+        "query": "東京ニコニコラムネ",
+        "topName": "東京ニコニコラムネ製菓本舗　ニコニコラムネ　30包入　駄菓子ラムネ",
+        "janAgreement": "1/1",
+        "brandAgreement": "0/1",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-46453",
+      "sourceId": "4537988361312",
+      "source": "yahoo",
+      "_review": {
+        "query": "フルーツポップ",
+        "topName": "日傘 完全遮光 折りたたみ傘 折り畳み 晴雨兼用 パペットスンスン × Wpc. 遮光日傘 フルーツ／ポップコーン／チーズ レディース",
+        "janAgreement": "2/10",
+        "brandAgreement": "4/10",
+        "brandRaw": "Wpc.",
+        "brandRejected": "商品ブランド名でありメーカーではない",
+        "genre": "レディース晴雨兼用傘"
+      }
+    },
+    {
+      "id": "inokuchi-46451",
+      "sourceId": "4903013090494",
+      "source": "yahoo",
+      "_review": {
+        "query": "うま辛パンチみそラーメン",
+        "topName": "うま辛パンチみそラーメン　35ｇ　30個入　１ケース　(株)やおきん　【本州・四国・九州への発送は送料無料】",
+        "janAgreement": "3/7",
+        "brandAgreement": "3/7",
+        "brandRaw": "カップヌードル",
+        "brandRejected": "商品ブランド名でありメーカーではない",
+        "genre": "ラーメン"
+      }
+    },
+    {
+      "id": "inokuchi-46303",
+      "source": "yahoo",
+      "_review": {
+        "query": "ポット入りフラワーヨーグル",
+        "topName": null,
+        "janAgreement": "0/0",
+        "brandAgreement": "0/0",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": null
+      }
+    },
+    {
+      "id": "inokuchi-46195",
+      "sourceId": "4903013246556",
+      "source": "yahoo",
+      "_review": {
+        "query": "ポリッキー",
+        "topName": "やおきん ポリッキー 24個装入 駄菓子 お菓子 おかし 縁日 景品 問屋 お祭り 子供 おもちゃ 祭り 縁日用品 屋台 イベント",
+        "janAgreement": "4/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "スナック菓子"
+      }
+    },
+    {
+      "id": "inokuchi-19342",
+      "maker": "よっちゃん",
+      "sourceId": "4903041018132",
+      "source": "yahoo",
+      "_review": {
+        "query": "カットよっちゃんいか",
+        "topName": "送料無料 よっちゃん カットよっちゃん 20袋 よっちゃんイカ 酢いか 珍味 駄菓子 おつまみ お菓子 まとめ買い 大容量 ポイント消化 爆買",
+        "janAgreement": "6/10",
+        "brandAgreement": "8/10",
+        "brandRaw": "よっちゃん",
+        "brandRejected": null,
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-32859",
+      "maker": "よっちゃん",
+      "sourceId": "4903041201206",
+      "source": "yahoo",
+      "_review": {
+        "query": "タラタラしてんじゃねーよ",
+        "topName": "タラタラしてんじゃねーよ 10g × 20袋 よっちゃん タラタラしてんじゃね〜よ 甘酢 スルメ スルメシート 三杯酢 晩酌 味 値段",
+        "janAgreement": "4/10",
+        "brandAgreement": "5/10",
+        "brandRaw": "よっちゃん",
+        "brandRejected": null,
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18847",
+      "maker": "ヤガイ",
+      "sourceId": "4903020005894",
+      "source": "yahoo",
+      "_review": {
+        "query": "おやつカルパス",
+        "topName": "ヤガイ おやつカルパス 30本 60本 90本 選べる 個包装 駄菓子 おつまみ お菓子 まとめ買い 送料無料 駄菓子 お試し ポイント消化 大人買い 爆買",
+        "janAgreement": "4/10",
+        "brandAgreement": "8/10",
+        "brandRaw": "ヤガイ",
+        "brandRejected": null,
+        "genre": "肉のおつまみ珍味"
+      }
+    },
+    {
+      "id": "inokuchi-46024",
+      "sourceId": "4903013431525",
+      "source": "yahoo",
+      "_review": {
+        "query": "セブンスティック",
+        "topName": "セブンスティック チョコクリーム １２入　駄菓子 子供会 景品 お祭り くじ引き 縁日",
+        "janAgreement": "6/10",
+        "brandAgreement": "1/10",
+        "brandRaw": "有楽製菓",
+        "brandRejected": "一致率が低い (1/10)",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-45501",
+      "source": "yahoo",
+      "_review": {
+        "query": "推しの子フーセンガム 当り付",
+        "topName": null,
+        "janAgreement": "0/0",
+        "brandAgreement": "0/0",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": null
+      }
+    },
+    {
+      "id": "inokuchi-45410",
+      "sourceId": "4904052011358",
+      "source": "yahoo",
+      "_review": {
+        "query": "中村製菓 ポテトフライ",
+        "topName": "【中村製菓】30円　中村のポテトフライ（20袋入）　　｛大人買い　駄菓子屋　景品　子供会　おやつ　つかみどり　業務用　小袋　スナック菓子｝",
+        "janAgreement": "2/10",
+        "brandAgreement": "1/10",
+        "brandRaw": "中村製菓",
+        "brandRejected": "一致率が低い (1/10)",
+        "genre": "ガム"
+      }
+    },
+    {
+      "id": "inokuchi-45231",
+      "maker": "共親製菓",
+      "sourceId": "4971646010554",
+      "source": "yahoo",
+      "_review": {
+        "query": "キャンディーボックス",
+        "topName": "共親製菓 キャンディーボックスＮ 24ｇ×15個",
+        "janAgreement": "4/10",
+        "brandAgreement": "3/10",
+        "brandRaw": "共親製菓",
+        "brandRejected": null,
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-42865",
+      "sourceId": "4903013274788",
+      "source": "yahoo",
+      "_review": {
+        "query": "うまい棒 スパイシービーフカレー味",
+        "topName": "うまい棒 スパイシービーフカレー 30本入り",
+        "janAgreement": "2/4",
+        "brandAgreement": "1/4",
+        "brandRaw": "うまい棒",
+        "brandRejected": "一致率が低い (1/4)",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18401",
+      "maker": "カルビー",
+      "sourceId": "49870312",
+      "source": "yahoo",
+      "_review": {
+        "query": "餅太郎・塩",
+        "topName": "（や）菓道 餅太郎 塩 30入",
+        "janAgreement": "4/10",
+        "brandAgreement": "4/10",
+        "brandRaw": "カルビー",
+        "brandRejected": null,
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-19550",
+      "sourceId": "45132872",
+      "source": "yahoo",
+      "_review": {
+        "query": "うまい棒 牛タン塩味",
+        "topName": "うまい棒 牛タン塩味（30個入）やおきん 駄菓子 お菓子 スナック菓子 景品 牛タン",
+        "janAgreement": "3/10",
+        "brandAgreement": "9/10",
+        "brandRaw": "うまい棒",
+        "brandRejected": "商品ブランド名でありメーカーではない",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-35219",
+      "sourceId": "49415780",
+      "source": "yahoo",
+      "_review": {
+        "query": "うまい棒 のり塩味",
+        "topName": "うまい棒 15種類の中から入る！1200本セット（各種30本）届いてからのお楽しみ  駄菓子 詰め合わせ 子供 つかみどり イベント お祭り 景品 送料無料",
+        "janAgreement": "3/10",
+        "brandAgreement": "9/10",
+        "brandRaw": "うまい棒",
+        "brandRejected": "商品ブランド名でありメーカーではない",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-44770",
+      "sourceId": "4903013799946",
+      "source": "yahoo",
+      "_review": {
+        "query": "どうぶつマシュマロ",
+        "topName": "どうぶつマシュマロ １２入(やおきん）",
+        "janAgreement": "9/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "マシュマロ、ギモーブ"
+      }
+    },
+    {
+      "id": "inokuchi-44767",
+      "sourceId": "4962679655294",
+      "source": "yahoo",
+      "_review": {
+        "query": "のむのむゼリー パイン味",
+        "topName": "のむのむゼリー　パイン味　60ｇ入×30個　1BOX　(株)タクマ食品　【原産国：中国】",
+        "janAgreement": "2/2",
+        "brandAgreement": "0/2",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "ゼリー"
+      }
+    },
+    {
+      "id": "inokuchi-39932",
+      "source": "yahoo",
+      "_review": {
+        "query": "のむのむゼリー 各種",
+        "topName": null,
+        "janAgreement": "0/0",
+        "brandAgreement": "0/0",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": null
+      }
+    },
+    {
+      "id": "inokuchi-44678",
+      "sourceId": "4971749111141",
+      "source": "yahoo",
+      "_review": {
+        "query": "カステラドーナツ太郎",
+        "topName": "カステラドーナツ太郎 ２０入　駄菓子 子供会 景品 お祭り くじ引き 縁日",
+        "janAgreement": "4/9",
+        "brandAgreement": "0/9",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-44675",
+      "maker": "東京拉麺",
+      "sourceId": "4906871022249",
+      "source": "yahoo",
+      "_review": {
+        "query": "うどん屋しんちゃん",
+        "topName": "【駄菓子のまとめ買い・ラーメン系の駄菓子】 東京拉麺 うどん屋しんちゃんうどん 30袋入り",
+        "janAgreement": "4/6",
+        "brandAgreement": "6/6",
+        "brandRaw": "東京拉麺",
+        "brandRejected": null,
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-44592",
+      "maker": "Trolli",
+      "sourceId": "8437000482093",
+      "source": "yahoo",
+      "_review": {
+        "query": "サワーコーラグミ",
+        "topName": "Trolli トローリ グミ 15種類から4つ選べるお試しセット 輸入菓子",
+        "janAgreement": "3/10",
+        "brandAgreement": "3/10",
+        "brandRaw": "Trolli",
+        "brandRejected": null,
+        "genre": "グミ、ジェリービーンズ"
+      }
+    },
+    {
+      "id": "inokuchi-44590",
+      "sourceId": "4903013247317",
+      "source": "yahoo",
+      "_review": {
+        "query": "グレープソーダグミ",
+        "topName": "グレープグミ 1個10g×60袋 NEWタイプ やおきん グレープソーダグミ",
+        "janAgreement": "3/10",
+        "brandAgreement": "2/10",
+        "brandRaw": "Kanro",
+        "brandRejected": "一致率が低い (2/10)",
+        "genre": "グミ、ジェリービーンズ"
+      }
+    },
+    {
+      "id": "inokuchi-44113",
+      "sourceId": "4903013060091",
+      "source": "yahoo",
+      "_review": {
+        "query": "やおきん にんじん",
+        "topName": "やおきん でかにんじん 55g×20袋入｜ 送料無料",
+        "janAgreement": "7/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-43853",
+      "maker": "不二家",
+      "sourceId": "49755190",
+      "source": "yahoo",
+      "_review": {
+        "query": "アンパンマン ペロペロキャンディ",
+        "topName": "メール便・送料無料　不二家 アンパンマンペロペロキャンディ 25本",
+        "janAgreement": "8/10",
+        "brandAgreement": "9/10",
+        "brandRaw": "不二家",
+        "brandRejected": null,
+        "genre": "飴、ソフトキャンディ"
+      }
+    },
+    {
+      "id": "inokuchi-43273",
+      "sourceId": "4971749112063",
+      "source": "yahoo",
+      "_review": {
+        "query": "ハニーバター太郎",
+        "topName": "ハニー バター 太郎 30個装入 駄菓子 お菓子 おかし 縁日 景品 問屋 お祭り 子供 おもちゃ 祭り 縁日用品 屋台 イベント",
+        "janAgreement": "5/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "スナック菓子"
+      }
+    },
+    {
+      "id": "inokuchi-43153",
+      "sourceId": "4906763153600",
+      "source": "yahoo",
+      "_review": {
+        "query": "にこにこにっこり わたがし 佐藤製菓",
+        "topName": "にこにこにっこりわたがし １０入　駄菓子 子供会 景品 お祭り くじ引き 縁日",
+        "janAgreement": "3/5",
+        "brandAgreement": "0/5",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-42585",
+      "sourceId": "4902744031844",
+      "source": "yahoo",
+      "_review": {
+        "query": "ガブリチュウ",
+        "topName": "ガブリチュウ 4種セット 各10本 計40本 グレープ味 ラムネ味 コーラ味 ホワイトソーダ味 ソフトキャンディ 駄菓子 お菓子 詰め合わせ まとめ買い 子ども会",
+        "janAgreement": "2/10",
+        "brandAgreement": "2/10",
+        "brandRaw": "ガブリチュウ",
+        "brandRejected": "一致率が低い (2/10)",
+        "genre": "ガム"
+      }
+    },
+    {
+      "id": "inokuchi-42136",
+      "maker": "BANDAI",
+      "sourceId": "4570117913730",
+      "source": "yahoo",
+      "_review": {
+        "query": "すみっコぐらし つりグミ",
+        "topName": "バンダイ すみっコぐらし つりグミ 30個入り クリスマス パーティー プレゼント ギフト　個包装 シェア 景品 グレープ味 オレンジ味 セール ポイント利用",
+        "janAgreement": "5/10",
+        "brandAgreement": "9/10",
+        "brandRaw": "BANDAI",
+        "brandRejected": null,
+        "genre": "グミ、ジェリービーンズ"
+      }
+    },
+    {
+      "id": "inokuchi-40722",
+      "maker": "BANDAI",
+      "sourceId": "4549660424024",
+      "source": "yahoo",
+      "_review": {
+        "query": "魚ギョッと釣りグミ",
+        "topName": "バンダイ 魚ギョッと 釣りグミ 14g×10袋入×(2ケース)｜ 送料無料",
+        "janAgreement": "8/10",
+        "brandAgreement": "7/10",
+        "brandRaw": "BANDAI",
+        "brandRejected": null,
+        "genre": "グミ、ジェリービーンズ"
+      }
+    },
+    {
+      "id": "inokuchi-42079",
+      "maker": "マルタ",
+      "sourceId": "4977831003134",
+      "source": "yahoo",
+      "_review": {
+        "query": "花コンペイ糖",
+        "topName": "金平糖 花こんぺいとう コンペイトウ 100袋セット 小分け ギフト プチギフト コンペイ糖 マルタ食品",
+        "janAgreement": "4/10",
+        "brandAgreement": "6/10",
+        "brandRaw": "マルタ(食品)",
+        "brandRejected": null,
+        "genre": "金平糖(こんぺいとう)"
+      }
+    },
+    {
+      "id": "inokuchi-18429",
+      "sourceId": "4971749110359",
+      "source": "yahoo",
+      "_review": {
+        "query": "もろこし輪太郎",
+        "topName": "菓道 もろこし輪太郎 (30×5)150入 (あすつく 優良配送) (駄菓子 スナック まとめ買い) (Y12) 本州一部送料無料",
+        "janAgreement": "6/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18428",
+      "sourceId": "4971749110304",
+      "source": "yahoo",
+      "_review": {
+        "query": "キャベツ太郎",
+        "topName": "菓道　キャベツ太郎　14g　1セット（30袋入）",
+        "janAgreement": "6/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18430",
+      "sourceId": "4971749110298",
+      "source": "yahoo",
+      "_review": {
+        "query": "玉葱さん太郎",
+        "topName": "菓道 玉葱さん 太郎 (90g) 菓子",
+        "janAgreement": "4/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18431",
+      "sourceId": "4542202659854",
+      "source": "yahoo",
+      "_review": {
+        "query": "アメリカンフライドポテト",
+        "topName": "- ドリームズ 公式 - Sonny Angel スナック シリーズ アソートボックス(12個入) Sonny Angel Snack Series AssortmentBox",
+        "janAgreement": "2/10",
+        "brandAgreement": "2/10",
+        "brandRaw": "Sonny Angel",
+        "brandRejected": "一致率が低い (2/10)",
+        "genre": "その他インテリア雑貨、小物"
+      }
+    },
+    {
+      "id": "inokuchi-18405",
+      "sourceId": "4971749110410",
+      "source": "yahoo",
+      "_review": {
+        "query": "ラーメン屋さん太郎",
+        "topName": "やきそば屋さん太郎 30個入 菓道 やきそば太郎 焼きそばやさん太郎　スナック菓子　昔ながら　らーめん　どーん　焼きそば",
+        "janAgreement": "4/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18406",
+      "sourceId": "4971749110403",
+      "source": "yahoo",
+      "_review": {
+        "query": "やきそば屋さん太郎",
+        "topName": "やきそば屋さん太郎 30個入 菓道 やきそば太郎 焼きそばやさん太郎　スナック菓子　昔ながら　らーめん　どーん　焼きそば",
+        "janAgreement": "6/10",
+        "brandAgreement": "1/10",
+        "brandRaw": "有楽製菓",
+        "brandRejected": "一致率が低い (1/10)",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-39792",
+      "maker": "ORIHIRO",
+      "sourceId": "4571157258096",
+      "source": "yahoo",
+      "_review": {
+        "query": "こんにゃくゼリー",
+        "topName": "ゼリー こんにゃくゼリー 福袋 オリヒロ ぷるんと 蒟蒻ゼリー 6種 48本セット orihiro 箱売り",
+        "janAgreement": "2/10",
+        "brandAgreement": "8/10",
+        "brandRaw": "ORIHIRO",
+        "brandRejected": null,
+        "genre": "ゼリー"
+      }
+    },
+    {
+      "id": "inokuchi-39283",
+      "sourceId": "49415780",
+      "source": "yahoo",
+      "_review": {
+        "query": "クリスマスうまい棒チョコレート",
+        "topName": "駄菓子 詰め合わせ ミニ駄菓子バッグ",
+        "janAgreement": "2/10",
+        "brandAgreement": "2/10",
+        "brandRaw": "うまい棒",
+        "brandRejected": "一致率が低い (2/10)",
+        "genre": "お菓子アソート、詰め合わせ"
+      }
+    },
+    {
+      "id": "inokuchi-39019",
+      "sourceId": "4903013246327",
+      "source": "yahoo",
+      "_review": {
+        "query": "ロールキャンディ",
+        "topName": "ロールキャンディ　コーラ味　24袋　やおきん　ストロベリー　韓国　asmr　青リンゴ　美味しい　お菓子　海外　やおきん",
+        "janAgreement": "3/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "ガム"
+      }
+    },
+    {
+      "id": "inokuchi-38662",
+      "sourceId": "4903013431730",
+      "source": "yahoo",
+      "_review": {
+        "query": "ロングチュー",
+        "topName": "ロングチュー 4種 各6本 計24本 コーラ グレープ サイダー オレンジ やおきん",
+        "janAgreement": "4/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "飴、ソフトキャンディ"
+      }
+    },
+    {
+      "id": "inokuchi-19095",
+      "sourceId": "4963298333778",
+      "source": "yahoo",
+      "_review": {
+        "query": "ビンラムネ（モナカ）",
+        "topName": "ビンラムネ 岡田商店 (20個入) 駄菓子 もなか 業務用 まとめ買い  ラムネ系のお菓子",
+        "janAgreement": "1/3",
+        "brandAgreement": "0/3",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18432",
+      "sourceId": "4971749110373",
+      "source": "yahoo",
+      "_review": {
+        "query": "どんどん焼あられ",
+        "topName": "どんどん焼 ソース味 12g×15袋 菓道 太鼓 ドンドン スナック菓子 醤油 ロングセラー ソース 餅菓子 おかき あられ",
+        "janAgreement": "5/10",
+        "brandAgreement": "2/10",
+        "brandRaw": "リスカ",
+        "brandRejected": "一致率が低い (2/10)",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-19299",
+      "sourceId": "4903047950740",
+      "source": "yahoo",
+      "_review": {
+        "query": "味カレー大和製菓",
+        "topName": "大和製菓 味カレー 55g×15袋",
+        "janAgreement": "4/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-24317",
+      "maker": "東豊製菓",
+      "sourceId": "4901984088267",
+      "source": "yahoo",
+      "_review": {
+        "query": "東豊ポテトフライ チキン味",
+        "topName": "【Ｋ】東豊 ポテトフライ フライドチキン味 11g ４０個（２ケース） 宅配80サイズ 駄菓子 ロングセラー おやつ スナック菓子 大人買い チキン",
+        "janAgreement": "6/10",
+        "brandAgreement": "6/10",
+        "brandRaw": "東豊製菓",
+        "brandRejected": null,
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-36594",
+      "maker": "東豊製菓",
+      "sourceId": "4901984088281",
+      "source": "yahoo",
+      "_review": {
+        "query": "東豊ポテトフライ カルビ焼きの味",
+        "topName": "箱売り ポテトフライ ３種 各４枚×20袋入 じゃが塩バター カルビ焼きの味 フライドチキン味  お菓子 駄菓子 東豊製菓 駄菓子 大人買い 大量",
+        "janAgreement": "2/10",
+        "brandAgreement": "9/10",
+        "brandRaw": "東豊製菓",
+        "brandRejected": null,
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-36591",
+      "maker": "東豊製菓",
+      "sourceId": "4901984088281",
+      "source": "yahoo",
+      "_review": {
+        "query": "東豊ポテトフライ じゃが塩バター味",
+        "topName": "【Ｋ】東豊 ポテトフライ じゃが塩バター味 11g ４０個（２ケース） 宅配80サイズ 駄菓子 じゃがバター ロングセラー おやつ スナック菓子 大人買い",
+        "janAgreement": "5/10",
+        "brandAgreement": "8/10",
+        "brandRaw": "東豊製菓",
+        "brandRejected": null,
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18504",
+      "sourceId": "49307887",
+      "source": "yahoo",
+      "_review": {
+        "query": "ペペロンチーノ",
+        "topName": "クーポン利用で234.3円/1袋 [3種計21袋]ニップン しそひじきご飯とチキンカツみぞれ煮風 / 2種のグリル＆彩り野菜カレー / オーマイプレミアムペペロンチーノ",
+        "janAgreement": "2/10",
+        "brandAgreement": "3/10",
+        "brandRaw": "nippn",
+        "brandRejected": "商品ブランド名でありメーカーではない",
+        "genre": "その他惣菜、料理"
+      }
+    },
+    {
+      "id": "inokuchi-36988",
+      "sourceId": "4930570146029",
+      "source": "yahoo",
+      "_review": {
+        "query": "ソフトマドロス",
+        "topName": "平野屋のソフトマドロス ２４入　駄菓子 おやつ 子供会 景品 お祭り くじ引き 縁日",
+        "janAgreement": "1/10",
+        "brandAgreement": "1/10",
+        "brandRaw": "日本コロムビア",
+        "brandRejected": "一致率が低い (1/10)",
+        "genre": "邦楽演歌の音楽ソフト"
+      }
+    },
+    {
+      "id": "inokuchi-34423",
+      "sourceId": "4979446010514",
+      "source": "yahoo",
+      "_review": {
+        "query": "梅ジャム タカミ製菓",
+        "topName": "タカミ製菓 梅ジャム 40袋 駄菓子",
+        "janAgreement": "6/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-34367",
+      "sourceId": "4903013247553",
+      "source": "yahoo",
+      "_review": {
+        "query": "焼たら",
+        "topName": "焼たら４gx36袋（やおきん）",
+        "janAgreement": "4/10",
+        "brandAgreement": "1/10",
+        "brandRaw": "江戸屋",
+        "brandRejected": "一致率が低い (1/10)",
+        "genre": "その他おつまみ珍味　スナック"
+      }
+    },
+    {
+      "id": "inokuchi-19229",
+      "source": "yahoo",
+      "_review": {
+        "query": "DXお菓子大当て台紙付き(数字合わせ)",
+        "topName": null,
+        "janAgreement": "0/0",
+        "brandAgreement": "0/0",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": null
+      }
+    },
+    {
+      "id": "inokuchi-19591",
+      "source": "yahoo",
+      "_review": {
+        "query": "お菓子大当て台紙付き(数字合せ)",
+        "topName": null,
+        "janAgreement": "0/0",
+        "brandAgreement": "0/0",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": null
+      }
+    },
+    {
+      "id": "inokuchi-19337",
+      "sourceId": "4902888254888",
+      "source": "yahoo",
+      "_review": {
+        "query": "森永ハイチュウ",
+        "topName": "ハイチュウ アソート ハイチュウ 種類 大容量 ハイチュウアソート キャンディー お菓子 森永製菓 お徳用 344g メール便 ポイント利用 食品 ポイント利用 お菓子",
+        "janAgreement": "4/10",
+        "brandAgreement": "9/10",
+        "brandRaw": "HIーCHEW",
+        "brandRejected": "商品ブランド名でありメーカーではない",
+        "genre": "飴、ソフトキャンディ"
+      }
+    },
+    {
+      "id": "inokuchi-19433",
+      "sourceId": "4902775070171",
+      "source": "yahoo",
+      "_review": {
+        "query": "ブタメン",
+        "topName": "【公式】おやつカンパニー ブタメンとんこつ味 35g×15個(ミニカップ ラーメン 大人買い 即席 夜食 駄菓子 こってりスープ)",
+        "janAgreement": "6/10",
+        "brandAgreement": "6/10",
+        "brandRaw": "ブタメン",
+        "brandRejected": "商品ブランド名でありメーカーではない",
+        "genre": "その他スナック、お菓子、おつまみ"
+      }
+    },
+    {
+      "id": "inokuchi-33782",
+      "sourceId": "4901640030449",
+      "source": "yahoo",
+      "_review": {
+        "query": "手づくりキャンディー",
+        "topName": "フルーツキャンディヤーン 毛糸 150g×2玉 大容量 ネップ入り 極太 並太 かぎ針2.5〜4mm 3号〜7号 編み物 ハンドメイド 手芸糸 パステルカラー モヘア",
+        "janAgreement": "2/10",
+        "brandAgreement": "1/10",
+        "brandRaw": "YANAGIYARN",
+        "brandRejected": "一致率が低い (1/10)",
+        "genre": "飴、ソフトキャンディ"
+      }
+    },
+    {
+      "id": "inokuchi-33775",
+      "sourceId": "4901922100105",
+      "source": "yahoo",
+      "_review": {
+        "query": "うずまきキャンディー",
+        "topName": "大丸本舗 NEWクルクル 43g×10本",
+        "janAgreement": "2/10",
+        "brandAgreement": "2/10",
+        "brandRaw": "大丸本舗",
+        "brandRejected": "一致率が低い (2/10)",
+        "genre": "飴、ソフトキャンディ"
+      }
+    },
+    {
+      "id": "inokuchi-33767",
+      "sourceId": "4573468825813",
+      "source": "yahoo",
+      "_review": {
+        "query": "りんごあめ",
+        "topName": "やおりん　りんご飴　2玉セット　長野県産りんご使用　りんごあめ　林檎飴　レトロ　スイーツ　低カロリー　ギルトフリー　ギフト　プレゼント　誕生日",
+        "janAgreement": "3/10",
+        "brandAgreement": "3/10",
+        "brandRaw": "LITHON",
+        "brandRejected": "商品ブランド名でありメーカーではない",
+        "genre": "電気フライヤー"
+      }
+    },
+    {
+      "id": "inokuchi-32110",
+      "sourceId": "4977381000386",
+      "source": "yahoo",
+      "_review": {
+        "query": "4個入りトンガリ菓子",
+        "topName": "トンガリ菓子 駄菓子 坂製菓 詰め合わせ セット 駄菓子屋 1箱 40個入り 人気 懐かしい モロッコヨーグル 砂糖菓子 箱 大人買い とんがり帽子 アイス コーン 爆買",
+        "janAgreement": "1/4",
+        "brandAgreement": "0/4",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18483",
+      "maker": "宮田製菓",
+      "sourceId": "4977821321491",
+      "source": "yahoo",
+      "_review": {
+        "query": "ヤングドーナツ",
+        "topName": "宮田製菓 ミヤタのヤングドーナツ 4個×20袋",
+        "janAgreement": "5/10",
+        "brandAgreement": "5/10",
+        "brandRaw": "宮田製菓",
+        "brandRejected": null,
+        "genre": "ドーナツ"
+      }
+    },
+    {
+      "id": "inokuchi-19969",
+      "maker": "カクダイ製菓",
+      "sourceId": "49635775",
+      "source": "yahoo",
+      "_review": {
+        "query": "クッピーラムネ",
+        "topName": "クッピーラムネ 詰め合わせ （イチゴ味 ヨーグルト味 レモン味) 約330g（約110袋）シェアパック 大容量 個包装 業務用 ラムネ お菓子 駄菓子 小袋 小分け",
+        "janAgreement": "2/10",
+        "brandAgreement": "7/10",
+        "brandRaw": "カクダイ製菓",
+        "brandRejected": null,
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18463",
+      "sourceId": "4971749110526",
+      "source": "yahoo",
+      "_review": {
+        "query": "ビッグカツとんかつソース味",
+        "topName": "ビッグカツ とんかつソース味 Big Katsu 20枚 菓道 ビックカツ Bigカツ　駄菓子　おつまみ　おやつ　お菓子　プレゼント",
+        "janAgreement": "3/10",
+        "brandAgreement": "1/10",
+        "brandRaw": "スグル食品",
+        "brandRejected": "一致率が低い (1/10)",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18848",
+      "sourceId": "4903013436094",
+      "source": "yahoo",
+      "_review": {
+        "query": "ぐるぐるゼリー",
+        "topName": "ぐるぐるゼリー 24本入 駄菓子 お菓子 おかし 縁日 景品 問屋 お祭り 子供 おもちゃ 祭り 縁日用品 屋台 イベント",
+        "janAgreement": "10/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "ゼリー"
+      }
+    },
+    {
+      "id": "inokuchi-23160",
+      "sourceId": "4903013016074",
+      "source": "yahoo",
+      "_review": {
+        "query": "ふがし（角）",
+        "topName": "やおきん ふ菓子 角 (30×2)60本入 (ふがし 駄菓子 お菓子 おやつ 景品 ばらまき イベント 祭り) (Y80) 本州一部送料無料",
+        "janAgreement": "6/10",
+        "brandAgreement": "1/10",
+        "brandRaw": "La Perruche",
+        "brandRejected": "一致率が低い (1/10)",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-19268",
+      "source": "yahoo",
+      "_review": {
+        "query": "ど〜ん太郎 うどん",
+        "topName": null,
+        "janAgreement": "0/0",
+        "brandAgreement": "0/0",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": null
+      }
+    },
+    {
+      "id": "inokuchi-18409",
+      "sourceId": "4971749110335",
+      "source": "yahoo",
+      "_review": {
+        "query": "蒲焼さん太郎",
+        "topName": "菓道 蒲焼さん太郎 1枚×60袋 太郎さんシリーズ 蒲焼 うなぎ 魚肉 すり身 つまみ おつまみ 珍味 ちんみ 酒 値段 蒲焼さん シリーズ 箱買い カロリー",
+        "janAgreement": "9/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18410",
+      "sourceId": "4971749110342",
+      "source": "yahoo",
+      "_review": {
+        "query": "焼肉さん太郎",
+        "topName": "菓道 焼肉さん太郎 1枚×60袋 太郎さんシリーズ やきにく うなぎ 魚肉 すり身 つまみ おつまみ 珍味 ちんみ",
+        "janAgreement": "7/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18412",
+      "sourceId": "4971749110618",
+      "source": "yahoo",
+      "_review": {
+        "query": "のし梅さん太郎",
+        "topName": "のし梅さん太郎 ×60袋 華道 ダイエット ヘルシー 小腹 美味しい 梅肉 梅 おつまみ 珍味 ちんみ 酒 大人買い",
+        "janAgreement": "7/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-19272",
+      "sourceId": "4971749110984",
+      "source": "yahoo",
+      "_review": {
+        "query": "わさびのり太郎",
+        "topName": "菓道 わさびのり太郎 1枚×60袋 おつまみ 珍味 ちんみ 酒 大人買い イベント 縁日 祭り 子供 大人 懐かしい",
+        "janAgreement": "7/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18411",
+      "sourceId": "4971749110328",
+      "source": "yahoo",
+      "_review": {
+        "query": "酢だこさん太郎",
+        "topName": "酢だこさん太郎 120枚入",
+        "janAgreement": "6/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18458",
+      "maker": "チーリン製菓",
+      "sourceId": "45024405",
+      "source": "yahoo",
+      "_review": {
+        "query": "プチプチうらないチョコ",
+        "topName": "プチプチうらないチョコ玉 18粒×30個入り 占い付きのチョコ駄菓子 チーリン プチプチ占い 　チーリン  占いチョコ 遊べ",
+        "janAgreement": "3/10",
+        "brandAgreement": "4/10",
+        "brandRaw": "チーリン製菓",
+        "brandRejected": null,
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-19181",
+      "sourceId": "4962679104808",
+      "source": "yahoo",
+      "_review": {
+        "query": "月の小石チョコ",
+        "topName": "業務用 月の小石チョコ 400ｇ 送料無料 ポスト投函便  石チョコ チョコレート 訳あり",
+        "janAgreement": "3/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "チョコスナック、チョコバー"
+      }
+    },
+    {
+      "id": "inokuchi-19320",
+      "sourceId": "4903013549503",
+      "source": "yahoo",
+      "_review": {
+        "query": "どらチョコ",
+        "topName": "どらチョコ / チョコっとどらチョコ 20個装入 駄菓子 お菓子 おかし 縁日 景品 問屋 お祭り 子供 おもちゃ 祭り 縁日用品 屋台 イベント",
+        "janAgreement": "7/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-19966",
+      "maker": "meito",
+      "sourceId": "4902757111304",
+      "source": "yahoo",
+      "_review": {
+        "query": "ぷくぷくたい",
+        "topName": "meito ぷくぷくたい チョコ10個",
+        "janAgreement": "5/10",
+        "brandAgreement": "3/10",
+        "brandRaw": "meito",
+        "brandRejected": null,
+        "genre": "チョコスナック、チョコバー"
+      }
+    },
+    {
+      "id": "inokuchi-21426",
+      "source": "yahoo",
+      "_review": {
+        "query": "ドリコ 棒きなこ飴連続当て",
+        "topName": null,
+        "janAgreement": "0/0",
+        "brandAgreement": "0/0",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": null
+      }
+    },
+    {
+      "id": "inokuchi-39984",
+      "source": "yahoo",
+      "_review": {
+        "query": "鈴ノ屋 棒きなこ飴 連続当て",
+        "topName": null,
+        "janAgreement": "0/0",
+        "brandAgreement": "0/0",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": null
+      }
+    },
+    {
+      "id": "inokuchi-18841",
+      "maker": "オリオン",
+      "sourceId": "49598742",
+      "source": "yahoo",
+      "_review": {
+        "query": "オリオン ミニ サワー",
+        "topName": "オリオン (Orion) 7種 35個 バラエティ ラムネ 缶 ミニコーラ ミニサワー ミニフレッシュ ミニピーチ ミニグレープ",
+        "janAgreement": "6/10",
+        "brandAgreement": "7/10",
+        "brandRaw": "オリオン（お菓子）",
+        "brandRejected": null,
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18842",
+      "maker": "オリオン",
+      "sourceId": "49598636",
+      "source": "yahoo",
+      "_review": {
+        "query": "オリオン ミニ コーラ",
+        "topName": "オリオン ミニラムネ コーラ ３０入　駄菓子 子供会 景品 お祭り くじ引き 縁日",
+        "janAgreement": "2/10",
+        "brandAgreement": "7/10",
+        "brandRaw": "オリオン（お菓子）",
+        "brandRejected": null,
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-19304",
+      "sourceId": "4902555111407",
+      "source": "yahoo",
+      "_review": {
+        "query": "不二家ミルキー",
+        "topName": "LINE新規登録で最大1000円オフ ホエイプロテイン 送料無料 ペコちゃん ミルキー風味 1袋 900g ( WPC ホエイ ビーレジェンド 国内製造 )",
+        "janAgreement": "2/10",
+        "brandAgreement": "4/10",
+        "brandRaw": "ミルキー（不二家）",
+        "brandRejected": "商品ブランド名でありメーカーではない",
+        "genre": "飴、ソフトキャンディ"
+      }
+    },
+    {
+      "id": "inokuchi-19295",
+      "sourceId": "4901361001315",
+      "source": "yahoo",
+      "_review": {
+        "query": "ポケモンガム(当り付き）",
+        "topName": "コリス ポケモンガム 55入り×1BOX",
+        "janAgreement": "1/1",
+        "brandAgreement": "0/1",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18501",
+      "sourceId": "4903013436018",
+      "source": "yahoo",
+      "_review": {
+        "query": "カップ入りねり水飴",
+        "topName": "カップ入り水飴24個入り",
+        "janAgreement": "2/5",
+        "brandAgreement": "0/5",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18480",
+      "maker": "オリオン",
+      "sourceId": "49151558",
+      "source": "yahoo",
+      "_review": {
+        "query": "ココアシガレット",
+        "topName": "オリオン ココアシガレット (6本×10箱入り)×3セット",
+        "janAgreement": "3/10",
+        "brandAgreement": "4/10",
+        "brandRaw": "オリオン（お菓子）",
+        "brandRejected": null,
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-19270",
+      "source": "yahoo",
+      "_review": {
+        "query": "オリオンシガレット各種",
+        "topName": null,
+        "janAgreement": "0/0",
+        "brandAgreement": "0/0",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": null
+      }
+    },
+    {
+      "id": "inokuchi-18388",
+      "sourceId": "49480832",
+      "source": "yahoo",
+      "_review": {
+        "query": "うまい棒 チーズ味",
+        "topName": "やおきん うまい棒 チーズ味 6g×30袋",
+        "janAgreement": "6/10",
+        "brandAgreement": "5/10",
+        "brandRaw": "うまい棒",
+        "brandRejected": "商品ブランド名でありメーカーではない",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-28100",
+      "sourceId": "49415780",
+      "source": "yahoo",
+      "_review": {
+        "query": "うまい棒コーンポタージュ",
+        "topName": "【1袋30本入】うまい棒 コーンポタージュ味 セット お菓子 駄菓子 お菓子 おやつ 大容量 お徳用パック まとめ買い イベント パーティー",
+        "janAgreement": "8/10",
+        "brandAgreement": "4/10",
+        "brandRaw": "うまい棒",
+        "brandRejected": "商品ブランド名でありメーカーではない",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18387",
+      "sourceId": "49480856",
+      "source": "yahoo",
+      "_review": {
+        "query": "うまい棒 めんたい味",
+        "topName": "やおきん　うまい棒　めんたい　1セット（30本入）",
+        "janAgreement": "9/10",
+        "brandAgreement": "5/10",
+        "brandRaw": "うまい棒",
+        "brandRejected": "商品ブランド名でありメーカーではない",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18394",
+      "sourceId": "49480795",
+      "source": "yahoo",
+      "_review": {
+        "query": "うまい棒 たこ焼味",
+        "topName": "やおきん うまい棒 たこ焼味 6g×30袋",
+        "janAgreement": "4/10",
+        "brandAgreement": "6/10",
+        "brandRaw": "うまい棒",
+        "brandRejected": "商品ブランド名でありメーカーではない",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-19972",
+      "sourceId": "49415735",
+      "source": "yahoo",
+      "_review": {
+        "query": "うまい棒 シュガーラスク味",
+        "topName": "やおきん うまい棒 シュガーラスク味 6g×30袋",
+        "janAgreement": "4/10",
+        "brandAgreement": "7/10",
+        "brandRaw": "うまい棒",
+        "brandRejected": "商品ブランド名でありメーカーではない",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18451",
+      "maker": "マルカワ",
+      "sourceId": "49438185",
+      "source": "yahoo",
+      "_review": {
+        "query": "マルカワ マーブルガム当たり付",
+        "topName": "ソーダマーブルガム【定価20円】　（当たり付）　6粒入×33個+あたり分3個入　丸川製菓（株）",
+        "janAgreement": "2/6",
+        "brandAgreement": "3/6",
+        "brandRaw": "マルカワ",
+        "brandRejected": null,
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-21110",
+      "sourceId": "49415780",
+      "source": "yahoo",
+      "_review": {
+        "query": "うまい棒 やきとり味",
+        "topName": "うまい棒 15種類の中から入る！1200本セット（各種30本）届いてからのお楽しみ  駄菓子 詰め合わせ 子供 つかみどり イベント お祭り 景品 送料無料",
+        "janAgreement": "3/10",
+        "brandAgreement": "9/10",
+        "brandRaw": "うまい棒",
+        "brandRejected": "商品ブランド名でありメーカーではない",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-19959",
+      "sourceId": "49480771",
+      "source": "yahoo",
+      "_review": {
+        "query": "うまい棒 なっとう味",
+        "topName": "うまい棒　なっとう味　30本入",
+        "janAgreement": "6/10",
+        "brandAgreement": "5/10",
+        "brandRaw": "うまい棒",
+        "brandRejected": "商品ブランド名でありメーカーではない",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-19332",
+      "sourceId": "4984014010193",
+      "source": "yahoo",
+      "_review": {
+        "query": "コーラガム(当り付き）",
+        "topName": "当り付きの駄菓子 マルカワ コーラガム(55個＋当たり5個入)",
+        "janAgreement": "1/2",
+        "brandAgreement": "1/2",
+        "brandRaw": "マルカワ",
+        "brandRejected": "一致率が低い (1/2)",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18418",
+      "maker": "マルカワ",
+      "sourceId": "49459319",
+      "source": "yahoo",
+      "_review": {
+        "query": "フィリックスガム当たり付",
+        "topName": "フィリックスガム（当たり付）　５５個+あたり分５個入　丸川製菓（株）",
+        "janAgreement": "4/6",
+        "brandAgreement": "4/6",
+        "brandRaw": "マルカワ",
+        "brandRejected": null,
+        "genre": "ガム"
+      }
+    },
+    {
+      "id": "inokuchi-27358",
+      "sourceId": "4903013431686",
+      "source": "yahoo",
+      "_review": {
+        "query": "ぱんだろ〜クッキー",
+        "topName": "ぱんだろ〜クッキー　1枚入ｘ24個　（株）やおきん　【原産国：タイ】",
+        "janAgreement": "1/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "お菓子アソート、詰め合わせ"
+      }
+    },
+    {
+      "id": "inokuchi-18439",
+      "source": "yahoo",
+      "_review": {
+        "query": "やおきん きなこ棒飴箱入",
+        "topName": null,
+        "janAgreement": "0/0",
+        "brandAgreement": "0/0",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": null
+      }
+    },
+    {
+      "id": "inokuchi-19142",
+      "sourceId": "4903013080303",
+      "source": "yahoo",
+      "_review": {
+        "query": "中村製菓 なつかしカレー味せんべい",
+        "topName": "なつかしカレー味 ２０入　駄菓子 子供会 景品 お祭り くじ引き 縁日",
+        "janAgreement": "1/1",
+        "brandAgreement": "0/1",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "スナック菓子"
+      }
+    },
+    {
+      "id": "inokuchi-29685",
+      "sourceId": "4902797237095",
+      "source": "yahoo",
+      "_review": {
+        "query": "パチパチパニック",
+        "topName": "パチパチパニック5ｇ 3種×各10袋＝合計30袋 明治産業 アレンジ オレンジ 箱買い 明治産業 asmr 駄菓子 コーラ味 ソーダ味",
+        "janAgreement": "2/10",
+        "brandAgreement": "2/10",
+        "brandRaw": "atrion",
+        "brandRejected": "一致率が低い (2/10)",
+        "genre": "飴、ソフトキャンディ"
+      }
+    },
+    {
+      "id": "inokuchi-18426",
+      "maker": "Pine",
+      "sourceId": "49751970",
+      "source": "yahoo",
+      "_review": {
+        "query": "どんぐりガム",
+        "topName": "パイン どんぐりガム コーラ味 100個 PINE コーラキャンディ フーセンガム 駄菓子 イベント 景品 販促 つかみ取り",
+        "janAgreement": "2/10",
+        "brandAgreement": "6/10",
+        "brandRaw": "Pine（食品）",
+        "brandRejected": null,
+        "genre": "ガム"
+      }
+    },
+    {
+      "id": "inokuchi-18440",
+      "sourceId": "4902762771739",
+      "source": "yahoo",
+      "_review": {
+        "query": "あんずボー",
+        "topName": "自然あんずボー 5本入×20袋 港常｜あんず風味 フルーティな香り 昔懐かしい おやつ向け",
+        "janAgreement": "3/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-19143",
+      "sourceId": "4971646010431",
+      "source": "yahoo",
+      "_review": {
+        "query": "フルーツの森",
+        "topName": "共親製菓 フルーツの森Ａ 20ｇ×24個",
+        "janAgreement": "3/10",
+        "brandAgreement": "2/10",
+        "brandRaw": "共親製菓",
+        "brandRejected": "一致率が低い (2/10)",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18479",
+      "sourceId": "4906763121005",
+      "source": "yahoo",
+      "_review": {
+        "query": "ソースせんべい佐藤製菓",
+        "topName": "佐藤製菓 花丸せんべい 業務用 〈 約 200枚入 × 4袋セット (約 800枚入) 〉 駄菓子 縁日 大容量  ミルクせんべい 祭り セット",
+        "janAgreement": "2/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18390",
+      "sourceId": "49480818",
+      "source": "yahoo",
+      "_review": {
+        "query": "うまい棒 とんかつソース味",
+        "topName": "やおきん うまい棒 とんかつソース味 5g×30袋",
+        "janAgreement": "6/10",
+        "brandAgreement": "6/10",
+        "brandRaw": "うまい棒",
+        "brandRejected": "商品ブランド名でありメーカーではない",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18435",
+      "sourceId": "4971749110465",
+      "source": "yahoo",
+      "_review": {
+        "query": "甘いか太郎 キムチ味",
+        "topName": "甘いか太郎　キムチ味　　30枚入　(株)菓道",
+        "janAgreement": "7/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18916",
+      "source": "yahoo",
+      "_review": {
+        "query": "ヤッターめん 金券くじ当て",
+        "topName": "ジャック ヤッターめん 当たり付 ((100個+あたり)×5箱) 駄菓子 まとめ買い 箱買い 大量 大容量 ラーメン お菓子 2606",
+        "janAgreement": "0/2",
+        "brandAgreement": "0/2",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-20067",
+      "sourceId": "4573210640183",
+      "source": "yahoo",
+      "_review": {
+        "query": "ポップコーン塩味",
+        "topName": "バターソルトポップコーン 100人材料セット　GOLDMEDAL",
+        "janAgreement": "2/10",
+        "brandAgreement": "1/10",
+        "brandRaw": "KIRKLAND signature",
+        "brandRejected": "一致率が低い (1/10)",
+        "genre": "スナック菓子"
+      }
+    },
+    {
+      "id": "inokuchi-28026",
+      "sourceId": "4903013241247",
+      "source": "yahoo",
+      "_review": {
+        "query": "ダイヤモンドリングキャンディ",
+        "topName": "ダイヤモンドリングキャンディ 24個装入 駄菓子 お菓子 おかし 縁日 景品 問屋 お祭り 子供 おもちゃ 祭り 縁日用品 屋台 イベント",
+        "janAgreement": "6/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "飴、ソフトキャンディ"
+      }
+    },
+    {
+      "id": "inokuchi-18423",
+      "sourceId": "49630411",
+      "source": "yahoo",
+      "_review": {
+        "query": "あべっ子ラムネアソート",
+        "topName": "あべっこラムネ　50個入【アベッコラムネ　アベッ子ラムネ　あべっ子ラムネ　くだものラムネ　果物ラムネ　駄菓子】",
+        "janAgreement": "2/10",
+        "brandAgreement": "1/10",
+        "brandRaw": "カントリーマアム",
+        "brandRejected": "一致率が低い (1/10)",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18498",
+      "sourceId": "4970450115578",
+      "source": "yahoo",
+      "_review": {
+        "query": "さくら大根",
+        "topName": "遠藤食品 さくら大根 「さくら大根2枚1組×10袋セット 計20枚」”甘酢漬”に調味し包装した駄菓子の”定番”］エンドー",
+        "janAgreement": "4/10",
+        "brandAgreement": "2/10",
+        "brandRaw": "エンドー",
+        "brandRejected": "一致率が低い (2/10)",
+        "genre": "漬物"
+      }
+    },
+    {
+      "id": "inokuchi-18436",
+      "sourceId": "4902762721833",
+      "source": "yahoo",
+      "_review": {
+        "query": "みつあんず",
+        "topName": "ミナツネ 港常 ミナツネのおいしい みつあんず 25個",
+        "janAgreement": "6/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18473",
+      "sourceId": "4904052011389",
+      "source": "yahoo",
+      "_review": {
+        "query": "中村製菓 チーズあられ",
+        "topName": "200円 中村 100gチーズあられ [1箱 10個入]",
+        "janAgreement": "3/10",
+        "brandAgreement": "1/10",
+        "brandRaw": "中村製菓",
+        "brandRejected": "一致率が低い (1/10)",
+        "genre": "スナック菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18500",
+      "sourceId": "4902762850137",
+      "source": "yahoo",
+      "_review": {
+        "query": "うぐいすあんず",
+        "topName": "港常 うぐいすあんず 28g×12個　あんず",
+        "janAgreement": "3/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "フルーツ あんず、ネクタリン"
+      }
+    },
+    {
+      "id": "inokuchi-19599",
+      "sourceId": "4970765131119",
+      "source": "yahoo",
+      "_review": {
+        "query": "チーズおやつ",
+        "topName": "【10％offクーポン配布中】扇屋食品 チーズおやつ 50個 カマンベール入り 酒の肴 個包装 お菓子 チーズ ちーず",
+        "janAgreement": "2/10",
+        "brandAgreement": "1/10",
+        "brandRaw": "扇屋食品",
+        "brandRejected": "一致率が低い (1/10)",
+        "genre": "チーズのおつまみ珍味"
+      }
+    },
+    {
+      "id": "inokuchi-18437",
+      "sourceId": "4906763121005",
+      "source": "yahoo",
+      "_review": {
+        "query": "ミルクせんべい佐藤製菓",
+        "topName": "佐藤製菓 ミルクせんべい 〈 8g 〉 30個 駄菓子 せんべい (半世紀 以上愛されている 定番 駄菓子) まとめ買い 個包装 ミルクせん",
+        "janAgreement": "2/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-29060",
+      "sourceId": "4903013431679",
+      "source": "yahoo",
+      "_review": {
+        "query": "メロンぱんだろ〜クッキー",
+        "topName": "メロンぱんだろ〜クッキー　1枚入ｘ24個　（株）やおきん　【原産国：タイ】",
+        "janAgreement": "4/8",
+        "brandAgreement": "0/8",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18425",
+      "maker": "Pine",
+      "sourceId": "49707243",
+      "source": "yahoo",
+      "_review": {
+        "query": "あわ玉 飴",
+        "topName": "あわ玉 黒（コーラ） 1袋（100粒入） パイン キャンディ 飴 あめ",
+        "janAgreement": "3/10",
+        "brandAgreement": "8/10",
+        "brandRaw": "Pine（食品）",
+        "brandRejected": null,
+        "genre": "飴、ソフトキャンディ"
+      }
+    },
+    {
+      "id": "inokuchi-19644",
+      "sourceId": "4902748001461",
+      "source": "yahoo",
+      "_review": {
+        "query": "フルーツパウダージュース(松山製菓)",
+        "topName": "駄菓子 個包装 コーラ ソーダ フルーツ ジュース パウダードリンク 粉末 ジュース 7種類 20パック 松山製菓 ポイント利用 ポイント消化",
+        "janAgreement": "2/5",
+        "brandAgreement": "0/5",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18391",
+      "sourceId": "49480849",
+      "source": "yahoo",
+      "_review": {
+        "query": "うまい棒 テリヤキバーガー味",
+        "topName": "やおきん うまい棒 テリヤキバーガー味 6g×30袋",
+        "janAgreement": "5/10",
+        "brandAgreement": "5/10",
+        "brandRaw": "うまい棒",
+        "brandRejected": "商品ブランド名でありメーカーではない",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18443",
+      "sourceId": "4980937000310",
+      "source": "yahoo",
+      "_review": {
+        "query": "こざくら餅",
+        "topName": "選べる こざくら餅 ミックス餅 ソーダ餅 コーラ餅 16個セット ポイント消化 送料無料 明光製菓 駄菓子 よりどり",
+        "janAgreement": "3/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-19219",
+      "maker": "不二家",
+      "sourceId": "4902555126142",
+      "source": "yahoo",
+      "_review": {
+        "query": "不二家棒付き ポップキャンディ",
+        "topName": "不二家 ポップキャンディ 63本入り ペコちゃん 棒付きキャンディ 飴 詰め合わせ まとめ買い 子供会 景品 お祭り",
+        "janAgreement": "8/10",
+        "brandAgreement": "10/10",
+        "brandRaw": "不二家",
+        "brandRejected": null,
+        "genre": "飴、ソフトキャンディ"
+      }
+    },
+    {
+      "id": "inokuchi-23990",
+      "sourceId": "9011019600014",
+      "source": "yahoo",
+      "_review": {
+        "query": "ねり水あめ大当て",
+        "topName": "ねりあめ 1．3kg 駄菓子 お菓子 おかし 縁日 景品 問屋 お祭り 子供 おもちゃ 祭り 縁日用品 屋台 イベント",
+        "janAgreement": "1/2",
+        "brandAgreement": "0/2",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "飴、ソフトキャンディ"
+      }
+    },
+    {
+      "id": "inokuchi-34363",
+      "sourceId": "4973887810382",
+      "source": "yahoo",
+      "_review": {
+        "query": "サッカースクラッチ",
+        "topName": "【 サッカースクラッチ 計50個 セット 】 駄菓子 お菓子 ラムネ まとめ買い 大人買い 人気 大量 プレゼント イベント メール便 ポスト投函 おやつ 子供",
+        "janAgreement": "6/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-22560",
+      "sourceId": "4903013276072",
+      "source": "yahoo",
+      "_review": {
+        "query": "うまい棒プレミアム和風ステーキ味",
+        "topName": "プレミアムうまい棒　和風ステーキ味　10本入　（株）やおきん",
+        "janAgreement": "5/10",
+        "brandAgreement": "6/10",
+        "brandRaw": "うまい棒",
+        "brandRejected": "商品ブランド名でありメーカーではない",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-21434",
+      "sourceId": "4903013276058",
+      "source": "yahoo",
+      "_review": {
+        "query": "うまい棒プレミアムめんたいこ味",
+        "topName": "うまい棒 プレミアム 明太子 味 １０本入り やおきん　一番人気　キャラクター　アレンジ　大人買い　景品　セット　味　大量",
+        "janAgreement": "3/9",
+        "brandAgreement": "2/9",
+        "brandRaw": "うまい棒",
+        "brandRejected": "一致率が低い (2/9)",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-21429",
+      "sourceId": "4903013276027",
+      "source": "yahoo",
+      "_review": {
+        "query": "うまい棒プレミアムチーズ味",
+        "topName": "プレミアムうまい棒 モッツァレラチーズ＆カマンベールチーズ味 １袋（１０本入）　駄菓子 子供会 景品 お祭り くじ引き 縁日",
+        "janAgreement": "3/10",
+        "brandAgreement": "3/10",
+        "brandRaw": "うまい棒",
+        "brandRejected": "商品ブランド名でありメーカーではない",
+        "genre": "スナック菓子"
+      }
+    },
+    {
+      "id": "inokuchi-34331",
+      "sourceId": "4903013090531",
+      "source": "yahoo",
+      "_review": {
+        "query": "ガリボリラーメン",
+        "topName": "ガリボリラーメン 全3種 21個装入 駄菓子 お菓子 おかし 縁日 景品 問屋 お祭り 子供 おもちゃ 祭り 縁日用品 屋台 イベント",
+        "janAgreement": "4/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-19891",
+      "sourceId": "4966712000034",
+      "source": "yahoo",
+      "_review": {
+        "query": "東京下町あんこ玉",
+        "topName": "宇佐見製菓　あんこ玉",
+        "janAgreement": "1/1",
+        "brandAgreement": "0/1",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-18482",
+      "source": "yahoo",
+      "_review": {
+        "query": "たかみにんじん",
+        "topName": null,
+        "janAgreement": "0/0",
+        "brandAgreement": "0/0",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": null
+      }
+    }
+  ]
+}

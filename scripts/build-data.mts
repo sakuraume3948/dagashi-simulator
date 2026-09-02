@@ -22,10 +22,14 @@ const OUTPUT_PATH = path.join(ROOT, "lib/data.ts");
 
 /**
  * 情報源の優先順位。後ろにあるものが勝つ。
- * 手で作った manual.json を最後に置き、自動取得が手作業を上書きしないようにしている。
- * （さらに強い上書きが必要なら data/overrides.json を使う）
+ *
+ * yahoo は maker と sourceId だけを持つ補完用の情報源なので最後に置く。
+ * 価格を持たないため、井ノ口の希望小売価格を上書きすることはない
+ * （assignDefined が undefined のキーを無視するため）。
+ *
+ * さらに強い上書きが必要なら data/overrides.json を使う。
  */
-const SOURCE_PRIORITY = ["inokuchi", "yaokin", "manual"];
+const SOURCE_PRIORITY = ["inokuchi", "yaokin", "yahoo"];
 
 type SourceItem = {
   id: string;
@@ -73,9 +77,13 @@ function loadSources(): SourceFile[] {
   );
 }
 
-/** 値が undefined のキーは上書きに使わない（「未指定」と「消したい」を区別するため）。 */
+/**
+ * 値が undefined のキーは上書きに使わない（「未指定」と「消したい」を区別するため）。
+ * "_" で始まるキーは人間向けの注釈（_reason など）なので取り込まない。
+ */
 function assignDefined(target: Merged, patch: Partial<Merged>): void {
   for (const [key, value] of Object.entries(patch)) {
+    if (key.startsWith("_")) continue;
     if (value !== undefined) {
       (target as Record<string, unknown>)[key] = value;
     }
