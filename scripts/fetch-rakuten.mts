@@ -15,6 +15,10 @@
  *   data/sources/inokuchi.json にある商品に maker と sourceId を足すだけ。
  *   ECの価格は取り込まない。商品画像と商品説明文も取得しない。
  *
+ * ★メーカー名とJANコードの「採否を決める」のはこのスクリプト。
+ *   fetch-yahoo.mts は候補（_makerCandidate / _janCandidate）を出すだけで、
+ *   最終データには届かない。ここで両APIを突き合わせて確定させる。
+ *
  * ★公開されるアプリはこのAPIを呼ばない。
  *   取得は開発者の手元でのみ行い、結果を data/sources/rakuten.json に保存する。
  *
@@ -28,6 +32,7 @@
 
 import { mkdirSync, readFileSync, writeFileSync, existsSync } from "node:fs";
 import path from "node:path";
+import { acceptableJan } from "./jan.mts";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const CACHE_DIR = path.join(ROOT, "data/.cache/rakuten");
@@ -47,6 +52,18 @@ const ALLOWED_SITE = "https://github.com";
 /** 申告した予想QPSは1。余裕を見て2秒間隔にする。 */
 const DELAY_MS = 2000;
 const RESULTS_PER_QUERY = 10;
+
+/**
+ * 片方のAPIしかJANを返さなかったときに要求する最低一致率
+ * （検索結果10件中、何件が同じJANを返したか）。
+ *
+ * fetch-yahoo.mts の MIN_BRAND_AGREEMENT と同じ考え方・同じ値。
+ * 実測では、両APIが一致した36件はいずれもYahoo!側で2件以上が同じJANを返しており、
+ * 1件しか一致していないものは1つも含まれていなかった。
+ * 逆に不一致だった36件には1〜2件しか一致していないものが12件含まれる。
+ * 一致率の低さと誤マッチは実際に相関している。
+ */
+const MIN_JAN_AGREEMENT = 3;
 
 const refresh = process.argv.includes("--refresh");
 
@@ -188,12 +205,6 @@ function majority(values: (string | undefined)[]): {
   return { value, agreed, total: values.length };
 }
 
-function normalizeJan(raw: string | undefined): string | undefined {
-  if (!raw) return undefined;
-  const s = raw.replace(/[^0-9]/g, "").replace(/^0+/, "");
-  return s.length >= 8 ? s : undefined;
-}
-
 type Enriched = {
   id: string;
   maker?: string;
@@ -210,6 +221,11 @@ type Enriched = {
     /** Yahoo!が返したメーカー名。一致すれば信頼度が高い */
     yahooMaker: string | null;
     agreesWithYahoo: boolean | null;
+    janAgreement: string;
+    /** Yahoo!が返したJAN候補。 */
+    yahooJan: string | null;
+    /** JANを採用した（またはしなかった）理由。 */
+    janBasis: string;
   };
 };
 
@@ -220,12 +236,21 @@ async function main(): Promise<void> {
 
   // Yahoo!の結果があれば突き合わせる
   const yahooMakers = new Map<string, string>();
+  const yahooJans = new Map<string, { jan: string; agreed: number }>();
   if (existsSync(YAHOO_PATH)) {
     const y = JSON.parse(readFileSync(YAHOO_PATH, "utf8")) as {
-      items: { id: string; _makerCandidate?: string }[];
+      items: {
+        id: string;
+        _makerCandidate?: string;
+        _janCandidate?: string;
+        _janAgreed?: number;
+      }[];
     };
     for (const it of y.items) {
       if (it._makerCandidate) yahooMakers.set(it.id, it._makerCandidate);
+      if (it._janCandidate) {
+        yahooJans.set(it.id, { jan: it._janCandidate, agreed: it._janAgreed ?? 0 });
+      }
     }
   }
 
@@ -247,7 +272,7 @@ async function main(): Promise<void> {
     if (all.length === 0) noHit++;
 
     const maker = majority(food.map((p) => p.makerName));
-    const jan = majority(food.map((p) => normalizeJan(p.productCode)));
+    const jan = majority(food.map((p) => acceptableJan(p.productCode)));
     const genre = majority(food.map((p) => p.genreName));
 
     const yahooMaker = yahooMakers.get(item.id) ?? null;
@@ -266,13 +291,53 @@ async function main(): Promise<void> {
 
     const adoptedMaker = agreesWithYahoo ? canonicalRakuten : null;
 
+    // ★JANコードの採否。メーカー名と同じく、単独の情報源では確定させない。
+    //
+    //   両方がJANを返した72件のうち36件（50%）が食い違った。しかも
+    //   食い違いの中身は「まったく別の商品」ではなく、末尾が近い隣接SKU
+    //   （味違い・入数違い）が大半で、商品名だけではどちらが井ノ口の
+    //   売っている単品なのか機械的に決められない。
+    //     カンロ ザ・ストロンググミ ソーダ  yahoo=...26793 / rakuten=...26786
+    //     ポリッキー                      yahoo=...246556 / rakuten=...246563
+    //   そのため食い違ったものは推測せず、両方とも捨てる。
+    //
+    //   片方しかJANを持たない場合は、メーカー名の MIN_BRAND_AGREEMENT と
+    //   同じ考え方で一致率のしきい値を課す。楽天は検索ヒット0件が153件中77件
+    //   あり、「楽天の製品マスタに無いだけ」で Yahoo! 側の答えが
+    //   悪いわけではないため、ここで捨てると根拠なく件数を失う。
+    const yahooJan = yahooJans.get(item.id) ?? null;
+    let adoptedJan: string | null = null;
+    let janBasis = "どちらも取得できず";
+    if (yahooJan && jan.value) {
+      if (yahooJan.jan === jan.value) {
+        adoptedJan = jan.value;
+        janBasis = "両API一致";
+      } else {
+        janBasis = `両APIが不一致 (yahoo=${yahooJan.jan} / rakuten=${jan.value})`;
+      }
+    } else if (yahooJan) {
+      if (yahooJan.agreed >= MIN_JAN_AGREEMENT) {
+        adoptedJan = yahooJan.jan;
+        janBasis = `Yahoo!のみ (一致率 ${yahooJan.agreed})`;
+      } else {
+        janBasis = `Yahoo!のみだが一致率が低い (${yahooJan.agreed})`;
+      }
+    } else if (jan.value) {
+      if (jan.agreed >= MIN_JAN_AGREEMENT) {
+        adoptedJan = jan.value;
+        janBasis = `楽天のみ (一致率 ${jan.agreed})`;
+      } else {
+        janBasis = `楽天のみだが一致率が低い (${jan.agreed})`;
+      }
+    }
+
     if (adoptedMaker) makerFound++;
-    if (jan.value) janFound++;
+    if (adoptedJan) janFound++;
 
     enriched.push({
       id: item.id,
       ...(adoptedMaker ? { maker: adoptedMaker } : {}),
-      ...(jan.value ? { sourceId: jan.value } : {}),
+      ...(adoptedJan ? { sourceId: adoptedJan } : {}),
       source: "rakuten",
       _review: {
         query: item.name,
@@ -283,6 +348,9 @@ async function main(): Promise<void> {
         makerAgreement: `${maker.agreed}/${maker.total}`,
         yahooMaker,
         agreesWithYahoo,
+        janAgreement: `${jan.agreed}/${jan.total}`,
+        yahooJan: yahooJan?.jan ?? null,
+        janBasis,
       },
     });
 
@@ -292,7 +360,7 @@ async function main(): Promise<void> {
         item.name.slice(0, 22).padEnd(24),
         `hits=${String(all.length).padStart(2)}/food=${String(food.length).padStart(2)}`,
         `maker=${(adoptedMaker ?? "-").slice(0, 16).padEnd(18)}(rakuten=${maker.value ?? "-"})`,
-        `jan=${(jan.value ?? "-").padEnd(14)}`,
+        `jan=${(adoptedJan ?? "-").padEnd(14)}[${janBasis}]`,
         yahooMaker ? `yahoo=${yahooMaker}${agreesWithYahoo ? " ✓一致" : " ✗不一致"}` : "",
       ].join(" "),
     );
@@ -321,8 +389,18 @@ async function main(): Promise<void> {
   const pct = (n: number) => `${((n / done) * 100).toFixed(0)}%`;
   console.log(`\n照会完了: ${done}件`);
   console.log(`  ヒット0件だった商品: ${noHit}件 (${pct(noHit)})`);
-  console.log(`  JANコードが取れた:   ${janFound}件 (${pct(janFound)})`);
   console.log(`  ★メーカー名を採用:   ${makerFound}件 (${pct(makerFound)})  ← Yahoo!と一致したものだけ`);
+  console.log(`  ★JANコードを採用:   ${janFound}件 (${pct(janFound)})`);
+
+  const basisCounts = new Map<string, number>();
+  for (const e of enriched) {
+    // 「両APIが不一致 (yahoo=... / rakuten=...)」のような個別の値はまとめて数える
+    const key = e._review.janBasis.replace(/\s*\(.*\)$/, "");
+    basisCounts.set(key, (basisCounts.get(key) ?? 0) + 1);
+  }
+  for (const [basis, count] of [...basisCounts].sort((a, b) => b[1] - a[1])) {
+    console.log(`    └ ${basis.padEnd(28)} ${String(count).padStart(3)}件`);
+  }
   console.log(`\n✓ data/sources/rakuten.json を書きました`);
   console.log(`  照合結果の一覧: data/.cache/rakuten-review.txt`);
   console.log("  反映するには npm run build:data を実行してください。");

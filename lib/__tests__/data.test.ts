@@ -63,8 +63,59 @@ describe("ガチャと予算モードが成立する前提", () => {
   it("17b. 将来用フィールドは今は未設定である", () => {
     for (const d of DAGASHI_DATA) {
       expect(d.rarity).toBeNull();
-      expect(d.source).toBe("dummy");
+      expect(d.weight).toBeNull();
+      expect(d.imageUrl).toBeNull();
     }
+  });
+});
+
+describe("取得元の情報", () => {
+  it("17c. source が定義済みの取得元である", () => {
+    const sources = ["inokuchi", "yahoo", "rakuten", "overrides"];
+    for (const d of DAGASHI_DATA) {
+      expect(sources, `${d.name} の source が未定義の値`).toContain(d.source);
+    }
+  });
+
+  it("17d. 自動取得の商品は取得日時を持つ（値上げ追跡のため）", () => {
+    for (const d of DAGASHI_DATA) {
+      if (d.source === "overrides") continue; // 手で決めた価格に取得日時は無い
+      expect(d.fetchedAt, `${d.name} に取得日時が無い`).not.toBeNull();
+      expect(Number.isNaN(Date.parse(d.fetchedAt!))).toBe(false);
+    }
+  });
+
+  it("17e. JANコードは8桁か13桁で、検査数字を通る", () => {
+    // ★商品名の曖昧検索で拾うため誤った値が混ざりやすい。
+    //   桁数と検査数字は機械的に検証できるので、壊れた値が
+    //   lib/data.ts に入り込んでいないことをここで担保する。
+    const checkDigitOf = (digits: string): number => {
+      const body = [...digits.slice(0, -1)].map(Number);
+      let sum = 0;
+      for (let i = 0; i < body.length; i++) {
+        sum += body[i] * ((body.length - i) % 2 === 1 ? 3 : 1);
+      }
+      return (10 - (sum % 10)) % 10;
+    };
+
+    for (const d of DAGASHI_DATA) {
+      if (d.sourceId === null) continue;
+      expect([8, 13], `${d.name} のJANの桁数が不正: ${d.sourceId}`).toContain(
+        d.sourceId.length,
+      );
+      expect(d.sourceId, `${d.name} のJANに数字以外が入っている`).toMatch(/^[0-9]+$/);
+      expect(
+        checkDigitOf(d.sourceId),
+        `${d.name} のJANが検査数字を通らない: ${d.sourceId}`,
+      ).toBe(Number(d.sourceId[d.sourceId.length - 1]));
+      // 日本の事業者コードは 45 / 49 で始まる
+      expect(d.sourceId.slice(0, 2), `${d.name} のJANが日本以外`).toMatch(/^4[59]$/);
+    }
+  });
+
+  it("17f. 同じJANが2つの商品に付いていない", () => {
+    const jans = DAGASHI_DATA.map((d) => d.sourceId).filter((j) => j !== null);
+    expect(new Set(jans).size, "JANが重複している").toBe(jans.length);
   });
 });
 

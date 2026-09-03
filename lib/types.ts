@@ -25,6 +25,15 @@ export type Category = (typeof CATEGORIES)[number];
 export type Rarity = "N" | "R" | "SR" | "SSR";
 
 /**
+ * 価格の取得元。
+ *
+ * "overrides" は data/overrides.json で人が価格を決めたもの。
+ * yahoo / rakuten は価格を持たない補完用の情報源だが、将来
+ * 価格を取れるようになったときのために型としては受け入れる。
+ */
+export type DataSource = "inokuchi" | "yahoo" | "rakuten" | "overrides";
+
+/**
  * 必須なのは id / name / price / category の4つだけ。
  *
  * price は予算モードもガチャも成立しなくなるため絶対に必要。
@@ -64,8 +73,14 @@ export type Dagashi = {
   /** null ならカテゴリ絵文字にフォールバックする。 */
   imageUrl: string | null;
   sourceUrl: string | null;
-  source: "dummy" | "yahoo";
-  /** JAN コード / 商品コード。 */
+  /** 価格を取得した情報源。 */
+  source: DataSource;
+  /**
+   * JANコード。8桁(JAN-8)か13桁(EAN-13)で、検査数字を通ったものだけが入る。
+   *
+   * 商品名の曖昧検索で拾うため、確度が足りないものは埋めずに null にしてある。
+   * 採否の基準は scripts/fetch-rakuten.mts を参照。
+   */
   sourceId: string | null;
   /** 価格を取得した日時 (ISO8601)。値上げ追跡用。 */
   fetchedAt: string | null;

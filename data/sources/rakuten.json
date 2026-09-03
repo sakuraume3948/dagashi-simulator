@@ -1,10 +1,11 @@
 {
   "source": "rakuten",
   "sourceName": "楽天プロダクト製品検索API（メーカー名・JANコードの補完）",
-  "fetchedAt": "2026-09-02T08:23:47.113Z",
+  "fetchedAt": "2026-09-03T15:13:21.398Z",
   "items": [
     {
       "id": "inokuchi-49941",
+      "sourceId": "4550433081924",
       "source": "rakuten",
       "_review": {
         "query": "ちゅるりんジェリー",
@@ -14,7 +15,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4550433081924",
+        "janBasis": "Yahoo!のみ (一致率 4)"
       }
     },
     {
@@ -30,11 +34,15 @@
         "genre": "その他",
         "makerAgreement": "1/2",
         "yahooMaker": "SEIKA",
-        "agreesWithYahoo": true
+        "agreesWithYahoo": true,
+        "janAgreement": "1/2",
+        "yahooJan": "4973260301094",
+        "janBasis": "両API一致"
       }
     },
     {
       "id": "inokuchi-49936",
+      "sourceId": "4973260301032",
       "source": "rakuten",
       "_review": {
         "query": "ぶどうのもっちゃん",
@@ -44,13 +52,15 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4973260301032",
+        "janBasis": "Yahoo!のみ (一致率 5)"
       }
     },
     {
       "id": "inokuchi-49843",
       "maker": "カンロ",
-      "sourceId": "4901351026786",
       "source": "rakuten",
       "_review": {
         "query": "カンロ ザ・ストロンググミ ソーダ",
@@ -60,11 +70,15 @@
         "genre": "グミ",
         "makerAgreement": "2/2",
         "yahooMaker": "Kanro",
-        "agreesWithYahoo": true
+        "agreesWithYahoo": true,
+        "janAgreement": "1/2",
+        "yahooJan": "4901351026793",
+        "janBasis": "両APIが不一致 (yahoo=4901351026793 / rakuten=4901351026786)"
       }
     },
     {
       "id": "inokuchi-49773",
+      "sourceId": "4903013799823",
       "source": "rakuten",
       "_review": {
         "query": "コーラスプラッシュ",
@@ -74,12 +88,14 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4903013799823",
+        "janBasis": "Yahoo!のみ (一致率 3)"
       }
     },
     {
       "id": "inokuchi-49742",
-      "sourceId": "4589704434893",
       "source": "rakuten",
       "_review": {
         "query": "ココナッツクッキー",
@@ -89,11 +105,15 @@
         "genre": "各種駄菓子セット",
         "makerAgreement": "1/2",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/2",
+        "yahooJan": "4901360361540",
+        "janBasis": "両APIが不一致 (yahoo=4901360361540 / rakuten=4589704434893)"
       }
     },
     {
       "id": "inokuchi-49575",
+      "sourceId": "4903013357207",
       "source": "rakuten",
       "_review": {
         "query": "サワーペーパーキャンディ ホワイトソーダ",
@@ -103,7 +123,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4903013357207",
+        "janBasis": "Yahoo!のみ (一致率 10)"
       }
     },
     {
@@ -118,12 +141,14 @@
         "genre": "駄菓子キャンディ",
         "makerAgreement": "1/1",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/1",
+        "yahooJan": "4903013357276",
+        "janBasis": "両API一致"
       }
     },
     {
       "id": "inokuchi-49526",
-      "sourceId": "4902744037266",
       "source": "rakuten",
       "_review": {
         "query": "プレミアムガブリチュウ 焦がしキャラメル味",
@@ -133,7 +158,10 @@
         "genre": "ソフトキャンディ",
         "makerAgreement": "1/1",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/1",
+        "yahooJan": null,
+        "janBasis": "楽天のみだが一致率が低い (1)"
       }
     },
     {
@@ -149,7 +177,10 @@
         "genre": "駄菓子珍味",
         "makerAgreement": "2/2",
         "yahooMaker": "ヤガイ",
-        "agreesWithYahoo": true
+        "agreesWithYahoo": true,
+        "janAgreement": "1/2",
+        "yahooJan": "4903020005870",
+        "janBasis": "両API一致"
       }
     },
     {
@@ -163,7 +194,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": null,
+        "janBasis": "どちらも取得できず"
       }
     },
     {
@@ -177,7 +211,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": null,
+        "janBasis": "どちらも取得できず"
       }
     },
     {
@@ -193,7 +230,10 @@
         "genre": "ラムネ",
         "makerAgreement": "1/1",
         "yahooMaker": "オリオン",
-        "agreesWithYahoo": true
+        "agreesWithYahoo": true,
+        "janAgreement": "1/1",
+        "yahooJan": "49598605",
+        "janBasis": "両API一致"
       }
     },
     {
@@ -207,7 +247,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4570160333202",
+        "janBasis": "Yahoo!のみだが一致率が低い (1)"
       }
     },
     {
@@ -221,11 +264,15 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": null,
+        "janBasis": "どちらも取得できず"
       }
     },
     {
       "id": "inokuchi-48013",
+      "sourceId": "4901005521308",
       "source": "rakuten",
       "_review": {
         "query": "プリッツ うまサラダ",
@@ -235,12 +282,14 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": "グリコ",
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4901005521308",
+        "janBasis": "Yahoo!のみ (一致率 5)"
       }
     },
     {
       "id": "inokuchi-48012",
-      "sourceId": "4901005521179",
       "source": "rakuten",
       "_review": {
         "query": "プリッツ",
@@ -250,7 +299,10 @@
         "genre": "その他",
         "makerAgreement": "9/10",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/10",
+        "yahooJan": "4901005521193",
+        "janBasis": "両APIが不一致 (yahoo=4901005521193 / rakuten=4901005521179)"
       }
     },
     {
@@ -266,7 +318,10 @@
         "genre": "チョコレートスナック",
         "makerAgreement": "1/1",
         "yahooMaker": "ロッテ",
-        "agreesWithYahoo": true
+        "agreesWithYahoo": true,
+        "janAgreement": "1/1",
+        "yahooJan": "4903333129034",
+        "janBasis": "両API一致"
       }
     },
     {
@@ -281,7 +336,10 @@
         "genre": "小袋菓子",
         "makerAgreement": "1/1",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/1",
+        "yahooJan": "4582218057558",
+        "janBasis": "両API一致"
       }
     },
     {
@@ -295,12 +353,14 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4582218055929",
+        "janBasis": "Yahoo!のみだが一致率が低い (2)"
       }
     },
     {
       "id": "inokuchi-47443",
-      "sourceId": "4902744036917",
       "source": "rakuten",
       "_review": {
         "query": "チューキャン",
@@ -310,11 +370,15 @@
         "genre": "ソフトキャンディ",
         "makerAgreement": "2/2",
         "yahooMaker": "明治",
-        "agreesWithYahoo": false
+        "agreesWithYahoo": false,
+        "janAgreement": "1/2",
+        "yahooJan": "4902744036900",
+        "janBasis": "両APIが不一致 (yahoo=4902744036900 / rakuten=4902744036917)"
       }
     },
     {
       "id": "inokuchi-47318",
+      "sourceId": "4901588617511",
       "source": "rakuten",
       "_review": {
         "query": "しみチョココーン全粒粉スティック",
@@ -324,11 +388,15 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": "ギンビス",
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4901588617511",
+        "janBasis": "Yahoo!のみ (一致率 6)"
       }
     },
     {
       "id": "inokuchi-47227",
+      "sourceId": "4589704432264",
       "source": "rakuten",
       "_review": {
         "query": "ペヤングソース焼きそばカツ",
@@ -338,7 +406,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4589704432264",
+        "janBasis": "Yahoo!のみ (一致率 6)"
       }
     },
     {
@@ -352,12 +423,14 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4589704435050",
+        "janBasis": "Yahoo!のみだが一致率が低い (2)"
       }
     },
     {
       "id": "inokuchi-47221",
-      "sourceId": "45203398",
       "source": "rakuten",
       "_review": {
         "query": "ポテコロン",
@@ -367,11 +440,15 @@
         "genre": "各種駄菓子セット",
         "makerAgreement": "2/2",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/2",
+        "yahooJan": "45203329",
+        "janBasis": "両APIが不一致 (yahoo=45203329 / rakuten=45203398)"
       }
     },
     {
       "id": "inokuchi-47112",
+      "sourceId": "4903013790042",
       "source": "rakuten",
       "_review": {
         "query": "マカロンクッキー",
@@ -381,7 +458,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4903013790042",
+        "janBasis": "Yahoo!のみ (一致率 3)"
       }
     },
     {
@@ -395,12 +475,14 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": null,
+        "janBasis": "どちらも取得できず"
       }
     },
     {
       "id": "inokuchi-46453",
-      "sourceId": "4903013790035",
       "source": "rakuten",
       "_review": {
         "query": "フルーツポップ",
@@ -410,11 +492,15 @@
         "genre": "あめ・キャンディ",
         "makerAgreement": "1/1",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/1",
+        "yahooJan": "4537988361312",
+        "janBasis": "両APIが不一致 (yahoo=4537988361312 / rakuten=4903013790035)"
       }
     },
     {
       "id": "inokuchi-46451",
+      "sourceId": "4903013090494",
       "source": "rakuten",
       "_review": {
         "query": "うま辛パンチみそラーメン",
@@ -424,7 +510,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4903013090494",
+        "janBasis": "Yahoo!のみ (一致率 3)"
       }
     },
     {
@@ -438,12 +527,14 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": null,
+        "janBasis": "どちらも取得できず"
       }
     },
     {
       "id": "inokuchi-46195",
-      "sourceId": "4903013246563",
       "source": "rakuten",
       "_review": {
         "query": "ポリッキー",
@@ -453,11 +544,15 @@
         "genre": "その他",
         "makerAgreement": "4/4",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/4",
+        "yahooJan": "4903013246556",
+        "janBasis": "両APIが不一致 (yahoo=4903013246556 / rakuten=4903013246563)"
       }
     },
     {
       "id": "inokuchi-19342",
+      "sourceId": "4903041018132",
       "source": "rakuten",
       "_review": {
         "query": "カットよっちゃんいか",
@@ -467,11 +562,15 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": "よっちゃん",
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4903041018132",
+        "janBasis": "Yahoo!のみ (一致率 6)"
       }
     },
     {
       "id": "inokuchi-32859",
+      "sourceId": "4903041201206",
       "source": "rakuten",
       "_review": {
         "query": "タラタラしてんじゃねーよ",
@@ -481,13 +580,15 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": "よっちゃん",
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4903041201206",
+        "janBasis": "Yahoo!のみ (一致率 4)"
       }
     },
     {
       "id": "inokuchi-18847",
       "maker": "ヤガイ",
-      "sourceId": "4903020305857",
       "source": "rakuten",
       "_review": {
         "query": "おやつカルパス",
@@ -497,7 +598,10 @@
         "genre": "駄菓子珍味",
         "makerAgreement": "9/9",
         "yahooMaker": "ヤガイ",
-        "agreesWithYahoo": true
+        "agreesWithYahoo": true,
+        "janAgreement": "1/9",
+        "yahooJan": "4903020005894",
+        "janBasis": "両APIが不一致 (yahoo=4903020005894 / rakuten=4903020305857)"
       }
     },
     {
@@ -512,7 +616,10 @@
         "genre": "チョコレートスナック",
         "makerAgreement": "2/3",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/3",
+        "yahooJan": "4903013431525",
+        "janBasis": "両API一致"
       }
     },
     {
@@ -526,12 +633,14 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": null,
+        "janBasis": "どちらも取得できず"
       }
     },
     {
       "id": "inokuchi-45410",
-      "sourceId": "4904052011365",
       "source": "rakuten",
       "_review": {
         "query": "中村製菓 ポテトフライ",
@@ -541,12 +650,14 @@
         "genre": "駄菓子スナック",
         "makerAgreement": "1/1",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/1",
+        "yahooJan": "4904052011358",
+        "janBasis": "両APIが不一致 (yahoo=4904052011358 / rakuten=4904052011365)"
       }
     },
     {
       "id": "inokuchi-45231",
-      "sourceId": "9784098637393",
       "source": "rakuten",
       "_review": {
         "query": "キャンディーボックス",
@@ -556,7 +667,10 @@
         "genre": "プリザーブドフラワー",
         "makerAgreement": "5/10",
         "yahooMaker": "共親製菓",
-        "agreesWithYahoo": false
+        "agreesWithYahoo": false,
+        "janAgreement": "1/10",
+        "yahooJan": "4971646010554",
+        "janBasis": "両APIが不一致 (yahoo=4971646010554 / rakuten=4902750973183)"
       }
     },
     {
@@ -570,7 +684,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4903013274788",
+        "janBasis": "Yahoo!のみだが一致率が低い (2)"
       }
     },
     {
@@ -585,7 +702,10 @@
         "genre": "駄菓子スナック",
         "makerAgreement": "1/1",
         "yahooMaker": "カルビー",
-        "agreesWithYahoo": false
+        "agreesWithYahoo": false,
+        "janAgreement": "1/1",
+        "yahooJan": "49870312",
+        "janBasis": "両API一致"
       }
     },
     {
@@ -600,12 +720,14 @@
         "genre": "駄菓子スナック",
         "makerAgreement": "1/1",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/1",
+        "yahooJan": "45132872",
+        "janBasis": "両API一致"
       }
     },
     {
       "id": "inokuchi-35219",
-      "sourceId": "4903013270353",
       "source": "rakuten",
       "_review": {
         "query": "うまい棒 のり塩味",
@@ -615,7 +737,10 @@
         "genre": "駄菓子スナック",
         "makerAgreement": "1/1",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/1",
+        "yahooJan": "49415780",
+        "janBasis": "両APIが不一致 (yahoo=49415780 / rakuten=4903013270353)"
       }
     },
     {
@@ -630,7 +755,10 @@
         "genre": "マシュマロ",
         "makerAgreement": "1/1",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/1",
+        "yahooJan": "4903013799946",
+        "janBasis": "両API一致"
       }
     },
     {
@@ -644,7 +772,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4962679655294",
+        "janBasis": "Yahoo!のみだが一致率が低い (2)"
       }
     },
     {
@@ -658,11 +789,15 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": null,
+        "janBasis": "どちらも取得できず"
       }
     },
     {
       "id": "inokuchi-44678",
+      "sourceId": "4971749111141",
       "source": "rakuten",
       "_review": {
         "query": "カステラドーナツ太郎",
@@ -672,11 +807,15 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4971749111141",
+        "janBasis": "Yahoo!のみ (一致率 4)"
       }
     },
     {
       "id": "inokuchi-44675",
+      "sourceId": "4906871022249",
       "source": "rakuten",
       "_review": {
         "query": "うどん屋しんちゃん",
@@ -686,7 +825,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": "東京拉麺",
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4906871022249",
+        "janBasis": "Yahoo!のみ (一致率 4)"
       }
     },
     {
@@ -700,7 +842,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": "Trolli",
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4903013247324",
+        "janBasis": "Yahoo!のみだが一致率が低い (1)"
       }
     },
     {
@@ -715,7 +860,10 @@
         "genre": "その他",
         "makerAgreement": "1/1",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/1",
+        "yahooJan": "4903013247317",
+        "janBasis": "両API一致"
       }
     },
     {
@@ -730,12 +878,14 @@
         "genre": "その他",
         "makerAgreement": "2/2",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/2",
+        "yahooJan": "4903013060091",
+        "janBasis": "両API一致"
       }
     },
     {
       "id": "inokuchi-43853",
-      "sourceId": "4580798040267",
       "source": "rakuten",
       "_review": {
         "query": "アンパンマン ペロペロキャンディ",
@@ -745,7 +895,10 @@
         "genre": "駄菓子スナック",
         "makerAgreement": "1/1",
         "yahooMaker": "不二家",
-        "agreesWithYahoo": false
+        "agreesWithYahoo": false,
+        "janAgreement": "1/1",
+        "yahooJan": "49755190",
+        "janBasis": "両APIが不一致 (yahoo=49755190 / rakuten=4580798040267)"
       }
     },
     {
@@ -760,11 +913,15 @@
         "genre": "駄菓子スナック",
         "makerAgreement": "1/1",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/1",
+        "yahooJan": "4971749112063",
+        "janBasis": "両API一致"
       }
     },
     {
       "id": "inokuchi-43153",
+      "sourceId": "4906763153600",
       "source": "rakuten",
       "_review": {
         "query": "にこにこにっこり わたがし 佐藤製菓",
@@ -774,12 +931,14 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4906763153600",
+        "janBasis": "Yahoo!のみ (一致率 3)"
       }
     },
     {
       "id": "inokuchi-42585",
-      "sourceId": "4902744031851",
       "source": "rakuten",
       "_review": {
         "query": "ガブリチュウ",
@@ -789,13 +948,15 @@
         "genre": "ソフトキャンディ",
         "makerAgreement": "10/10",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/10",
+        "yahooJan": "4902744031844",
+        "janBasis": "両APIが不一致 (yahoo=4902744031844 / rakuten=4902744031851)"
       }
     },
     {
       "id": "inokuchi-42136",
       "maker": "バンダイ",
-      "sourceId": "4549660836537",
       "source": "rakuten",
       "_review": {
         "query": "すみっコぐらし つりグミ",
@@ -805,11 +966,15 @@
         "genre": "駄菓子キャンディ",
         "makerAgreement": "2/2",
         "yahooMaker": "BANDAI",
-        "agreesWithYahoo": true
+        "agreesWithYahoo": true,
+        "janAgreement": "1/2",
+        "yahooJan": "4570117913730",
+        "janBasis": "両APIが不一致 (yahoo=4570117913730 / rakuten=4549660836537)"
       }
     },
     {
       "id": "inokuchi-40722",
+      "sourceId": "4549660424024",
       "source": "rakuten",
       "_review": {
         "query": "魚ギョッと釣りグミ",
@@ -819,13 +984,15 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": "BANDAI",
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4549660424024",
+        "janBasis": "Yahoo!のみ (一致率 8)"
       }
     },
     {
       "id": "inokuchi-42079",
       "maker": "マルタ食品",
-      "sourceId": "4977831201134",
       "source": "rakuten",
       "_review": {
         "query": "花コンペイ糖",
@@ -835,12 +1002,14 @@
         "genre": "こんぺいとう",
         "makerAgreement": "2/2",
         "yahooMaker": "マルタ",
-        "agreesWithYahoo": true
+        "agreesWithYahoo": true,
+        "janAgreement": "1/2",
+        "yahooJan": "4977831003134",
+        "janBasis": "両APIが不一致 (yahoo=4977831003134 / rakuten=4977831201134)"
       }
     },
     {
       "id": "inokuchi-18429",
-      "sourceId": "4971749110397",
       "source": "rakuten",
       "_review": {
         "query": "もろこし輪太郎",
@@ -850,12 +1019,14 @@
         "genre": "駄菓子スナック",
         "makerAgreement": "4/4",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/4",
+        "yahooJan": "4971749110359",
+        "janBasis": "両APIが不一致 (yahoo=4971749110359 / rakuten=4971749110397)"
       }
     },
     {
       "id": "inokuchi-18428",
-      "sourceId": "4582398324969",
       "source": "rakuten",
       "_review": {
         "query": "キャベツ太郎",
@@ -865,7 +1036,10 @@
         "genre": "大人用弁当箱",
         "makerAgreement": "3/6",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/6",
+        "yahooJan": "4971749110304",
+        "janBasis": "両APIが不一致 (yahoo=4971749110304 / rakuten=4582398324969)"
       }
     },
     {
@@ -880,7 +1054,10 @@
         "genre": "駄菓子スナック",
         "makerAgreement": "1/1",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/1",
+        "yahooJan": "4971749110298",
+        "janBasis": "両API一致"
       }
     },
     {
@@ -894,7 +1071,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4542202659854",
+        "janBasis": "Yahoo!のみだが一致率が低い (2)"
       }
     },
     {
@@ -909,7 +1089,10 @@
         "genre": "ミニラーメン",
         "makerAgreement": "1/1",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/1",
+        "yahooJan": "4971749110410",
+        "janBasis": "両API一致"
       }
     },
     {
@@ -924,13 +1107,15 @@
         "genre": "駄菓子スナック",
         "makerAgreement": "1/1",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/1",
+        "yahooJan": "4971749110403",
+        "janBasis": "両API一致"
       }
     },
     {
       "id": "inokuchi-39792",
       "maker": "オリヒロ",
-      "sourceId": "4571157254494",
       "source": "rakuten",
       "_review": {
         "query": "こんにゃくゼリー",
@@ -940,7 +1125,10 @@
         "genre": "ゼリー",
         "makerAgreement": "9/10",
         "yahooMaker": "ORIHIRO",
-        "agreesWithYahoo": true
+        "agreesWithYahoo": true,
+        "janAgreement": "1/10",
+        "yahooJan": "4571157258096",
+        "janBasis": "両APIが不一致 (yahoo=4571157258096 / rakuten=4571157254494)"
       }
     },
     {
@@ -954,12 +1142,14 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "49415780",
+        "janBasis": "Yahoo!のみだが一致率が低い (2)"
       }
     },
     {
       "id": "inokuchi-39019",
-      "sourceId": "4903013246303",
       "source": "rakuten",
       "_review": {
         "query": "ロールキャンディ",
@@ -969,7 +1159,10 @@
         "genre": "駄菓子キャンディ",
         "makerAgreement": "5/5",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/5",
+        "yahooJan": "4903013246327",
+        "janBasis": "両APIが不一致 (yahoo=4903013246327 / rakuten=4903013246303)"
       }
     },
     {
@@ -984,7 +1177,10 @@
         "genre": "駄菓子キャンディ",
         "makerAgreement": "4/4",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/4",
+        "yahooJan": "4903013431730",
+        "janBasis": "両API一致"
       }
     },
     {
@@ -998,11 +1194,15 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4963298333778",
+        "janBasis": "Yahoo!のみだが一致率が低い (1)"
       }
     },
     {
       "id": "inokuchi-18432",
+      "sourceId": "4971749110373",
       "source": "rakuten",
       "_review": {
         "query": "どんどん焼あられ",
@@ -1012,11 +1212,15 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4971749110373",
+        "janBasis": "Yahoo!のみ (一致率 5)"
       }
     },
     {
       "id": "inokuchi-19299",
+      "sourceId": "4903047950740",
       "source": "rakuten",
       "_review": {
         "query": "味カレー大和製菓",
@@ -1026,11 +1230,15 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4903047950740",
+        "janBasis": "Yahoo!のみ (一致率 4)"
       }
     },
     {
       "id": "inokuchi-24317",
+      "sourceId": "4901984088267",
       "source": "rakuten",
       "_review": {
         "query": "東豊ポテトフライ チキン味",
@@ -1040,7 +1248,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": "東豊製菓",
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4901984088267",
+        "janBasis": "Yahoo!のみ (一致率 6)"
       }
     },
     {
@@ -1054,11 +1265,15 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": "東豊製菓",
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4901984088281",
+        "janBasis": "Yahoo!のみだが一致率が低い (2)"
       }
     },
     {
       "id": "inokuchi-36591",
+      "sourceId": "4901984088281",
       "source": "rakuten",
       "_review": {
         "query": "東豊ポテトフライ じゃが塩バター味",
@@ -1068,12 +1283,14 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": "東豊製菓",
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4901984088281",
+        "janBasis": "Yahoo!のみ (一致率 5)"
       }
     },
     {
       "id": "inokuchi-18504",
-      "sourceId": "4901002115494",
       "source": "rakuten",
       "_review": {
         "query": "ペペロンチーノ",
@@ -1083,7 +1300,10 @@
         "genre": "パスタソース",
         "makerAgreement": "2/10",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/10",
+        "yahooJan": "49307887",
+        "janBasis": "両APIが不一致 (yahoo=49307887 / rakuten=4901002115494)"
       }
     },
     {
@@ -1097,7 +1317,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4930570146029",
+        "janBasis": "Yahoo!のみだが一致率が低い (1)"
       }
     },
     {
@@ -1112,12 +1335,14 @@
         "genre": "小袋菓子",
         "makerAgreement": "1/1",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/1",
+        "yahooJan": "4979446010514",
+        "janBasis": "両API一致"
       }
     },
     {
       "id": "inokuchi-34367",
-      "sourceId": "4520716001710",
       "source": "rakuten",
       "_review": {
         "query": "焼たら",
@@ -1127,7 +1352,10 @@
         "genre": "ソフトルアー",
         "makerAgreement": "2/5",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/5",
+        "yahooJan": "4903013247553",
+        "janBasis": "両APIが不一致 (yahoo=4903013247553 / rakuten=4520716001710)"
       }
     },
     {
@@ -1141,7 +1369,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": null,
+        "janBasis": "どちらも取得できず"
       }
     },
     {
@@ -1155,12 +1386,14 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": null,
+        "janBasis": "どちらも取得できず"
       }
     },
     {
       "id": "inokuchi-19337",
-      "sourceId": "4951232101118",
       "source": "rakuten",
       "_review": {
         "query": "森永ハイチュウ",
@@ -1170,12 +1403,14 @@
         "genre": "ソフトキャンディ",
         "makerAgreement": "4/5",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/5",
+        "yahooJan": "4902888254888",
+        "janBasis": "両APIが不一致 (yahoo=4902888254888 / rakuten=4951232101118)"
       }
     },
     {
       "id": "inokuchi-19433",
-      "sourceId": "4902775076807",
       "source": "rakuten",
       "_review": {
         "query": "ブタメン",
@@ -1185,7 +1420,10 @@
         "genre": "ミニラーメン",
         "makerAgreement": "7/10",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/10",
+        "yahooJan": "4902775070171",
+        "janBasis": "両APIが不一致 (yahoo=4902775070171 / rakuten=4902775076807)"
       }
     },
     {
@@ -1199,7 +1437,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4901640030449",
+        "janBasis": "Yahoo!のみだが一致率が低い (2)"
       }
     },
     {
@@ -1213,12 +1454,14 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4901922100105",
+        "janBasis": "Yahoo!のみだが一致率が低い (2)"
       }
     },
     {
       "id": "inokuchi-33767",
-      "sourceId": "4931760842103",
       "source": "rakuten",
       "_review": {
         "query": "りんごあめ",
@@ -1228,7 +1471,10 @@
         "genre": "のぼり",
         "makerAgreement": "5/10",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/10",
+        "yahooJan": "4573468825813",
+        "janBasis": "両APIが不一致 (yahoo=4573468825813 / rakuten=4931760842103)"
       }
     },
     {
@@ -1242,7 +1488,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4977381000386",
+        "janBasis": "Yahoo!のみだが一致率が低い (1)"
       }
     },
     {
@@ -1258,12 +1507,14 @@
         "genre": "ドーナツ",
         "makerAgreement": "2/6",
         "yahooMaker": "宮田製菓",
-        "agreesWithYahoo": true
+        "agreesWithYahoo": true,
+        "janAgreement": "1/6",
+        "yahooJan": "4977821321491",
+        "janBasis": "両API一致"
       }
     },
     {
       "id": "inokuchi-19969",
-      "sourceId": "4901365824002",
       "source": "rakuten",
       "_review": {
         "query": "クッピーラムネ",
@@ -1273,11 +1524,15 @@
         "genre": "靴下",
         "makerAgreement": "3/6",
         "yahooMaker": "カクダイ製菓",
-        "agreesWithYahoo": false
+        "agreesWithYahoo": false,
+        "janAgreement": "1/6",
+        "yahooJan": "49635775",
+        "janBasis": "両APIが不一致 (yahoo=49635775 / rakuten=4901365824002)"
       }
     },
     {
       "id": "inokuchi-18463",
+      "sourceId": "4971749110526",
       "source": "rakuten",
       "_review": {
         "query": "ビッグカツとんかつソース味",
@@ -1287,7 +1542,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4971749110526",
+        "janBasis": "Yahoo!のみ (一致率 3)"
       }
     },
     {
@@ -1302,11 +1560,15 @@
         "genre": "ゼリー",
         "makerAgreement": "1/1",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/1",
+        "yahooJan": "4903013436094",
+        "janBasis": "両API一致"
       }
     },
     {
       "id": "inokuchi-23160",
+      "sourceId": "4903013016074",
       "source": "rakuten",
       "_review": {
         "query": "ふがし（角）",
@@ -1316,7 +1578,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4903013016074",
+        "janBasis": "Yahoo!のみ (一致率 6)"
       }
     },
     {
@@ -1330,11 +1595,15 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": null,
+        "janBasis": "どちらも取得できず"
       }
     },
     {
       "id": "inokuchi-18409",
+      "sourceId": "4971749110335",
       "source": "rakuten",
       "_review": {
         "query": "蒲焼さん太郎",
@@ -1344,11 +1613,15 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4971749110335",
+        "janBasis": "Yahoo!のみ (一致率 9)"
       }
     },
     {
       "id": "inokuchi-18410",
+      "sourceId": "4971749110342",
       "source": "rakuten",
       "_review": {
         "query": "焼肉さん太郎",
@@ -1358,11 +1631,15 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4971749110342",
+        "janBasis": "Yahoo!のみ (一致率 7)"
       }
     },
     {
       "id": "inokuchi-18412",
+      "sourceId": "4971749110618",
       "source": "rakuten",
       "_review": {
         "query": "のし梅さん太郎",
@@ -1372,7 +1649,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4971749110618",
+        "janBasis": "Yahoo!のみ (一致率 7)"
       }
     },
     {
@@ -1387,7 +1667,10 @@
         "genre": "駄菓子珍味",
         "makerAgreement": "1/1",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/1",
+        "yahooJan": "4971749110984",
+        "janBasis": "両API一致"
       }
     },
     {
@@ -1402,7 +1685,10 @@
         "genre": "駄菓子珍味",
         "makerAgreement": "1/1",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/1",
+        "yahooJan": "4971749110328",
+        "janBasis": "両API一致"
       }
     },
     {
@@ -1418,11 +1704,15 @@
         "genre": "その他",
         "makerAgreement": "2/2",
         "yahooMaker": "チーリン製菓",
-        "agreesWithYahoo": true
+        "agreesWithYahoo": true,
+        "janAgreement": "1/2",
+        "yahooJan": "45024405",
+        "janBasis": "両API一致"
       }
     },
     {
       "id": "inokuchi-19181",
+      "sourceId": "4962679104808",
       "source": "rakuten",
       "_review": {
         "query": "月の小石チョコ",
@@ -1432,11 +1722,15 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4962679104808",
+        "janBasis": "Yahoo!のみ (一致率 3)"
       }
     },
     {
       "id": "inokuchi-19320",
+      "sourceId": "4903013549503",
       "source": "rakuten",
       "_review": {
         "query": "どらチョコ",
@@ -1446,13 +1740,15 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4903013549503",
+        "janBasis": "Yahoo!のみ (一致率 7)"
       }
     },
     {
       "id": "inokuchi-19966",
       "maker": "meito",
-      "sourceId": "4902757113704",
       "source": "rakuten",
       "_review": {
         "query": "ぷくぷくたい",
@@ -1462,7 +1758,10 @@
         "genre": "チョコレートスナック",
         "makerAgreement": "7/9",
         "yahooMaker": "meito",
-        "agreesWithYahoo": true
+        "agreesWithYahoo": true,
+        "janAgreement": "1/9",
+        "yahooJan": "4902757111304",
+        "janBasis": "両APIが不一致 (yahoo=4902757111304 / rakuten=4902757113704)"
       }
     },
     {
@@ -1476,7 +1775,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": null,
+        "janBasis": "どちらも取得できず"
       }
     },
     {
@@ -1490,11 +1792,15 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": null,
+        "janBasis": "どちらも取得できず"
       }
     },
     {
       "id": "inokuchi-18841",
+      "sourceId": "49598742",
       "source": "rakuten",
       "_review": {
         "query": "オリオン ミニ サワー",
@@ -1504,13 +1810,15 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": "オリオン",
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "49598742",
+        "janBasis": "Yahoo!のみ (一致率 6)"
       }
     },
     {
       "id": "inokuchi-18842",
       "maker": "オリオン",
-      "sourceId": "49598544",
       "source": "rakuten",
       "_review": {
         "query": "オリオン ミニ コーラ",
@@ -1520,12 +1828,14 @@
         "genre": "ラムネ",
         "makerAgreement": "2/2",
         "yahooMaker": "オリオン",
-        "agreesWithYahoo": true
+        "agreesWithYahoo": true,
+        "janAgreement": "1/2",
+        "yahooJan": "49598636",
+        "janBasis": "両APIが不一致 (yahoo=49598636 / rakuten=49598544)"
       }
     },
     {
       "id": "inokuchi-19304",
-      "sourceId": "4902555117492",
       "source": "rakuten",
       "_review": {
         "query": "不二家ミルキー",
@@ -1535,7 +1845,10 @@
         "genre": "ソフトキャンディ",
         "makerAgreement": "4/7",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/7",
+        "yahooJan": "4902555111407",
+        "janBasis": "両APIが不一致 (yahoo=4902555111407 / rakuten=4902555117492)"
       }
     },
     {
@@ -1549,7 +1862,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4901361001315",
+        "janBasis": "Yahoo!のみだが一致率が低い (1)"
       }
     },
     {
@@ -1563,12 +1879,14 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4903013436018",
+        "janBasis": "Yahoo!のみだが一致率が低い (2)"
       }
     },
     {
       "id": "inokuchi-18480",
-      "sourceId": "4548626157150",
       "source": "rakuten",
       "_review": {
         "query": "ココアシガレット",
@@ -1578,7 +1896,10 @@
         "genre": "ラムネ",
         "makerAgreement": "2/7",
         "yahooMaker": "オリオン",
-        "agreesWithYahoo": false
+        "agreesWithYahoo": false,
+        "janAgreement": "1/7",
+        "yahooJan": "49151558",
+        "janBasis": "両APIが不一致 (yahoo=49151558 / rakuten=4548626157150)"
       }
     },
     {
@@ -1592,12 +1913,14 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": null,
+        "janBasis": "どちらも取得できず"
       }
     },
     {
       "id": "inokuchi-18388",
-      "sourceId": "4580433070666",
       "source": "rakuten",
       "_review": {
         "query": "うまい棒 チーズ味",
@@ -1607,7 +1930,10 @@
         "genre": "靴下",
         "makerAgreement": "1/3",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/3",
+        "yahooJan": "49480832",
+        "janBasis": "両APIが不一致 (yahoo=49480832 / rakuten=4580433070666)"
       }
     },
     {
@@ -1622,12 +1948,14 @@
         "genre": "駄菓子スナック",
         "makerAgreement": "2/5",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/5",
+        "yahooJan": "49415780",
+        "janBasis": "両API一致"
       }
     },
     {
       "id": "inokuchi-18387",
-      "sourceId": "4538290614097",
       "source": "rakuten",
       "_review": {
         "query": "うまい棒 めんたい味",
@@ -1637,11 +1965,15 @@
         "genre": "各種駄菓子セット",
         "makerAgreement": "1/4",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/4",
+        "yahooJan": "49480856",
+        "janBasis": "両APIが不一致 (yahoo=49480856 / rakuten=4538290614097)"
       }
     },
     {
       "id": "inokuchi-18394",
+      "sourceId": "49480795",
       "source": "rakuten",
       "_review": {
         "query": "うまい棒 たこ焼味",
@@ -1651,7 +1983,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "49480795",
+        "janBasis": "Yahoo!のみ (一致率 4)"
       }
     },
     {
@@ -1666,7 +2001,10 @@
         "genre": "駄菓子スナック",
         "makerAgreement": "1/1",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/1",
+        "yahooJan": "49415735",
+        "janBasis": "両API一致"
       }
     },
     {
@@ -1680,12 +2018,14 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": "マルカワ",
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "49438185",
+        "janBasis": "Yahoo!のみだが一致率が低い (2)"
       }
     },
     {
       "id": "inokuchi-21110",
-      "sourceId": "4903013270322",
       "source": "rakuten",
       "_review": {
         "query": "うまい棒 やきとり味",
@@ -1695,7 +2035,10 @@
         "genre": "駄菓子スナック",
         "makerAgreement": "1/1",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/1",
+        "yahooJan": "49415780",
+        "janBasis": "両APIが不一致 (yahoo=49415780 / rakuten=4903013270322)"
       }
     },
     {
@@ -1710,7 +2053,10 @@
         "genre": "駄菓子スナック",
         "makerAgreement": "1/1",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/1",
+        "yahooJan": "49480771",
+        "janBasis": "両API一致"
       }
     },
     {
@@ -1724,11 +2070,15 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4984014010193",
+        "janBasis": "Yahoo!のみだが一致率が低い (1)"
       }
     },
     {
       "id": "inokuchi-18418",
+      "sourceId": "49459319",
       "source": "rakuten",
       "_review": {
         "query": "フィリックスガム当たり付",
@@ -1738,7 +2088,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": "マルカワ",
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "49459319",
+        "janBasis": "Yahoo!のみ (一致率 4)"
       }
     },
     {
@@ -1752,7 +2105,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4903013431686",
+        "janBasis": "Yahoo!のみだが一致率が低い (1)"
       }
     },
     {
@@ -1766,7 +2122,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": null,
+        "janBasis": "どちらも取得できず"
       }
     },
     {
@@ -1780,7 +2139,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4903013080303",
+        "janBasis": "Yahoo!のみだが一致率が低い (1)"
       }
     },
     {
@@ -1795,13 +2157,15 @@
         "genre": "駄菓子キャンディ",
         "makerAgreement": "7/7",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/7",
+        "yahooJan": "4902797237095",
+        "janBasis": "両API一致"
       }
     },
     {
       "id": "inokuchi-18426",
       "maker": "パイン",
-      "sourceId": "49707502",
       "source": "rakuten",
       "_review": {
         "query": "どんぐりガム",
@@ -1811,7 +2175,10 @@
         "genre": "ガム",
         "makerAgreement": "9/9",
         "yahooMaker": "Pine",
-        "agreesWithYahoo": true
+        "agreesWithYahoo": true,
+        "janAgreement": "1/9",
+        "yahooJan": "49751970",
+        "janBasis": "両APIが不一致 (yahoo=49751970 / rakuten=49707502)"
       }
     },
     {
@@ -1826,12 +2193,14 @@
         "genre": "各種駄菓子セット",
         "makerAgreement": "3/3",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/3",
+        "yahooJan": "4902762771739",
+        "janBasis": "両API一致"
       }
     },
     {
       "id": "inokuchi-19143",
-      "sourceId": "4517161166101",
       "source": "rakuten",
       "_review": {
         "query": "フルーツの森",
@@ -1841,7 +2210,10 @@
         "genre": "ハンドソープ",
         "makerAgreement": "7/10",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/10",
+        "yahooJan": "4971646010431",
+        "janBasis": "両APIが不一致 (yahoo=4971646010431 / rakuten=4517161166101)"
       }
     },
     {
@@ -1855,12 +2227,14 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4906763121005",
+        "janBasis": "Yahoo!のみだが一致率が低い (2)"
       }
     },
     {
       "id": "inokuchi-18390",
-      "sourceId": "4991863511115",
       "source": "rakuten",
       "_review": {
         "query": "うまい棒 とんかつソース味",
@@ -1870,11 +2244,15 @@
         "genre": "鉛筆",
         "makerAgreement": "1/2",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/2",
+        "yahooJan": "49480818",
+        "janBasis": "両APIが不一致 (yahoo=49480818 / rakuten=4991863511115)"
       }
     },
     {
       "id": "inokuchi-18435",
+      "sourceId": "4971749110465",
       "source": "rakuten",
       "_review": {
         "query": "甘いか太郎 キムチ味",
@@ -1884,7 +2262,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4971749110465",
+        "janBasis": "Yahoo!のみ (一致率 7)"
       }
     },
     {
@@ -1898,7 +2279,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": null,
+        "janBasis": "どちらも取得できず"
       }
     },
     {
@@ -1912,7 +2296,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4573210640183",
+        "janBasis": "Yahoo!のみだが一致率が低い (2)"
       }
     },
     {
@@ -1927,7 +2314,10 @@
         "genre": "あめ・キャンディ",
         "makerAgreement": "2/2",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/2",
+        "yahooJan": "4903013241247",
+        "janBasis": "両API一致"
       }
     },
     {
@@ -1941,7 +2331,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "49630411",
+        "janBasis": "Yahoo!のみだが一致率が低い (2)"
       }
     },
     {
@@ -1956,7 +2349,10 @@
         "genre": "駄菓子珍味",
         "makerAgreement": "1/2",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/2",
+        "yahooJan": "4970450115578",
+        "janBasis": "両API一致"
       }
     },
     {
@@ -1971,7 +2367,10 @@
         "genre": "あんず",
         "makerAgreement": "1/1",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/1",
+        "yahooJan": "4902762721833",
+        "janBasis": "両API一致"
       }
     },
     {
@@ -1986,7 +2385,10 @@
         "genre": "駄菓子スナック",
         "makerAgreement": "1/1",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/1",
+        "yahooJan": "4904052011389",
+        "janBasis": "両API一致"
       }
     },
     {
@@ -2001,12 +2403,14 @@
         "genre": "その他",
         "makerAgreement": "1/1",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/1",
+        "yahooJan": "4902762850137",
+        "janBasis": "両API一致"
       }
     },
     {
       "id": "inokuchi-19599",
-      "sourceId": "1001000014812008",
       "source": "rakuten",
       "_review": {
         "query": "チーズおやつ",
@@ -2016,7 +2420,10 @@
         "genre": "駄菓子珍味",
         "makerAgreement": "3/8",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/8",
+        "yahooJan": "4970765131119",
+        "janBasis": "両APIが不一致 (yahoo=4970765131119 / rakuten=4970765131126)"
       }
     },
     {
@@ -2030,11 +2437,15 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4906763121005",
+        "janBasis": "Yahoo!のみだが一致率が低い (2)"
       }
     },
     {
       "id": "inokuchi-29060",
+      "sourceId": "4903013431679",
       "source": "rakuten",
       "_review": {
         "query": "メロンぱんだろ〜クッキー",
@@ -2044,11 +2455,15 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4903013431679",
+        "janBasis": "Yahoo!のみ (一致率 4)"
       }
     },
     {
       "id": "inokuchi-18425",
+      "sourceId": "49707243",
       "source": "rakuten",
       "_review": {
         "query": "あわ玉 飴",
@@ -2058,7 +2473,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": "Pine",
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "49707243",
+        "janBasis": "Yahoo!のみ (一致率 3)"
       }
     },
     {
@@ -2072,11 +2490,15 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4902748001461",
+        "janBasis": "Yahoo!のみだが一致率が低い (2)"
       }
     },
     {
       "id": "inokuchi-18391",
+      "sourceId": "49480849",
       "source": "rakuten",
       "_review": {
         "query": "うまい棒 テリヤキバーガー味",
@@ -2086,7 +2508,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "49480849",
+        "janBasis": "Yahoo!のみ (一致率 5)"
       }
     },
     {
@@ -2101,11 +2526,15 @@
         "genre": "グミ",
         "makerAgreement": "2/2",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/2",
+        "yahooJan": "4980937000310",
+        "janBasis": "両API一致"
       }
     },
     {
       "id": "inokuchi-19219",
+      "sourceId": "4902555126142",
       "source": "rakuten",
       "_review": {
         "query": "不二家棒付き ポップキャンディ",
@@ -2115,7 +2544,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": "不二家",
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4902555126142",
+        "janBasis": "Yahoo!のみ (一致率 8)"
       }
     },
     {
@@ -2129,7 +2561,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4973269000028",
+        "janBasis": "Yahoo!のみだが一致率が低い (1)"
       }
     },
     {
@@ -2144,11 +2579,15 @@
         "genre": "ラムネ",
         "makerAgreement": "1/1",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/1",
+        "yahooJan": "4973887810382",
+        "janBasis": "両API一致"
       }
     },
     {
       "id": "inokuchi-22560",
+      "sourceId": "4903013276072",
       "source": "rakuten",
       "_review": {
         "query": "うまい棒プレミアム和風ステーキ味",
@@ -2158,11 +2597,15 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4903013276072",
+        "janBasis": "Yahoo!のみ (一致率 5)"
       }
     },
     {
       "id": "inokuchi-21434",
+      "sourceId": "4903013276058",
       "source": "rakuten",
       "_review": {
         "query": "うまい棒プレミアムめんたいこ味",
@@ -2172,11 +2615,15 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4903013276058",
+        "janBasis": "Yahoo!のみ (一致率 3)"
       }
     },
     {
       "id": "inokuchi-21429",
+      "sourceId": "4903013276027",
       "source": "rakuten",
       "_review": {
         "query": "うまい棒プレミアムチーズ味",
@@ -2186,7 +2633,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4903013276027",
+        "janBasis": "Yahoo!のみ (一致率 3)"
       }
     },
     {
@@ -2201,7 +2651,10 @@
         "genre": "ミニラーメン",
         "makerAgreement": "2/2",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "1/2",
+        "yahooJan": "4903013090531",
+        "janBasis": "両API一致"
       }
     },
     {
@@ -2215,7 +2668,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4966712000034",
+        "janBasis": "Yahoo!のみだが一致率が低い (1)"
       }
     },
     {
@@ -2229,7 +2685,10 @@
         "genre": null,
         "makerAgreement": "0/0",
         "yahooMaker": null,
-        "agreesWithYahoo": null
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": null,
+        "janBasis": "どちらも取得できず"
       }
     }
   ]

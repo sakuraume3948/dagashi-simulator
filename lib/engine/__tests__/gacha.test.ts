@@ -23,7 +23,7 @@ function fake(
     weight,
     imageUrl: null,
     sourceUrl: null,
-    source: "dummy",
+    source: "inokuchi",
     sourceId: null,
     fetchedAt: null,
   };

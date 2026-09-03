@@ -1,11 +1,12 @@
 {
   "source": "yahoo",
   "sourceName": "Yahoo!ショッピング商品検索API（メーカー名・JANコードの補完）",
-  "fetchedAt": "2026-09-02T08:22:00.509Z",
+  "fetchedAt": "2026-09-03T15:13:12.857Z",
   "items": [
     {
       "id": "inokuchi-49941",
-      "sourceId": "4550433081924",
+      "_janCandidate": "4550433081924",
+      "_janAgreed": 4,
       "source": "yahoo",
       "_review": {
         "query": "ちゅるりんジェリー",
@@ -20,7 +21,8 @@
     {
       "id": "inokuchi-49938",
       "_makerCandidate": "SEIKA",
-      "sourceId": "4973260301094",
+      "_janCandidate": "4973260301094",
+      "_janAgreed": 5,
       "source": "yahoo",
       "_review": {
         "query": "ラムネもち",
@@ -34,7 +36,8 @@
     },
     {
       "id": "inokuchi-49936",
-      "sourceId": "4973260301032",
+      "_janCandidate": "4973260301032",
+      "_janAgreed": 5,
       "source": "yahoo",
       "_review": {
         "query": "ぶどうのもっちゃん",
@@ -49,7 +52,8 @@
     {
       "id": "inokuchi-49843",
       "_makerCandidate": "Kanro",
-      "sourceId": "4901351026793",
+      "_janCandidate": "4901351026793",
+      "_janAgreed": 4,
       "source": "yahoo",
       "_review": {
         "query": "カンロ ザ・ストロンググミ ソーダ",
@@ -63,7 +67,8 @@
     },
     {
       "id": "inokuchi-49773",
-      "sourceId": "4903013799823",
+      "_janCandidate": "4903013799823",
+      "_janAgreed": 3,
       "source": "yahoo",
       "_review": {
         "query": "コーラスプラッシュ",
@@ -77,7 +82,8 @@
     },
     {
       "id": "inokuchi-49742",
-      "sourceId": "8938517587047",
+      "_janCandidate": "4901360361540",
+      "_janAgreed": 1,
       "source": "yahoo",
       "_review": {
         "query": "ココナッツクッキー",
@@ -91,7 +97,8 @@
     },
     {
       "id": "inokuchi-49575",
-      "sourceId": "4903013357207",
+      "_janCandidate": "4903013357207",
+      "_janAgreed": 10,
       "source": "yahoo",
       "_review": {
         "query": "サワーペーパーキャンディ ホワイトソーダ",
@@ -105,7 +112,8 @@
     },
     {
       "id": "inokuchi-49528",
-      "sourceId": "4903013357276",
+      "_janCandidate": "4903013357276",
+      "_janAgreed": 3,
       "source": "yahoo",
       "_review": {
         "query": "サワーペーパーキャンディ",
@@ -133,7 +141,8 @@
     {
       "id": "inokuchi-49386",
       "_makerCandidate": "ヤガイ",
-      "sourceId": "4903020005870",
+      "_janCandidate": "4903020005870",
+      "_janAgreed": 5,
       "source": "yahoo",
       "_review": {
         "query": "おやつカルパス 旨辛味",
@@ -174,7 +183,8 @@
     {
       "id": "inokuchi-48874",
       "_makerCandidate": "オリオン",
-      "sourceId": "49598605",
+      "_janCandidate": "49598605",
+      "_janAgreed": 4,
       "source": "yahoo",
       "_review": {
         "query": "マンテンデビュー",
@@ -188,7 +198,8 @@
     },
     {
       "id": "inokuchi-48621",
-      "sourceId": "4570160333202",
+      "_janCandidate": "4570160333202",
+      "_janAgreed": 1,
       "source": "yahoo",
       "_review": {
         "query": "キララメシールバインダー",
@@ -216,7 +227,8 @@
     {
       "id": "inokuchi-48013",
       "_makerCandidate": "グリコ",
-      "sourceId": "4901005521308",
+      "_janCandidate": "4901005521308",
+      "_janAgreed": 5,
       "source": "yahoo",
       "_review": {
         "query": "プリッツ うまサラダ",
@@ -230,7 +242,8 @@
     },
     {
       "id": "inokuchi-48012",
-      "sourceId": "4901005521193",
+      "_janCandidate": "4901005521193",
+      "_janAgreed": 2,
       "source": "yahoo",
       "_review": {
         "query": "プリッツ",
@@ -245,7 +258,8 @@
     {
       "id": "inokuchi-48009",
       "_makerCandidate": "ロッテ",
-      "sourceId": "4903333129034",
+      "_janCandidate": "4903333129034",
+      "_janAgreed": 4,
       "source": "yahoo",
       "_review": {
         "query": "コアラのマーチ ミニパック",
@@ -259,7 +273,8 @@
     },
     {
       "id": "inokuchi-47599",
-      "sourceId": "4582218057558",
+      "_janCandidate": "4582218057558",
+      "_janAgreed": 7,
       "source": "yahoo",
       "_review": {
         "query": "アニマルヨーチ",
@@ -273,7 +288,8 @@
     },
     {
       "id": "inokuchi-47544",
-      "sourceId": "4582218055929",
+      "_janCandidate": "4582218055929",
+      "_janAgreed": 2,
       "source": "yahoo",
       "_review": {
         "query": "プチドーナッツビスケット",
@@ -288,7 +304,8 @@
     {
       "id": "inokuchi-47443",
       "_makerCandidate": "明治",
-      "sourceId": "4902744036900",
+      "_janCandidate": "4902744036900",
+      "_janAgreed": 5,
       "source": "yahoo",
       "_review": {
         "query": "チューキャン",
@@ -303,7 +320,8 @@
     {
       "id": "inokuchi-47318",
       "_makerCandidate": "ギンビス",
-      "sourceId": "4901588617511",
+      "_janCandidate": "4901588617511",
+      "_janAgreed": 6,
       "source": "yahoo",
       "_review": {
         "query": "しみチョココーン全粒粉スティック",
@@ -317,7 +335,8 @@
     },
     {
       "id": "inokuchi-47227",
-      "sourceId": "4589704432264",
+      "_janCandidate": "4589704432264",
+      "_janAgreed": 6,
       "source": "yahoo",
       "_review": {
         "query": "ペヤングソース焼きそばカツ",
@@ -331,7 +350,8 @@
     },
     {
       "id": "inokuchi-47224",
-      "sourceId": "4589704435050",
+      "_janCandidate": "4589704435050",
+      "_janAgreed": 2,
       "source": "yahoo",
       "_review": {
         "query": "ミルメーク ムギスナック",
@@ -345,7 +365,8 @@
     },
     {
       "id": "inokuchi-47221",
-      "sourceId": "45203329",
+      "_janCandidate": "45203329",
+      "_janAgreed": 4,
       "source": "yahoo",
       "_review": {
         "query": "ポテコロン",
@@ -359,7 +380,8 @@
     },
     {
       "id": "inokuchi-47112",
-      "sourceId": "4903013790042",
+      "_janCandidate": "4903013790042",
+      "_janAgreed": 3,
       "source": "yahoo",
       "_review": {
         "query": "マカロンクッキー",
@@ -373,12 +395,11 @@
     },
     {
       "id": "inokuchi-46630",
-      "sourceId": "10211038",
       "source": "yahoo",
       "_review": {
         "query": "東京ニコニコラムネ",
         "topName": "東京ニコニコラムネ製菓本舗　ニコニコラムネ　30包入　駄菓子ラムネ",
-        "janAgreement": "1/1",
+        "janAgreement": "0/1",
         "brandAgreement": "0/1",
         "brandRaw": null,
         "brandRejected": "brand なし",
@@ -387,7 +408,8 @@
     },
     {
       "id": "inokuchi-46453",
-      "sourceId": "4537988361312",
+      "_janCandidate": "4537988361312",
+      "_janAgreed": 2,
       "source": "yahoo",
       "_review": {
         "query": "フルーツポップ",
@@ -401,7 +423,8 @@
     },
     {
       "id": "inokuchi-46451",
-      "sourceId": "4903013090494",
+      "_janCandidate": "4903013090494",
+      "_janAgreed": 3,
       "source": "yahoo",
       "_review": {
         "query": "うま辛パンチみそラーメン",
@@ -428,7 +451,8 @@
     },
     {
       "id": "inokuchi-46195",
-      "sourceId": "4903013246556",
+      "_janCandidate": "4903013246556",
+      "_janAgreed": 4,
       "source": "yahoo",
       "_review": {
         "query": "ポリッキー",
@@ -443,7 +467,8 @@
     {
       "id": "inokuchi-19342",
       "_makerCandidate": "よっちゃん",
-      "sourceId": "4903041018132",
+      "_janCandidate": "4903041018132",
+      "_janAgreed": 6,
       "source": "yahoo",
       "_review": {
         "query": "カットよっちゃんいか",
@@ -458,7 +483,8 @@
     {
       "id": "inokuchi-32859",
       "_makerCandidate": "よっちゃん",
-      "sourceId": "4903041201206",
+      "_janCandidate": "4903041201206",
+      "_janAgreed": 4,
       "source": "yahoo",
       "_review": {
         "query": "タラタラしてんじゃねーよ",
@@ -473,7 +499,8 @@
     {
       "id": "inokuchi-18847",
       "_makerCandidate": "ヤガイ",
-      "sourceId": "4903020005894",
+      "_janCandidate": "4903020005894",
+      "_janAgreed": 4,
       "source": "yahoo",
       "_review": {
         "query": "おやつカルパス",
@@ -487,7 +514,8 @@
     },
     {
       "id": "inokuchi-46024",
-      "sourceId": "4903013431525",
+      "_janCandidate": "4903013431525",
+      "_janAgreed": 6,
       "source": "yahoo",
       "_review": {
         "query": "セブンスティック",
@@ -514,7 +542,8 @@
     },
     {
       "id": "inokuchi-45410",
-      "sourceId": "4904052011358",
+      "_janCandidate": "4904052011358",
+      "_janAgreed": 2,
       "source": "yahoo",
       "_review": {
         "query": "中村製菓 ポテトフライ",
@@ -529,7 +558,8 @@
     {
       "id": "inokuchi-45231",
       "_makerCandidate": "共親製菓",
-      "sourceId": "4971646010554",
+      "_janCandidate": "4971646010554",
+      "_janAgreed": 4,
       "source": "yahoo",
       "_review": {
         "query": "キャンディーボックス",
@@ -543,7 +573,8 @@
     },
     {
       "id": "inokuchi-42865",
-      "sourceId": "4903013274788",
+      "_janCandidate": "4903013274788",
+      "_janAgreed": 2,
       "source": "yahoo",
       "_review": {
         "query": "うまい棒 スパイシービーフカレー味",
@@ -558,7 +589,8 @@
     {
       "id": "inokuchi-18401",
       "_makerCandidate": "カルビー",
-      "sourceId": "49870312",
+      "_janCandidate": "49870312",
+      "_janAgreed": 4,
       "source": "yahoo",
       "_review": {
         "query": "餅太郎・塩",
@@ -572,7 +604,8 @@
     },
     {
       "id": "inokuchi-19550",
-      "sourceId": "45132872",
+      "_janCandidate": "45132872",
+      "_janAgreed": 3,
       "source": "yahoo",
       "_review": {
         "query": "うまい棒 牛タン塩味",
@@ -586,7 +619,8 @@
     },
     {
       "id": "inokuchi-35219",
-      "sourceId": "49415780",
+      "_janCandidate": "49415780",
+      "_janAgreed": 3,
       "source": "yahoo",
       "_review": {
         "query": "うまい棒 のり塩味",
@@ -600,7 +634,8 @@
     },
     {
       "id": "inokuchi-44770",
-      "sourceId": "4903013799946",
+      "_janCandidate": "4903013799946",
+      "_janAgreed": 9,
       "source": "yahoo",
       "_review": {
         "query": "どうぶつマシュマロ",
@@ -614,7 +649,8 @@
     },
     {
       "id": "inokuchi-44767",
-      "sourceId": "4962679655294",
+      "_janCandidate": "4962679655294",
+      "_janAgreed": 2,
       "source": "yahoo",
       "_review": {
         "query": "のむのむゼリー パイン味",
@@ -641,7 +677,8 @@
     },
     {
       "id": "inokuchi-44678",
-      "sourceId": "4971749111141",
+      "_janCandidate": "4971749111141",
+      "_janAgreed": 4,
       "source": "yahoo",
       "_review": {
         "query": "カステラドーナツ太郎",
@@ -656,7 +693,8 @@
     {
       "id": "inokuchi-44675",
       "_makerCandidate": "東京拉麺",
-      "sourceId": "4906871022249",
+      "_janCandidate": "4906871022249",
+      "_janAgreed": 4,
       "source": "yahoo",
       "_review": {
         "query": "うどん屋しんちゃん",
@@ -671,12 +709,13 @@
     {
       "id": "inokuchi-44592",
       "_makerCandidate": "Trolli",
-      "sourceId": "8437000482093",
+      "_janCandidate": "4903013247324",
+      "_janAgreed": 1,
       "source": "yahoo",
       "_review": {
         "query": "サワーコーラグミ",
         "topName": "Trolli トローリ グミ 15種類から4つ選べるお試しセット 輸入菓子",
-        "janAgreement": "3/10",
+        "janAgreement": "1/10",
         "brandAgreement": "3/10",
         "brandRaw": "Trolli",
         "brandRejected": null,
@@ -685,7 +724,8 @@
     },
     {
       "id": "inokuchi-44590",
-      "sourceId": "4903013247317",
+      "_janCandidate": "4903013247317",
+      "_janAgreed": 3,
       "source": "yahoo",
       "_review": {
         "query": "グレープソーダグミ",
@@ -699,7 +739,8 @@
     },
     {
       "id": "inokuchi-44113",
-      "sourceId": "4903013060091",
+      "_janCandidate": "4903013060091",
+      "_janAgreed": 7,
       "source": "yahoo",
       "_review": {
         "query": "やおきん にんじん",
@@ -714,7 +755,8 @@
     {
       "id": "inokuchi-43853",
       "_makerCandidate": "不二家",
-      "sourceId": "49755190",
+      "_janCandidate": "49755190",
+      "_janAgreed": 8,
       "source": "yahoo",
       "_review": {
         "query": "アンパンマン ペロペロキャンディ",
@@ -728,7 +770,8 @@
     },
     {
       "id": "inokuchi-43273",
-      "sourceId": "4971749112063",
+      "_janCandidate": "4971749112063",
+      "_janAgreed": 5,
       "source": "yahoo",
       "_review": {
         "query": "ハニーバター太郎",
@@ -742,7 +785,8 @@
     },
     {
       "id": "inokuchi-43153",
-      "sourceId": "4906763153600",
+      "_janCandidate": "4906763153600",
+      "_janAgreed": 3,
       "source": "yahoo",
       "_review": {
         "query": "にこにこにっこり わたがし 佐藤製菓",
@@ -756,7 +800,8 @@
     },
     {
       "id": "inokuchi-42585",
-      "sourceId": "4902744031844",
+      "_janCandidate": "4902744031844",
+      "_janAgreed": 2,
       "source": "yahoo",
       "_review": {
         "query": "ガブリチュウ",
@@ -771,7 +816,8 @@
     {
       "id": "inokuchi-42136",
       "_makerCandidate": "BANDAI",
-      "sourceId": "4570117913730",
+      "_janCandidate": "4570117913730",
+      "_janAgreed": 5,
       "source": "yahoo",
       "_review": {
         "query": "すみっコぐらし つりグミ",
@@ -786,7 +832,8 @@
     {
       "id": "inokuchi-40722",
       "_makerCandidate": "BANDAI",
-      "sourceId": "4549660424024",
+      "_janCandidate": "4549660424024",
+      "_janAgreed": 8,
       "source": "yahoo",
       "_review": {
         "query": "魚ギョッと釣りグミ",
@@ -801,7 +848,8 @@
     {
       "id": "inokuchi-42079",
       "_makerCandidate": "マルタ",
-      "sourceId": "4977831003134",
+      "_janCandidate": "4977831003134",
+      "_janAgreed": 4,
       "source": "yahoo",
       "_review": {
         "query": "花コンペイ糖",
@@ -815,7 +863,8 @@
     },
     {
       "id": "inokuchi-18429",
-      "sourceId": "4971749110359",
+      "_janCandidate": "4971749110359",
+      "_janAgreed": 6,
       "source": "yahoo",
       "_review": {
         "query": "もろこし輪太郎",
@@ -829,7 +878,8 @@
     },
     {
       "id": "inokuchi-18428",
-      "sourceId": "4971749110304",
+      "_janCandidate": "4971749110304",
+      "_janAgreed": 6,
       "source": "yahoo",
       "_review": {
         "query": "キャベツ太郎",
@@ -843,7 +893,8 @@
     },
     {
       "id": "inokuchi-18430",
-      "sourceId": "4971749110298",
+      "_janCandidate": "4971749110298",
+      "_janAgreed": 4,
       "source": "yahoo",
       "_review": {
         "query": "玉葱さん太郎",
@@ -857,7 +908,8 @@
     },
     {
       "id": "inokuchi-18431",
-      "sourceId": "4542202659854",
+      "_janCandidate": "4542202659854",
+      "_janAgreed": 2,
       "source": "yahoo",
       "_review": {
         "query": "アメリカンフライドポテト",
@@ -871,7 +923,8 @@
     },
     {
       "id": "inokuchi-18405",
-      "sourceId": "4971749110410",
+      "_janCandidate": "4971749110410",
+      "_janAgreed": 4,
       "source": "yahoo",
       "_review": {
         "query": "ラーメン屋さん太郎",
@@ -885,7 +938,8 @@
     },
     {
       "id": "inokuchi-18406",
-      "sourceId": "4971749110403",
+      "_janCandidate": "4971749110403",
+      "_janAgreed": 6,
       "source": "yahoo",
       "_review": {
         "query": "やきそば屋さん太郎",
@@ -900,7 +954,8 @@
     {
       "id": "inokuchi-39792",
       "_makerCandidate": "ORIHIRO",
-      "sourceId": "4571157258096",
+      "_janCandidate": "4571157258096",
+      "_janAgreed": 2,
       "source": "yahoo",
       "_review": {
         "query": "こんにゃくゼリー",
@@ -914,7 +969,8 @@
     },
     {
       "id": "inokuchi-39283",
-      "sourceId": "49415780",
+      "_janCandidate": "49415780",
+      "_janAgreed": 2,
       "source": "yahoo",
       "_review": {
         "query": "クリスマスうまい棒チョコレート",
@@ -928,7 +984,8 @@
     },
     {
       "id": "inokuchi-39019",
-      "sourceId": "4903013246327",
+      "_janCandidate": "4903013246327",
+      "_janAgreed": 3,
       "source": "yahoo",
       "_review": {
         "query": "ロールキャンディ",
@@ -942,7 +999,8 @@
     },
     {
       "id": "inokuchi-38662",
-      "sourceId": "4903013431730",
+      "_janCandidate": "4903013431730",
+      "_janAgreed": 4,
       "source": "yahoo",
       "_review": {
         "query": "ロングチュー",
@@ -956,7 +1014,8 @@
     },
     {
       "id": "inokuchi-19095",
-      "sourceId": "4963298333778",
+      "_janCandidate": "4963298333778",
+      "_janAgreed": 1,
       "source": "yahoo",
       "_review": {
         "query": "ビンラムネ（モナカ）",
@@ -970,7 +1029,8 @@
     },
     {
       "id": "inokuchi-18432",
-      "sourceId": "4971749110373",
+      "_janCandidate": "4971749110373",
+      "_janAgreed": 5,
       "source": "yahoo",
       "_review": {
         "query": "どんどん焼あられ",
@@ -984,7 +1044,8 @@
     },
     {
       "id": "inokuchi-19299",
-      "sourceId": "4903047950740",
+      "_janCandidate": "4903047950740",
+      "_janAgreed": 4,
       "source": "yahoo",
       "_review": {
         "query": "味カレー大和製菓",
@@ -999,7 +1060,8 @@
     {
       "id": "inokuchi-24317",
       "_makerCandidate": "東豊製菓",
-      "sourceId": "4901984088267",
+      "_janCandidate": "4901984088267",
+      "_janAgreed": 6,
       "source": "yahoo",
       "_review": {
         "query": "東豊ポテトフライ チキン味",
@@ -1014,7 +1076,8 @@
     {
       "id": "inokuchi-36594",
       "_makerCandidate": "東豊製菓",
-      "sourceId": "4901984088281",
+      "_janCandidate": "4901984088281",
+      "_janAgreed": 2,
       "source": "yahoo",
       "_review": {
         "query": "東豊ポテトフライ カルビ焼きの味",
@@ -1029,7 +1092,8 @@
     {
       "id": "inokuchi-36591",
       "_makerCandidate": "東豊製菓",
-      "sourceId": "4901984088281",
+      "_janCandidate": "4901984088281",
+      "_janAgreed": 5,
       "source": "yahoo",
       "_review": {
         "query": "東豊ポテトフライ じゃが塩バター味",
@@ -1043,7 +1107,8 @@
     },
     {
       "id": "inokuchi-18504",
-      "sourceId": "49307887",
+      "_janCandidate": "49307887",
+      "_janAgreed": 2,
       "source": "yahoo",
       "_review": {
         "query": "ペペロンチーノ",
@@ -1057,7 +1122,8 @@
     },
     {
       "id": "inokuchi-36988",
-      "sourceId": "4930570146029",
+      "_janCandidate": "4930570146029",
+      "_janAgreed": 1,
       "source": "yahoo",
       "_review": {
         "query": "ソフトマドロス",
@@ -1071,7 +1137,8 @@
     },
     {
       "id": "inokuchi-34423",
-      "sourceId": "4979446010514",
+      "_janCandidate": "4979446010514",
+      "_janAgreed": 6,
       "source": "yahoo",
       "_review": {
         "query": "梅ジャム タカミ製菓",
@@ -1085,7 +1152,8 @@
     },
     {
       "id": "inokuchi-34367",
-      "sourceId": "4903013247553",
+      "_janCandidate": "4903013247553",
+      "_janAgreed": 4,
       "source": "yahoo",
       "_review": {
         "query": "焼たら",
@@ -1125,7 +1193,8 @@
     },
     {
       "id": "inokuchi-19337",
-      "sourceId": "4902888254888",
+      "_janCandidate": "4902888254888",
+      "_janAgreed": 4,
       "source": "yahoo",
       "_review": {
         "query": "森永ハイチュウ",
@@ -1139,7 +1208,8 @@
     },
     {
       "id": "inokuchi-19433",
-      "sourceId": "4902775070171",
+      "_janCandidate": "4902775070171",
+      "_janAgreed": 6,
       "source": "yahoo",
       "_review": {
         "query": "ブタメン",
@@ -1153,7 +1223,8 @@
     },
     {
       "id": "inokuchi-33782",
-      "sourceId": "4901640030449",
+      "_janCandidate": "4901640030449",
+      "_janAgreed": 2,
       "source": "yahoo",
       "_review": {
         "query": "手づくりキャンディー",
@@ -1167,7 +1238,8 @@
     },
     {
       "id": "inokuchi-33775",
-      "sourceId": "4901922100105",
+      "_janCandidate": "4901922100105",
+      "_janAgreed": 2,
       "source": "yahoo",
       "_review": {
         "query": "うずまきキャンディー",
@@ -1181,7 +1253,8 @@
     },
     {
       "id": "inokuchi-33767",
-      "sourceId": "4573468825813",
+      "_janCandidate": "4573468825813",
+      "_janAgreed": 3,
       "source": "yahoo",
       "_review": {
         "query": "りんごあめ",
@@ -1195,7 +1268,8 @@
     },
     {
       "id": "inokuchi-32110",
-      "sourceId": "4977381000386",
+      "_janCandidate": "4977381000386",
+      "_janAgreed": 1,
       "source": "yahoo",
       "_review": {
         "query": "4個入りトンガリ菓子",
@@ -1210,7 +1284,8 @@
     {
       "id": "inokuchi-18483",
       "_makerCandidate": "宮田製菓",
-      "sourceId": "4977821321491",
+      "_janCandidate": "4977821321491",
+      "_janAgreed": 5,
       "source": "yahoo",
       "_review": {
         "query": "ヤングドーナツ",
@@ -1225,7 +1300,8 @@
     {
       "id": "inokuchi-19969",
       "_makerCandidate": "カクダイ製菓",
-      "sourceId": "49635775",
+      "_janCandidate": "49635775",
+      "_janAgreed": 2,
       "source": "yahoo",
       "_review": {
         "query": "クッピーラムネ",
@@ -1239,7 +1315,8 @@
     },
     {
       "id": "inokuchi-18463",
-      "sourceId": "4971749110526",
+      "_janCandidate": "4971749110526",
+      "_janAgreed": 3,
       "source": "yahoo",
       "_review": {
         "query": "ビッグカツとんかつソース味",
@@ -1253,7 +1330,8 @@
     },
     {
       "id": "inokuchi-18848",
-      "sourceId": "4903013436094",
+      "_janCandidate": "4903013436094",
+      "_janAgreed": 10,
       "source": "yahoo",
       "_review": {
         "query": "ぐるぐるゼリー",
@@ -1267,7 +1345,8 @@
     },
     {
       "id": "inokuchi-23160",
-      "sourceId": "4903013016074",
+      "_janCandidate": "4903013016074",
+      "_janAgreed": 6,
       "source": "yahoo",
       "_review": {
         "query": "ふがし（角）",
@@ -1294,7 +1373,8 @@
     },
     {
       "id": "inokuchi-18409",
-      "sourceId": "4971749110335",
+      "_janCandidate": "4971749110335",
+      "_janAgreed": 9,
       "source": "yahoo",
       "_review": {
         "query": "蒲焼さん太郎",
@@ -1308,7 +1388,8 @@
     },
     {
       "id": "inokuchi-18410",
-      "sourceId": "4971749110342",
+      "_janCandidate": "4971749110342",
+      "_janAgreed": 7,
       "source": "yahoo",
       "_review": {
         "query": "焼肉さん太郎",
@@ -1322,7 +1403,8 @@
     },
     {
       "id": "inokuchi-18412",
-      "sourceId": "4971749110618",
+      "_janCandidate": "4971749110618",
+      "_janAgreed": 7,
       "source": "yahoo",
       "_review": {
         "query": "のし梅さん太郎",
@@ -1336,7 +1418,8 @@
     },
     {
       "id": "inokuchi-19272",
-      "sourceId": "4971749110984",
+      "_janCandidate": "4971749110984",
+      "_janAgreed": 7,
       "source": "yahoo",
       "_review": {
         "query": "わさびのり太郎",
@@ -1350,7 +1433,8 @@
     },
     {
       "id": "inokuchi-18411",
-      "sourceId": "4971749110328",
+      "_janCandidate": "4971749110328",
+      "_janAgreed": 6,
       "source": "yahoo",
       "_review": {
         "query": "酢だこさん太郎",
@@ -1365,7 +1449,8 @@
     {
       "id": "inokuchi-18458",
       "_makerCandidate": "チーリン製菓",
-      "sourceId": "45024405",
+      "_janCandidate": "45024405",
+      "_janAgreed": 3,
       "source": "yahoo",
       "_review": {
         "query": "プチプチうらないチョコ",
@@ -1379,7 +1464,8 @@
     },
     {
       "id": "inokuchi-19181",
-      "sourceId": "4962679104808",
+      "_janCandidate": "4962679104808",
+      "_janAgreed": 3,
       "source": "yahoo",
       "_review": {
         "query": "月の小石チョコ",
@@ -1393,7 +1479,8 @@
     },
     {
       "id": "inokuchi-19320",
-      "sourceId": "4903013549503",
+      "_janCandidate": "4903013549503",
+      "_janAgreed": 7,
       "source": "yahoo",
       "_review": {
         "query": "どらチョコ",
@@ -1408,7 +1495,8 @@
     {
       "id": "inokuchi-19966",
       "_makerCandidate": "meito",
-      "sourceId": "4902757111304",
+      "_janCandidate": "4902757111304",
+      "_janAgreed": 5,
       "source": "yahoo",
       "_review": {
         "query": "ぷくぷくたい",
@@ -1449,7 +1537,8 @@
     {
       "id": "inokuchi-18841",
       "_makerCandidate": "オリオン",
-      "sourceId": "49598742",
+      "_janCandidate": "49598742",
+      "_janAgreed": 6,
       "source": "yahoo",
       "_review": {
         "query": "オリオン ミニ サワー",
@@ -1464,7 +1553,8 @@
     {
       "id": "inokuchi-18842",
       "_makerCandidate": "オリオン",
-      "sourceId": "49598636",
+      "_janCandidate": "49598636",
+      "_janAgreed": 2,
       "source": "yahoo",
       "_review": {
         "query": "オリオン ミニ コーラ",
@@ -1478,7 +1568,8 @@
     },
     {
       "id": "inokuchi-19304",
-      "sourceId": "4902555111407",
+      "_janCandidate": "4902555111407",
+      "_janAgreed": 2,
       "source": "yahoo",
       "_review": {
         "query": "不二家ミルキー",
@@ -1492,7 +1583,8 @@
     },
     {
       "id": "inokuchi-19295",
-      "sourceId": "4901361001315",
+      "_janCandidate": "4901361001315",
+      "_janAgreed": 1,
       "source": "yahoo",
       "_review": {
         "query": "ポケモンガム(当り付き）",
@@ -1506,7 +1598,8 @@
     },
     {
       "id": "inokuchi-18501",
-      "sourceId": "4903013436018",
+      "_janCandidate": "4903013436018",
+      "_janAgreed": 2,
       "source": "yahoo",
       "_review": {
         "query": "カップ入りねり水飴",
@@ -1521,7 +1614,8 @@
     {
       "id": "inokuchi-18480",
       "_makerCandidate": "オリオン",
-      "sourceId": "49151558",
+      "_janCandidate": "49151558",
+      "_janAgreed": 3,
       "source": "yahoo",
       "_review": {
         "query": "ココアシガレット",
@@ -1548,7 +1642,8 @@
     },
     {
       "id": "inokuchi-18388",
-      "sourceId": "49480832",
+      "_janCandidate": "49480832",
+      "_janAgreed": 6,
       "source": "yahoo",
       "_review": {
         "query": "うまい棒 チーズ味",
@@ -1562,7 +1657,8 @@
     },
     {
       "id": "inokuchi-28100",
-      "sourceId": "49415780",
+      "_janCandidate": "49415780",
+      "_janAgreed": 8,
       "source": "yahoo",
       "_review": {
         "query": "うまい棒コーンポタージュ",
@@ -1576,7 +1672,8 @@
     },
     {
       "id": "inokuchi-18387",
-      "sourceId": "49480856",
+      "_janCandidate": "49480856",
+      "_janAgreed": 9,
       "source": "yahoo",
       "_review": {
         "query": "うまい棒 めんたい味",
@@ -1590,7 +1687,8 @@
     },
     {
       "id": "inokuchi-18394",
-      "sourceId": "49480795",
+      "_janCandidate": "49480795",
+      "_janAgreed": 4,
       "source": "yahoo",
       "_review": {
         "query": "うまい棒 たこ焼味",
@@ -1604,7 +1702,8 @@
     },
     {
       "id": "inokuchi-19972",
-      "sourceId": "49415735",
+      "_janCandidate": "49415735",
+      "_janAgreed": 4,
       "source": "yahoo",
       "_review": {
         "query": "うまい棒 シュガーラスク味",
@@ -1619,7 +1718,8 @@
     {
       "id": "inokuchi-18451",
       "_makerCandidate": "マルカワ",
-      "sourceId": "49438185",
+      "_janCandidate": "49438185",
+      "_janAgreed": 2,
       "source": "yahoo",
       "_review": {
         "query": "マルカワ マーブルガム当たり付",
@@ -1633,7 +1733,8 @@
     },
     {
       "id": "inokuchi-21110",
-      "sourceId": "49415780",
+      "_janCandidate": "49415780",
+      "_janAgreed": 3,
       "source": "yahoo",
       "_review": {
         "query": "うまい棒 やきとり味",
@@ -1647,7 +1748,8 @@
     },
     {
       "id": "inokuchi-19959",
-      "sourceId": "49480771",
+      "_janCandidate": "49480771",
+      "_janAgreed": 6,
       "source": "yahoo",
       "_review": {
         "query": "うまい棒 なっとう味",
@@ -1661,7 +1763,8 @@
     },
     {
       "id": "inokuchi-19332",
-      "sourceId": "4984014010193",
+      "_janCandidate": "4984014010193",
+      "_janAgreed": 1,
       "source": "yahoo",
       "_review": {
         "query": "コーラガム(当り付き）",
@@ -1676,7 +1779,8 @@
     {
       "id": "inokuchi-18418",
       "_makerCandidate": "マルカワ",
-      "sourceId": "49459319",
+      "_janCandidate": "49459319",
+      "_janAgreed": 4,
       "source": "yahoo",
       "_review": {
         "query": "フィリックスガム当たり付",
@@ -1690,7 +1794,8 @@
     },
     {
       "id": "inokuchi-27358",
-      "sourceId": "4903013431686",
+      "_janCandidate": "4903013431686",
+      "_janAgreed": 1,
       "source": "yahoo",
       "_review": {
         "query": "ぱんだろ〜クッキー",
@@ -1717,7 +1822,8 @@
     },
     {
       "id": "inokuchi-19142",
-      "sourceId": "4903013080303",
+      "_janCandidate": "4903013080303",
+      "_janAgreed": 1,
       "source": "yahoo",
       "_review": {
         "query": "中村製菓 なつかしカレー味せんべい",
@@ -1731,7 +1837,8 @@
     },
     {
       "id": "inokuchi-29685",
-      "sourceId": "4902797237095",
+      "_janCandidate": "4902797237095",
+      "_janAgreed": 2,
       "source": "yahoo",
       "_review": {
         "query": "パチパチパニック",
@@ -1746,7 +1853,8 @@
     {
       "id": "inokuchi-18426",
       "_makerCandidate": "Pine",
-      "sourceId": "49751970",
+      "_janCandidate": "49751970",
+      "_janAgreed": 2,
       "source": "yahoo",
       "_review": {
         "query": "どんぐりガム",
@@ -1760,7 +1868,8 @@
     },
     {
       "id": "inokuchi-18440",
-      "sourceId": "4902762771739",
+      "_janCandidate": "4902762771739",
+      "_janAgreed": 3,
       "source": "yahoo",
       "_review": {
         "query": "あんずボー",
@@ -1774,7 +1883,8 @@
     },
     {
       "id": "inokuchi-19143",
-      "sourceId": "4971646010431",
+      "_janCandidate": "4971646010431",
+      "_janAgreed": 3,
       "source": "yahoo",
       "_review": {
         "query": "フルーツの森",
@@ -1788,7 +1898,8 @@
     },
     {
       "id": "inokuchi-18479",
-      "sourceId": "4906763121005",
+      "_janCandidate": "4906763121005",
+      "_janAgreed": 2,
       "source": "yahoo",
       "_review": {
         "query": "ソースせんべい佐藤製菓",
@@ -1802,7 +1913,8 @@
     },
     {
       "id": "inokuchi-18390",
-      "sourceId": "49480818",
+      "_janCandidate": "49480818",
+      "_janAgreed": 6,
       "source": "yahoo",
       "_review": {
         "query": "うまい棒 とんかつソース味",
@@ -1816,7 +1928,8 @@
     },
     {
       "id": "inokuchi-18435",
-      "sourceId": "4971749110465",
+      "_janCandidate": "4971749110465",
+      "_janAgreed": 7,
       "source": "yahoo",
       "_review": {
         "query": "甘いか太郎 キムチ味",
@@ -1843,7 +1956,8 @@
     },
     {
       "id": "inokuchi-20067",
-      "sourceId": "4573210640183",
+      "_janCandidate": "4573210640183",
+      "_janAgreed": 2,
       "source": "yahoo",
       "_review": {
         "query": "ポップコーン塩味",
@@ -1857,7 +1971,8 @@
     },
     {
       "id": "inokuchi-28026",
-      "sourceId": "4903013241247",
+      "_janCandidate": "4903013241247",
+      "_janAgreed": 6,
       "source": "yahoo",
       "_review": {
         "query": "ダイヤモンドリングキャンディ",
@@ -1871,7 +1986,8 @@
     },
     {
       "id": "inokuchi-18423",
-      "sourceId": "49630411",
+      "_janCandidate": "49630411",
+      "_janAgreed": 2,
       "source": "yahoo",
       "_review": {
         "query": "あべっ子ラムネアソート",
@@ -1885,7 +2001,8 @@
     },
     {
       "id": "inokuchi-18498",
-      "sourceId": "4970450115578",
+      "_janCandidate": "4970450115578",
+      "_janAgreed": 4,
       "source": "yahoo",
       "_review": {
         "query": "さくら大根",
@@ -1899,7 +2016,8 @@
     },
     {
       "id": "inokuchi-18436",
-      "sourceId": "4902762721833",
+      "_janCandidate": "4902762721833",
+      "_janAgreed": 6,
       "source": "yahoo",
       "_review": {
         "query": "みつあんず",
@@ -1913,7 +2031,8 @@
     },
     {
       "id": "inokuchi-18473",
-      "sourceId": "4904052011389",
+      "_janCandidate": "4904052011389",
+      "_janAgreed": 3,
       "source": "yahoo",
       "_review": {
         "query": "中村製菓 チーズあられ",
@@ -1927,7 +2046,8 @@
     },
     {
       "id": "inokuchi-18500",
-      "sourceId": "4902762850137",
+      "_janCandidate": "4902762850137",
+      "_janAgreed": 3,
       "source": "yahoo",
       "_review": {
         "query": "うぐいすあんず",
@@ -1941,7 +2061,8 @@
     },
     {
       "id": "inokuchi-19599",
-      "sourceId": "4970765131119",
+      "_janCandidate": "4970765131119",
+      "_janAgreed": 2,
       "source": "yahoo",
       "_review": {
         "query": "チーズおやつ",
@@ -1955,7 +2076,8 @@
     },
     {
       "id": "inokuchi-18437",
-      "sourceId": "4906763121005",
+      "_janCandidate": "4906763121005",
+      "_janAgreed": 2,
       "source": "yahoo",
       "_review": {
         "query": "ミルクせんべい佐藤製菓",
@@ -1969,7 +2091,8 @@
     },
     {
       "id": "inokuchi-29060",
-      "sourceId": "4903013431679",
+      "_janCandidate": "4903013431679",
+      "_janAgreed": 4,
       "source": "yahoo",
       "_review": {
         "query": "メロンぱんだろ〜クッキー",
@@ -1984,7 +2107,8 @@
     {
       "id": "inokuchi-18425",
       "_makerCandidate": "Pine",
-      "sourceId": "49707243",
+      "_janCandidate": "49707243",
+      "_janAgreed": 3,
       "source": "yahoo",
       "_review": {
         "query": "あわ玉 飴",
@@ -1998,7 +2122,8 @@
     },
     {
       "id": "inokuchi-19644",
-      "sourceId": "4902748001461",
+      "_janCandidate": "4902748001461",
+      "_janAgreed": 2,
       "source": "yahoo",
       "_review": {
         "query": "フルーツパウダージュース(松山製菓)",
@@ -2012,7 +2137,8 @@
     },
     {
       "id": "inokuchi-18391",
-      "sourceId": "49480849",
+      "_janCandidate": "49480849",
+      "_janAgreed": 5,
       "source": "yahoo",
       "_review": {
         "query": "うまい棒 テリヤキバーガー味",
@@ -2026,7 +2152,8 @@
     },
     {
       "id": "inokuchi-18443",
-      "sourceId": "4980937000310",
+      "_janCandidate": "4980937000310",
+      "_janAgreed": 3,
       "source": "yahoo",
       "_review": {
         "query": "こざくら餅",
@@ -2041,7 +2168,8 @@
     {
       "id": "inokuchi-19219",
       "_makerCandidate": "不二家",
-      "sourceId": "4902555126142",
+      "_janCandidate": "4902555126142",
+      "_janAgreed": 8,
       "source": "yahoo",
       "_review": {
         "query": "不二家棒付き ポップキャンディ",
@@ -2055,7 +2183,8 @@
     },
     {
       "id": "inokuchi-23990",
-      "sourceId": "9011019600014",
+      "_janCandidate": "4973269000028",
+      "_janAgreed": 1,
       "source": "yahoo",
       "_review": {
         "query": "ねり水あめ大当て",
@@ -2069,7 +2198,8 @@
     },
     {
       "id": "inokuchi-34363",
-      "sourceId": "4973887810382",
+      "_janCandidate": "4973887810382",
+      "_janAgreed": 6,
       "source": "yahoo",
       "_review": {
         "query": "サッカースクラッチ",
@@ -2083,7 +2213,8 @@
     },
     {
       "id": "inokuchi-22560",
-      "sourceId": "4903013276072",
+      "_janCandidate": "4903013276072",
+      "_janAgreed": 5,
       "source": "yahoo",
       "_review": {
         "query": "うまい棒プレミアム和風ステーキ味",
@@ -2097,7 +2228,8 @@
     },
     {
       "id": "inokuchi-21434",
-      "sourceId": "4903013276058",
+      "_janCandidate": "4903013276058",
+      "_janAgreed": 3,
       "source": "yahoo",
       "_review": {
         "query": "うまい棒プレミアムめんたいこ味",
@@ -2111,7 +2243,8 @@
     },
     {
       "id": "inokuchi-21429",
-      "sourceId": "4903013276027",
+      "_janCandidate": "4903013276027",
+      "_janAgreed": 3,
       "source": "yahoo",
       "_review": {
         "query": "うまい棒プレミアムチーズ味",
@@ -2125,7 +2258,8 @@
     },
     {
       "id": "inokuchi-34331",
-      "sourceId": "4903013090531",
+      "_janCandidate": "4903013090531",
+      "_janAgreed": 4,
       "source": "yahoo",
       "_review": {
         "query": "ガリボリラーメン",
@@ -2139,7 +2273,8 @@
     },
     {
       "id": "inokuchi-19891",
-      "sourceId": "4966712000034",
+      "_janCandidate": "4966712000034",
+      "_janAgreed": 1,
       "source": "yahoo",
       "_review": {
         "query": "東京下町あんこ玉",

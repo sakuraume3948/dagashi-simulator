@@ -6,8 +6,14 @@
  *
  * ★このスクリプトは新しい商品を増やさない。
  *   data/sources/inokuchi.json にある商品に対して、
- *   maker（brand）と sourceId（JANコード）だけを埋める。
+ *   メーカー名とJANコードの「候補」を出すだけ。
  *   ECの価格はまとめ売り価格なので取り込まない。
+ *
+ * ★このスクリプト単独では何も確定させない。
+ *   出力するキーは _makerCandidate と _janCandidate で、どちらも "_" 始まり。
+ *   build-data は "_" 始まりのキーを商品データに取り込まないため、
+ *   Yahoo!だけの判断が lib/data.ts に届くことはない。
+ *   採否は scripts/fetch-rakuten.mts が両APIを突き合わせて決める。
  *
  * ★取得するのは事実情報のみ。商品画像と商品説明文は取得しない。
  *
@@ -23,6 +29,7 @@
 
 import { mkdirSync, readFileSync, writeFileSync, existsSync } from "node:fs";
 import path from "node:path";
+import { acceptableJan } from "./jan.mts";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const CACHE_DIR = path.join(ROOT, "data/.cache/yahoo");
@@ -152,18 +159,21 @@ function majority(values: (string | undefined)[]): { value: string | null; agree
   return { value, agreed, total: values.length };
 }
 
-/** JANコードは先頭ゼロの有無で表記ゆれがあるので揃える。 */
-function normalizeJan(raw: string | number | undefined): string | undefined {
-  if (raw === undefined || raw === null) return undefined;
-  const s = String(raw).replace(/[^0-9]/g, "").replace(/^0+/, "");
-  return s.length >= 8 ? s : undefined;
-}
-
 type Enriched = {
   id: string;
   /** 楽天との突き合わせ材料。"_" 始まりなので最終データには入らない。 */
   _makerCandidate?: string;
-  sourceId?: string;
+  /**
+   * JANコードの候補。★これも "_" 始まりで、最終データには入らない。
+   *
+   * メーカー名と同じ理由で、Yahoo!単独ではJANを確定させない。
+   * 検索は商品名の曖昧一致なので、上位10件に単品が1つも入らないことがある
+   * （「ココナッツクッキー」で10件すべて別商品だった実績がある）。
+   * 採否は scripts/fetch-rakuten.mts が両者を突き合わせて決める。
+   */
+  _janCandidate?: string;
+  /** 上位10件のうち何件が同じJANを返したか。採否の判定に使う。 */
+  _janAgreed?: number;
   source: "yahoo";
   /** 人間が確認するための情報。build-data は "_" 始まりのキーを無視する。 */
   _review: {
@@ -197,7 +207,7 @@ async function main(): Promise<void> {
     const hits = await search(item.id, item.name);
     done++;
 
-    const jan = majority(hits.map((h) => normalizeJan(h.janCode)));
+    const jan = majority(hits.map((h) => acceptableJan(h.janCode)));
     const brand = majority(
       hits.map((h) => (BRAND_NOISE.includes(h.brand?.name ?? "") ? undefined : h.brand?.name)),
     );
@@ -229,7 +239,7 @@ async function main(): Promise<void> {
       id: item.id,
       // "_" 始まりなので build-data はこれを商品データに取り込まない。
       ...(maker ? { _makerCandidate: maker } : {}),
-      ...(jan.value ? { sourceId: jan.value } : {}),
+      ...(jan.value ? { _janCandidate: jan.value, _janAgreed: jan.agreed } : {}),
       source: "yahoo",
       _review: {
         query: item.name,
@@ -288,7 +298,8 @@ async function main(): Promise<void> {
   for (const [reason, count] of [...rejectCounts].sort((a, b) => b[1] - a[1])) {
     console.log(`    └ 不採用 ${reason.padEnd(26)} ${String(count).padStart(3)}件`);
   }
-  console.log(`  JANコードが取れた: ${janFound}件 (${((janFound / done) * 100).toFixed(0)}%)`);
+  console.log(`  JANコードの候補が取れた: ${janFound}件 (${((janFound / done) * 100).toFixed(0)}%)`);
+  console.log("    ※候補どまり。採否は fetch:rakuten が両APIを突き合わせて決める。");
   console.log(`\n✓ data/sources/yahoo.json を書きました`);
   console.log(`  一致率つきの一覧: data/.cache/yahoo-review.txt`);
   console.log("  反映するには npm run build:data を実行してください。");

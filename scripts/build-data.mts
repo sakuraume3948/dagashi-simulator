@@ -1,7 +1,7 @@
 /**
  * data/sources/*.json と data/overrides.json をマージして lib/data.ts を生成する。
  *
- *   node --experimental-strip-types scripts/build-data.ts
+ *   node --experimental-strip-types scripts/build-data.mts
  *   （npm run build:data）
  *
  * ★このスクリプトは data/overrides.json を絶対に書き換えない。
@@ -14,6 +14,7 @@
 import { readFileSync, writeFileSync, existsSync, readdirSync } from "node:fs";
 import path from "node:path";
 import { CATEGORIES, type Category } from "../lib/types.ts";
+import { hasValidCheckDigit, isJapaneseJan } from "./jan.mts";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const SOURCES_DIR = path.join(ROOT, "data/sources");
@@ -56,11 +57,20 @@ type SourceFile = {
 
 type Override = Partial<SourceItem> & { weight?: number | null; exclude?: boolean };
 
-/** マージ途中の商品。どの情報源から来たかを覚えておく。 */
+/**
+ * マージ途中の商品。
+ *
+ * ★覚えるのは「価格を出した情報源」であって、最後に書いた情報源ではない。
+ *   lib/types.ts が fetchedAt を「価格を取得した日時（値上げ追跡用）」と
+ *   定義しているため、後から maker だけを足した rakuten の取得日を
+ *   入れてしまうと意味がずれる。
+ */
 type Merged = SourceItem & {
   weight?: number | null;
   exclude?: boolean;
+  /** 価格を供給した情報源。 */
   origin: string;
+  /** その情報源が価格を取得した日時。 */
   fetchedAt: string | null;
 };
 
@@ -101,10 +111,17 @@ function merge(sources: SourceFile[], overrides: Record<string, Override>): Merg
       const existing = byId.get(item.id);
       if (existing) {
         assignDefined(existing, item);
-        existing.origin = source.source;
-        existing.fetchedAt = source.fetchedAt;
+        // 価格を持ってきた情報源だけが「取得元」を名乗る。
+        if (item.price !== undefined) {
+          existing.origin = source.source;
+          existing.fetchedAt = source.fetchedAt;
+        }
       } else {
-        byId.set(item.id, { ...item, origin: source.source, fetchedAt: source.fetchedAt });
+        byId.set(item.id, {
+          ...item,
+          origin: source.source,
+          fetchedAt: item.price !== undefined ? source.fetchedAt : null,
+        });
       }
     }
   }
@@ -117,6 +134,11 @@ function merge(sources: SourceFile[], overrides: Record<string, Override>): Merg
       continue;
     }
     assignDefined(existing, patch as Partial<Merged>);
+    // 手で価格を決めた商品は、自動取得の取得日を名乗ってはいけない。
+    if (patch.price !== undefined) {
+      existing.origin = "overrides";
+      existing.fetchedAt = null;
+    }
   }
 
   return [...byId.values()];
@@ -160,6 +182,18 @@ function validate(items: Merged[]): { valid: Merged[]; rejected: Rejected[] } {
       reject(`価格が1以上の整数でない: ${item.price}`);
       continue;
     }
+    // ★JANが壊れていても商品自体は捨てない（価格さえあれば成立するため）。
+    //   JANだけを落として警告する。overrides.json に手で書いた値の打ち間違いも
+    //   ここで止まる。
+    if (item.sourceId) {
+      if (!hasValidCheckDigit(item.sourceId)) {
+        console.warn(`  ⚠ ${item.id} のJANが検査数字を通らない: ${item.sourceId} → 破棄`);
+        item.sourceId = null;
+      } else if (!isJapaneseJan(item.sourceId)) {
+        console.warn(`  ⚠ ${item.id} のJANが日本(45/49)以外: ${item.sourceId} → 破棄`);
+        item.sourceId = null;
+      }
+    }
 
     seenIds.add(item.id);
     valid.push(item);
@@ -172,7 +206,19 @@ function quote(value: string): string {
   return JSON.stringify(value);
 }
 
+/** 最も多く出てくる値。行ごとに同じ文字列が143回並ぶのを避けるための既定値に使う。 */
+function mostCommon<T>(values: T[]): T | undefined {
+  const counts = new Map<T, number>();
+  for (const v of values) counts.set(v, (counts.get(v) ?? 0) + 1);
+  return [...counts.entries()].sort((a, b) => b[1] - a[1])[0]?.[0];
+}
+
 function generateTypeScript(items: Merged[], sources: SourceFile[]): string {
+  // 価格の取得元と取得日時は情報源ごとに一定なので、多数派を d() の既定値にして
+  // 各行から省く。情報源が増えて値が割れたら、割れた行だけが値を持つ。
+  const defaultSource = mostCommon(items.map((i) => i.origin)) ?? "inokuchi";
+  const defaultFetchedAt = mostCommon(items.map((i) => i.fetchedAt)) ?? null;
+
   const byCategory = new Map<Category, Merged[]>();
   for (const category of CATEGORIES) byCategory.set(category, []);
   for (const item of items) byCategory.get(item.category as Category)!.push(item);
@@ -207,18 +253,34 @@ function generateTypeScript(items: Merged[], sources: SourceFile[]): string {
         quote(item.category!),
         item.unit ? quote(item.unit) : "null",
       ];
-      if (item.seriesId) args.push(quote(item.seriesId));
+
+      // 由来は数が多く、大半の商品で同じ値になる。位置引数を増やすと
+      // d(...) が読めなくなるので、埋まっているものだけをオブジェクトで渡す。
+      const from: string[] = [];
+      if (item.sourceId) from.push(`jan: ${quote(item.sourceId)}`);
+      if (item.sourceUrl) from.push(`url: ${quote(item.sourceUrl)}`);
+      if (item.origin !== defaultSource) from.push(`source: ${quote(item.origin)}`);
+      if (item.fetchedAt !== defaultFetchedAt) {
+        from.push(`at: ${item.fetchedAt ? quote(item.fetchedAt) : "null"}`);
+      }
+
+      // seriesId は位置引数なので、由来を渡すときは省略できない
+      if (item.seriesId || from.length > 0) {
+        args.push(item.seriesId ? quote(item.seriesId) : "null");
+      }
+      if (from.length > 0) args.push(`{ ${from.join(", ")} }`);
+
       return `  d(${args.join(", ")}),`;
     });
     blocks.push([header, ...rows].join("\n"));
   }
 
-  return `import type { Category, Dagashi } from "./types";
+  return `import type { Category, Dagashi, DataSource } from "./types";
 
 /**
  * 駄菓子マスタ。
  *
- * ★このファイルは scripts/build-data.ts が生成しています。直接編集しないでください。
+ * ★このファイルは scripts/build-data.mts が生成しています。直接編集しないでください。
  *   編集しても次回の \`npm run build:data\` で失われます。
  *
  *   商品を足す/直す場合:
@@ -232,6 +294,13 @@ ${sourceLines.join("\n")}
  * （ガチャの重みは 1/price^2 なので、価格帯が偏ると「高いものが出にくい」が成立しない）
  */
 
+/**
+ * 価格の取得元。全商品で同じなので定数にしてある。
+ * 価格を持つ情報源が増えたら、違う値の商品だけが d() の第8引数で上書きする。
+ */
+const SOURCE: DataSource = ${quote(defaultSource)};
+const FETCHED_AT = ${defaultFetchedAt ? quote(defaultFetchedAt) : "null"};
+
 /** 全フィールドを毎回書くと読めなくなるので、可変部分だけ受け取る。 */
 function d(
   id: string,
@@ -242,6 +311,8 @@ function d(
   unit: string | null,
   /** 味違いで束ねるシリーズ。省略すれば単独商品扱い。 */
   seriesId: string | null = null,
+  /** 由来。埋まっているものだけを渡す。 */
+  from: { jan?: string; url?: string; source?: DataSource; at?: string | null } = {},
 ): Dagashi {
   return {
     id,
@@ -254,10 +325,10 @@ function d(
     rarity: null,
     weight: null,
     imageUrl: null,
-    sourceUrl: null,
-    source: "dummy",
-    sourceId: null,
-    fetchedAt: null,
+    sourceUrl: from.url ?? null,
+    source: from.source ?? SOURCE,
+    sourceId: from.jan ?? null,
+    fetchedAt: from.at !== undefined ? from.at : FETCHED_AT,
   };
 }
 
