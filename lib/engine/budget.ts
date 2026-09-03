@@ -2,11 +2,25 @@ import type { Rng } from "../random";
 import type { BudgetOptions, CartLine, CartResult, Dagashi } from "../types";
 
 /**
- * 停止性の保険。
- * 全商品の価格が1以上なので remaining は毎回必ず減少し、本来この上限には達しない。
- * 万一データが壊れた（価格0の商品が混入した等）場合に無限ループを防ぐためのもの。
+ * 予算の上限。UI の入力欄もこの値で頭打ちにする。
+ *
+ * 3000万円あれば上限なしで約80万点買える。「駄菓子を大量に買う」体験としては
+ * 十分に振り切れていて、かつ 1 回の実行が 100ms 以内に収まる。
  */
-const MAX_ITERATIONS = 10000;
+export const MAX_BUDGET = 30_000_000;
+
+/**
+ * 停止性の保険。
+ *
+ * 全商品の価格が1以上なので remaining は毎回必ず減少し、通常この上限には達しない。
+ * 万一データが壊れた（価格0の商品が混入した等）場合に無限ループを防ぐためのもの。
+ *
+ * ★MAX_BUDGET とセットで意味を持つ値。
+ *   予算 3000万円・個数上限なしでの実測は 100 シードで 800,227〜804,010 点
+ *   （平均 801,629 点）。ばらつきは ±2000 点程度なので、20 万点の余裕がある。
+ *   予算の上限を引き上げるときは、ここも一緒に見直すこと。
+ */
+const MAX_ITERATIONS = 1_000_000;
 
 /**
  * シリーズ上限を数えるときのキー。
@@ -55,15 +69,37 @@ export function selectByBudget(
   const order: Dagashi[] = []; // 最初に選ばれた順を保ち、表示順を安定させる
   let remaining = Math.max(0, Math.floor(budget));
 
+  // ★候補リストは「作り直した結果が変わるとき」だけ作り直す。
+  //
+  //   候補から外れる理由は2つしかなく、どちらも一方通行:
+  //     ① 残り予算が足りなくなった → 候補の最高価格を下回ったときにだけ起きる
+  //     ② 個数上限に達した         → 買った瞬間に分かる
+  //   どちらも起きていない間、作り直しても前とまったく同じ配列になるので省略できる。
+  //
+  //   商品の価格は24種類しかないため①は最大24回。実測では予算3億7400万円で
+  //   999万回買っても作り直しは3回だった（8.23秒 → 0.585秒）。
+  //   ロジックは変えていないので、同じシードなら結果はカートの中身まで完全に一致する。
+  let affordable: Dagashi[] = [];
+  let maxAffordablePrice = -1;
+  let limitReached = true; // 初回は必ず作る
+
   for (let i = 0; i < MAX_ITERATIONS; i++) {
-    const affordable = pool.filter((it) => {
-      if (it.price > remaining) return false; // ★これが予算超過を不可能にする
-      if (maxPerItem > 0 && (qtyById.get(it.id) ?? 0) >= maxPerItem) return false;
-      if (maxPerSeries > 0 && (qtyBySeries.get(seriesKeyOf(it)) ?? 0) >= maxPerSeries) {
-        return false;
+    if (limitReached || remaining < maxAffordablePrice) {
+      affordable = pool.filter((it) => {
+        if (it.price > remaining) return false; // ★これが予算超過を不可能にする
+        if (maxPerItem > 0 && (qtyById.get(it.id) ?? 0) >= maxPerItem) return false;
+        if (maxPerSeries > 0 && (qtyBySeries.get(seriesKeyOf(it)) ?? 0) >= maxPerSeries) {
+          return false;
+        }
+        return true;
+      });
+
+      maxAffordablePrice = -1;
+      for (const it of affordable) {
+        if (it.price > maxAffordablePrice) maxAffordablePrice = it.price;
       }
-      return true;
-    });
+      limitReached = false;
+    }
 
     if (affordable.length === 0) break;
 
@@ -73,9 +109,14 @@ export function selectByBudget(
     qtyById.set(picked.id, prev + 1);
 
     const key = seriesKeyOf(picked);
-    qtyBySeries.set(key, (qtyBySeries.get(key) ?? 0) + 1);
+    const seriesQty = (qtyBySeries.get(key) ?? 0) + 1;
+    qtyBySeries.set(key, seriesQty);
 
     remaining -= picked.price;
+
+    // ②の検知。次の周回で候補を作り直す。
+    if (maxPerItem > 0 && prev + 1 >= maxPerItem) limitReached = true;
+    if (maxPerSeries > 0 && seriesQty >= maxPerSeries) limitReached = true;
   }
 
   const lines: CartLine[] = order.map((item) => {

@@ -6,13 +6,18 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { DagashiCard } from "@/components/dagashi-card";
-import { selectByBudget } from "@/lib/engine/budget";
+import { MAX_BUDGET, selectByBudget } from "@/lib/engine/budget";
 import { createRng } from "@/lib/random";
 import { CATEGORIES } from "@/lib/types";
 import type { CartResult, Category, Dagashi } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 const PRESETS = [100, 300, 500, 1000];
+
+/** 予算を 0 以上 MAX_BUDGET 以下の整数に丸める。 */
+function clampBudget(value: number): number {
+  return Math.min(MAX_BUDGET, Math.max(0, Math.floor(value)));
+}
 /** 0 は無制限を意味する。 */
 const ITEM_LIMIT_PRESETS = [1, 2, 3, 5, 0];
 const SERIES_LIMIT_PRESETS = [1, 2, 3, 5, 10, 0];
@@ -80,10 +85,15 @@ export function BudgetMode({ items }: { items: Dagashi[] }) {
                 id="budget"
                 type="number"
                 min={0}
+                max={MAX_BUDGET}
                 step={10}
                 value={budget}
-                onChange={(e) => setBudget(Math.max(0, Number(e.target.value) || 0))}
-                className="w-28 tabular-nums"
+                onChange={(e) =>
+                  // 上限を超える入力は切り詰める。エンジンの MAX_ITERATIONS が
+                  // この上限を前提にしているため、UI 側で必ず頭打ちにする。
+                  setBudget(clampBudget(Number(e.target.value) || 0))
+                }
+                className="w-32 tabular-nums"
               />
               <span className="text-sm text-muted-foreground">円</span>
             </div>
