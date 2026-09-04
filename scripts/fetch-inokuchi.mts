@@ -341,6 +341,9 @@ const SERIES_RULES: { keyword: string; seriesId: string }[] = [
   { keyword: "うまい棒", seriesId: "umaibo" },
   { keyword: "東豊ポテトフライ", seriesId: "toho-potato-fry" },
   { keyword: "オリオン ミニ", seriesId: "orion-mini" },
+  // 明治チューインガムの「すっぱい○○にご用心」。ぶどう / ソーダ / レモンの味違い。
+  // 「用心」を含む商品は他に無いので、この語だけで取り違えは起きない。
+  { keyword: "にご用心", seriesId: "suppai-goyoujin" },
 ];
 
 function inferSeriesId(name: string): string | null {
