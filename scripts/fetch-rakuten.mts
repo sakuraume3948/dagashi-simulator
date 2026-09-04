@@ -34,6 +34,7 @@ import { mkdirSync, readFileSync, writeFileSync, existsSync } from "node:fs";
 import path from "node:path";
 import { acceptableJan } from "./jan.mts";
 import { majority } from "./majority.mts";
+import { resolveFetchedAt } from "./source-file.mts";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const CACHE_DIR = path.join(ROOT, "data/.cache/rakuten");
@@ -67,6 +68,8 @@ const RESULTS_PER_QUERY = 10;
 const MIN_JAN_AGREEMENT = 3;
 
 const refresh = process.argv.includes("--refresh");
+/** 実際にサイト/APIを叩いたか。取得日時を更新してよいかの判定に使う。 */
+let fetchedFromNetwork = false;
 
 const APP_ID = process.env.RAKUTEN_APPLICATION_ID;
 const ACCESS_KEY = process.env.RAKUTEN_ACCESS_KEY;
@@ -180,6 +183,7 @@ async function search(id: string, query: string): Promise<RakutenProduct[]> {
 
   mkdirSync(CACHE_DIR, { recursive: true });
   writeFileSync(cachePath, JSON.stringify(products, null, 2), "utf8");
+  fetchedFromNetwork = true;
   await sleep(DELAY_MS);
   return products;
 }
@@ -359,7 +363,7 @@ async function main(): Promise<void> {
       {
         source: "rakuten",
         sourceName: "楽天プロダクト製品検索API（メーカー名・JANコードの補完）",
-        fetchedAt: new Date().toISOString(),
+        fetchedAt: resolveFetchedAt(OUTPUT_PATH, fetchedFromNetwork),
         items: enriched,
       },
       null,

@@ -11,7 +11,7 @@ import type { Category, Dagashi, DataSource } from "./types";
  *     - 手で決めた値     → data/overrides.json
  *
  * 情報源:
- *   - 井ノ口商店（希望小売価格）（166件 / 取得日: 2026-09-04）
+ *   - 井ノ口商店（希望小売価格）（166件 / 取得日: 2026-09-01）
  *   - Yahoo!ショッピング商品検索API（メーカー名・JANコードの補完）（166件 / 取得日: 2026-09-04）
  *   - 楽天プロダクト製品検索API（メーカー名・JANコードの補完）（166件 / 取得日: 2026-09-04）
  *
@@ -24,7 +24,7 @@ import type { Category, Dagashi, DataSource } from "./types";
  * 価格を持つ情報源が増えたら、違う値の商品だけが d() の第8引数で上書きする。
  */
 const SOURCE: DataSource = "inokuchi";
-const FETCHED_AT = "2026-09-04T14:52:21.898Z";
+const FETCHED_AT = "2026-09-01T20:50:00.153Z";
 
 /** 全フィールドを毎回書くと読めなくなるので、可変部分だけ受け取る。 */
 function d(

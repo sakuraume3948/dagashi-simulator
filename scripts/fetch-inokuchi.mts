@@ -21,6 +21,7 @@
 import { mkdirSync, readFileSync, writeFileSync, existsSync } from "node:fs";
 import path from "node:path";
 import { CATEGORIES, type Category } from "../lib/types.ts";
+import { resolveFetchedAt } from "./source-file.mts";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const CACHE_DIR = path.join(ROOT, "data/.cache/inokuchi");
@@ -34,6 +35,8 @@ const DELAY_MS = 1500;
 const MAX_PAGES = 20;
 
 const refresh = process.argv.includes("--refresh");
+/** 実際にサイト/APIを叩いたか。取得日時を更新してよいかの判定に使う。 */
+let fetchedFromNetwork = false;
 
 function sleep(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -55,6 +58,7 @@ async function fetchPage(pageNumber: number): Promise<string> {
   const html = await res.text();
   mkdirSync(CACHE_DIR, { recursive: true });
   writeFileSync(cachePath, html, "utf8");
+  fetchedFromNetwork = true;
   console.log(`  ページ${pageNumber}: 取得 (${(html.length / 1024).toFixed(0)}KB)`);
 
   await sleep(DELAY_MS);
@@ -441,7 +445,7 @@ async function main(): Promise<void> {
         source: "inokuchi",
         sourceName: "井ノ口商店（希望小売価格）",
         sourceUrl: BASE_URL,
-        fetchedAt: new Date().toISOString(),
+        fetchedAt: resolveFetchedAt(OUTPUT_PATH, fetchedFromNetwork),
         items,
       },
       null,

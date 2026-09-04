@@ -31,6 +31,7 @@ import { mkdirSync, readFileSync, writeFileSync, existsSync } from "node:fs";
 import path from "node:path";
 import { acceptableJan } from "./jan.mts";
 import { majority } from "./majority.mts";
+import { resolveFetchedAt } from "./source-file.mts";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const CACHE_DIR = path.join(ROOT, "data/.cache/yahoo");
@@ -94,6 +95,8 @@ function normalizeMaker(raw: string): string {
 }
 
 const refresh = process.argv.includes("--refresh");
+/** 実際にサイト/APIを叩いたか。取得日時を更新してよいかの判定に使う。 */
+let fetchedFromNetwork = false;
 
 const CLIENT_ID = process.env.YAHOO_CLIENT_ID;
 if (!CLIENT_ID) {
@@ -144,6 +147,7 @@ async function search(id: string, query: string): Promise<Hit[]> {
 
   mkdirSync(CACHE_DIR, { recursive: true });
   writeFileSync(cachePath, JSON.stringify(hits, null, 2), "utf8");
+  fetchedFromNetwork = true;
   await sleep(DELAY_MS);
   return hits;
 }
@@ -271,7 +275,7 @@ async function main(): Promise<void> {
       {
         source: "yahoo",
         sourceName: "Yahoo!ショッピング商品検索API（メーカー名・JANコードの補完）",
-        fetchedAt: new Date().toISOString(),
+        fetchedAt: resolveFetchedAt(OUTPUT_PATH, fetchedFromNetwork),
         items: enriched,
       },
       null,
