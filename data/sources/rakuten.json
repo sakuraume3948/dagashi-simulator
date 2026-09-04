@@ -1,7 +1,7 @@
 {
   "source": "rakuten",
   "sourceName": "楽天プロダクト製品検索API（メーカー名・JANコードの補完）",
-  "fetchedAt": "2026-09-03T15:13:21.398Z",
+  "fetchedAt": "2026-09-04T11:35:10.760Z",
   "items": [
     {
       "id": "inokuchi-49941",
@@ -268,6 +268,78 @@
         "janAgreement": "0/0",
         "yahooJan": null,
         "janBasis": "どちらも取得できず"
+      }
+    },
+    {
+      "id": "inokuchi-48349",
+      "sourceId": "4903013799908",
+      "source": "rakuten",
+      "_review": {
+        "query": "キャラメルの魔法",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "やおきん キャラメルの魔法 6g",
+        "genre": "ポップコーン",
+        "makerAgreement": "1/1",
+        "yahooMaker": "神戸フランツ",
+        "agreesWithYahoo": false,
+        "janAgreement": "1/1",
+        "yahooJan": "4903013799908",
+        "janBasis": "両API一致"
+      }
+    },
+    {
+      "id": "inokuchi-48176",
+      "sourceId": "4903013799885",
+      "source": "rakuten",
+      "_review": {
+        "query": "カナデルピロピロキャンディ",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4903013799885",
+        "janBasis": "Yahoo!のみ (一致率 5)"
+      }
+    },
+    {
+      "id": "inokuchi-48117",
+      "sourceId": "4903013069063",
+      "source": "rakuten",
+      "_review": {
+        "query": "大盛りそばめしスナック",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4903013069063",
+        "janBasis": "Yahoo!のみ (一致率 9)"
+      }
+    },
+    {
+      "id": "inokuchi-48114",
+      "sourceId": "4903013069148",
+      "source": "rakuten",
+      "_review": {
+        "query": "ムギポンミルクコーヒー味",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4903013069148",
+        "janBasis": "Yahoo!のみ (一致率 8)"
       }
     },
     {
@@ -623,6 +695,41 @@
       }
     },
     {
+      "id": "inokuchi-45700",
+      "source": "rakuten",
+      "_review": {
+        "query": "プーさんいちごチョコマシュマロ",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4901088021504",
+        "janBasis": "Yahoo!のみだが一致率が低い (1)"
+      }
+    },
+    {
+      "id": "inokuchi-45697",
+      "sourceId": "4901088020705",
+      "source": "rakuten",
+      "_review": {
+        "query": "ハローキティチョコマシュマロ",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "ハローキティチョコマシュマロ",
+        "genre": "マシュマロ",
+        "makerAgreement": "1/1",
+        "yahooMaker": null,
+        "agreesWithYahoo": null,
+        "janAgreement": "1/1",
+        "yahooJan": "4901088020705",
+        "janBasis": "両API一致"
+      }
+    },
+    {
       "id": "inokuchi-45501",
       "source": "rakuten",
       "_review": {
@@ -832,6 +939,60 @@
       }
     },
     {
+      "id": "inokuchi-44651",
+      "sourceId": "49738179",
+      "source": "rakuten",
+      "_review": {
+        "query": "すっぱいぶどうにご用心",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "すっぱいぶどうにご用心",
+        "genre": "ガム",
+        "makerAgreement": "1/1",
+        "yahooMaker": "明治",
+        "agreesWithYahoo": false,
+        "janAgreement": "1/1",
+        "yahooJan": "49738179",
+        "janBasis": "両API一致"
+      }
+    },
+    {
+      "id": "inokuchi-44648",
+      "sourceId": "4902744034609",
+      "source": "rakuten",
+      "_review": {
+        "query": "すっぱいソーダにご用心",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "明治 すっぱい ソーダ にご用心 ガム",
+        "genre": "その他",
+        "makerAgreement": "1/1",
+        "yahooMaker": "明治",
+        "agreesWithYahoo": false,
+        "janAgreement": "1/1",
+        "yahooJan": "4902744034609",
+        "janBasis": "両API一致"
+      }
+    },
+    {
+      "id": "inokuchi-44645",
+      "sourceId": "49782752",
+      "source": "rakuten",
+      "_review": {
+        "query": "すっぱいレモンにご用心",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "すっぱいレモンにご用心",
+        "genre": "ガム",
+        "makerAgreement": "1/1",
+        "yahooMaker": "明治",
+        "agreesWithYahoo": false,
+        "janAgreement": "1/1",
+        "yahooJan": "49782752",
+        "janBasis": "両API一致"
+      }
+    },
+    {
       "id": "inokuchi-44592",
       "source": "rakuten",
       "_review": {
@@ -899,6 +1060,40 @@
         "janAgreement": "1/1",
         "yahooJan": "49755190",
         "janBasis": "両APIが不一致 (yahoo=49755190 / rakuten=4580798040267)"
+      }
+    },
+    {
+      "id": "inokuchi-43522",
+      "source": "rakuten",
+      "_review": {
+        "query": "ロングネックマシュマロ",
+        "hits": 1,
+        "foodHits": 1,
+        "topFoodName": "やおきん ロングネックマシュマロ 22g",
+        "genre": "マシュマロ",
+        "makerAgreement": "0/1",
+        "yahooMaker": null,
+        "agreesWithYahoo": null,
+        "janAgreement": "0/1",
+        "yahooJan": null,
+        "janBasis": "どちらも取得できず"
+      }
+    },
+    {
+      "id": "inokuchi-43520",
+      "source": "rakuten",
+      "_review": {
+        "query": "ましゅろー",
+        "hits": 2,
+        "foodHits": 2,
+        "topFoodName": "やおきん BIG ましゅろー 袋入",
+        "genre": "マシュマロ",
+        "makerAgreement": "2/2",
+        "yahooMaker": null,
+        "agreesWithYahoo": null,
+        "janAgreement": "1/2",
+        "yahooJan": "4903013494025",
+        "janBasis": "両APIが不一致 (yahoo=4903013494025 / rakuten=4903013494094)"
       }
     },
     {
@@ -1478,6 +1673,24 @@
       }
     },
     {
+      "id": "inokuchi-18476",
+      "sourceId": "4510294000014",
+      "source": "rakuten",
+      "_review": {
+        "query": "3本きなこ飴棒",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": null,
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4510294000014",
+        "janBasis": "Yahoo!のみ (一致率 3)"
+      }
+    },
+    {
       "id": "inokuchi-32110",
       "source": "rakuten",
       "_review": {
@@ -1492,6 +1705,24 @@
         "janAgreement": "0/0",
         "yahooJan": "4977381000386",
         "janBasis": "Yahoo!のみだが一致率が低い (1)"
+      }
+    },
+    {
+      "id": "inokuchi-31068",
+      "sourceId": "4902726291204",
+      "source": "rakuten",
+      "_review": {
+        "query": "2枚入りおにぎりせんべい",
+        "hits": 0,
+        "foodHits": 0,
+        "topFoodName": null,
+        "genre": null,
+        "makerAgreement": "0/0",
+        "yahooMaker": "マスヤ",
+        "agreesWithYahoo": null,
+        "janAgreement": "0/0",
+        "yahooJan": "4902726291204",
+        "janBasis": "Yahoo!のみ (一致率 3)"
       }
     },
     {

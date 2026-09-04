@@ -1,7 +1,7 @@
 {
   "source": "yahoo",
   "sourceName": "Yahoo!ショッピング商品検索API（メーカー名・JANコードの補完）",
-  "fetchedAt": "2026-09-03T15:13:12.857Z",
+  "fetchedAt": "2026-09-04T11:34:34.751Z",
   "items": [
     {
       "id": "inokuchi-49941",
@@ -222,6 +222,67 @@
         "brandRaw": null,
         "brandRejected": "brand なし",
         "genre": null
+      }
+    },
+    {
+      "id": "inokuchi-48349",
+      "_makerCandidate": "神戸フランツ",
+      "_janCandidate": "4903013799908",
+      "_janAgreed": 6,
+      "source": "yahoo",
+      "_review": {
+        "query": "キャラメルの魔法",
+        "topName": "20円 やおきん 6gキャラメルの魔法 [1箱 28個入]",
+        "janAgreement": "6/10",
+        "brandAgreement": "3/10",
+        "brandRaw": "神戸フランツ",
+        "brandRejected": null,
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-48176",
+      "_janCandidate": "4903013799885",
+      "_janAgreed": 5,
+      "source": "yahoo",
+      "_review": {
+        "query": "カナデルピロピロキャンディ",
+        "topName": "カナデル ピロピロキャンディ いちご 24個装入 駄菓子 お菓子 おかし 縁日 景品 問屋 お祭り 子供 おもちゃ 祭り 縁日用品 屋台 イベント",
+        "janAgreement": "5/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "飴、ソフトキャンディ"
+      }
+    },
+    {
+      "id": "inokuchi-48117",
+      "_janCandidate": "4903013069063",
+      "_janAgreed": 9,
+      "source": "yahoo",
+      "_review": {
+        "query": "大盛りそばめしスナック",
+        "topName": "大盛りそばめしスナック　14ｇ×24袋入　(株)やおきん",
+        "janAgreement": "9/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "スナック菓子"
+      }
+    },
+    {
+      "id": "inokuchi-48114",
+      "_janCandidate": "4903013069148",
+      "_janAgreed": 8,
+      "source": "yahoo",
+      "_review": {
+        "query": "ムギポンミルクコーヒー味",
+        "topName": "ムギポン　ミルクコーヒー味　11ｇ×24袋入　(株)やおきん",
+        "janAgreement": "8/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
       }
     },
     {
@@ -528,6 +589,36 @@
       }
     },
     {
+      "id": "inokuchi-45700",
+      "_janCandidate": "4901088021504",
+      "_janAgreed": 1,
+      "source": "yahoo",
+      "_review": {
+        "query": "プーさんいちごチョコマシュマロ",
+        "topName": "エイワ くまのプーさん　いちごチョコマシュマロ 80個入",
+        "janAgreement": "1/10",
+        "brandAgreement": "1/10",
+        "brandRaw": "PRETZ",
+        "brandRejected": "一致率が低い (1/10)",
+        "genre": "お菓子アソート、詰め合わせ"
+      }
+    },
+    {
+      "id": "inokuchi-45697",
+      "_janCandidate": "4901088020705",
+      "_janAgreed": 8,
+      "source": "yahoo",
+      "_review": {
+        "query": "ハローキティチョコマシュマロ",
+        "topName": "【ゆうパケット・メール便】【全国送料無料】エイワ　ハローキティチョコマシュマロ（30個）",
+        "janAgreement": "8/10",
+        "brandAgreement": "1/10",
+        "brandRaw": "sanrio",
+        "brandRejected": "一致率が低い (1/10)",
+        "genre": "マシュマロ、ギモーブ"
+      }
+    },
+    {
       "id": "inokuchi-45501",
       "source": "yahoo",
       "_review": {
@@ -707,6 +798,54 @@
       }
     },
     {
+      "id": "inokuchi-44651",
+      "_makerCandidate": "明治",
+      "_janCandidate": "49738179",
+      "_janAgreed": 6,
+      "source": "yahoo",
+      "_review": {
+        "query": "すっぱいぶどうにご用心",
+        "topName": "【メール便送料無料】明治チューイン すっぱいぶどうにご用心   3個入×20個",
+        "janAgreement": "6/10",
+        "brandAgreement": "3/10",
+        "brandRaw": "明治",
+        "brandRejected": null,
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-44648",
+      "_makerCandidate": "明治",
+      "_janCandidate": "4902744034609",
+      "_janAgreed": 10,
+      "source": "yahoo",
+      "_review": {
+        "query": "すっぱいソーダにご用心",
+        "topName": "すっぱいソーダにご用心！ (20個入) 駄菓子 お菓子 おかし ガム 景品 明治チューインガム　超すっぱい　ソーダ　楽しい",
+        "janAgreement": "10/10",
+        "brandAgreement": "5/10",
+        "brandRaw": "明治",
+        "brandRejected": null,
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-44645",
+      "_makerCandidate": "明治",
+      "_janCandidate": "49782752",
+      "_janAgreed": 4,
+      "source": "yahoo",
+      "_review": {
+        "query": "すっぱいレモンにご用心",
+        "topName": "【メール便送料無料】明治チューイン すっぱいレモンにご用心   3個入×20個",
+        "janAgreement": "4/10",
+        "brandAgreement": "6/10",
+        "brandRaw": "明治",
+        "brandRejected": null,
+        "genre": "駄菓子"
+      }
+    },
+    {
       "id": "inokuchi-44592",
       "_makerCandidate": "Trolli",
       "_janCandidate": "4903013247324",
@@ -766,6 +905,34 @@
         "brandRaw": "不二家",
         "brandRejected": null,
         "genre": "飴、ソフトキャンディ"
+      }
+    },
+    {
+      "id": "inokuchi-43522",
+      "source": "yahoo",
+      "_review": {
+        "query": "ロングネックマシュマロ",
+        "topName": "ロングネックマシュマロ 22ｇ×12袋 やおきん　キャンプ　バーベキュー　マシュマロ　BBQ　デザート　プレゼント　パーティ",
+        "janAgreement": "0/10",
+        "brandAgreement": "2/10",
+        "brandRaw": "FREAK'S STORE",
+        "brandRejected": "一致率が低い (2/10)",
+        "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-43520",
+      "_janCandidate": "4903013494025",
+      "_janAgreed": 7,
+      "source": "yahoo",
+      "_review": {
+        "query": "ましゅろー",
+        "topName": "ましゅろ〜 7.5ｇ×30袋 やおきん マシュマロ菓子 駄菓子 ましゅまろ ましゅろー　キャンプ　バーベキュー　マシュマロ　BBQ",
+        "janAgreement": "7/10",
+        "brandAgreement": "0/10",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
       }
     },
     {
@@ -1267,6 +1434,21 @@
       }
     },
     {
+      "id": "inokuchi-18476",
+      "_janCandidate": "4510294000014",
+      "_janAgreed": 3,
+      "source": "yahoo",
+      "_review": {
+        "query": "3本きなこ飴棒",
+        "topName": "どりこ飴本舗 棒きなこ当 45本（あたり5本）×3BOX 栄養満点 西島製菓 きなこ 水飴 黒糖 当たり付き ゲーム おやつ",
+        "janAgreement": "3/9",
+        "brandAgreement": "0/9",
+        "brandRaw": null,
+        "brandRejected": "brand なし",
+        "genre": "駄菓子"
+      }
+    },
+    {
       "id": "inokuchi-32110",
       "_janCandidate": "4977381000386",
       "_janAgreed": 1,
@@ -1279,6 +1461,22 @@
         "brandRaw": null,
         "brandRejected": "brand なし",
         "genre": "駄菓子"
+      }
+    },
+    {
+      "id": "inokuchi-31068",
+      "_makerCandidate": "マスヤ",
+      "_janCandidate": "4902726291204",
+      "_janAgreed": 3,
+      "source": "yahoo",
+      "_review": {
+        "query": "2枚入りおにぎりせんべい",
+        "topName": "マスヤ おにぎりせんべい 銀シャリ 2枚入り （12袋） 塩 せんべい 駄菓子 メール便",
+        "janAgreement": "3/10",
+        "brandAgreement": "7/10",
+        "brandRaw": "マスヤ",
+        "brandRejected": null,
+        "genre": "せんべい"
       }
     },
     {

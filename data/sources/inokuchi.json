@@ -2,7 +2,7 @@
   "source": "inokuchi",
   "sourceName": "井ノ口商店（希望小売価格）",
   "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/",
-  "fetchedAt": "2026-09-01T20:50:00.153Z",
+  "fetchedAt": "2026-09-04T14:52:21.898Z",
   "items": [
     {
       "id": "inokuchi-49941",
@@ -51,8 +51,8 @@
       "packSize": 20,
       "sourceUrl": "https://www.inokuchi.net/item/dagashi/49773.html",
       "seriesId": null,
-      "category": "飲料",
-      "categoryHint": "コーラ"
+      "category": "その他",
+      "categoryHint": null
     },
     {
       "id": "inokuchi-49742",
@@ -155,14 +155,54 @@
       "categoryHint": null
     },
     {
+      "id": "inokuchi-48349",
+      "name": "キャラメルの魔法",
+      "price": 20,
+      "packSize": 28,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/48349.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-48176",
+      "name": "カナデルピロピロキャンディ",
+      "price": 20,
+      "packSize": 24,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/48176.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "キャンディ"
+    },
+    {
+      "id": "inokuchi-48117",
+      "name": "大盛りそばめしスナック",
+      "price": 30,
+      "packSize": 24,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/48117.html",
+      "seriesId": null,
+      "category": "スナック",
+      "categoryHint": "スナック"
+    },
+    {
+      "id": "inokuchi-48114",
+      "name": "ムギポンミルクコーヒー味",
+      "price": 30,
+      "packSize": 24,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/48114.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
       "id": "inokuchi-48013",
       "name": "プリッツ うまサラダ",
       "price": 100,
       "packSize": 20,
       "sourceUrl": "https://www.inokuchi.net/item/dagashi/48013.html",
       "seriesId": null,
-      "category": "その他",
-      "categoryHint": null
+      "category": "スナック",
+      "categoryHint": "プリッツ"
     },
     {
       "id": "inokuchi-48012",
@@ -171,8 +211,8 @@
       "packSize": 10,
       "sourceUrl": "https://www.inokuchi.net/item/dagashi/48012.html",
       "seriesId": null,
-      "category": "その他",
-      "categoryHint": null
+      "category": "スナック",
+      "categoryHint": "プリッツ"
     },
     {
       "id": "inokuchi-48009",
@@ -181,8 +221,8 @@
       "packSize": 10,
       "sourceUrl": "https://www.inokuchi.net/item/dagashi/48009.html",
       "seriesId": null,
-      "category": "その他",
-      "categoryHint": null
+      "category": "チョコ",
+      "categoryHint": "コアラのマーチ"
     },
     {
       "id": "inokuchi-47599",
@@ -191,8 +231,8 @@
       "packSize": 100,
       "sourceUrl": "https://www.inokuchi.net/item/dagashi/47599.html",
       "seriesId": null,
-      "category": "その他",
-      "categoryHint": null
+      "category": "スナック",
+      "categoryHint": "ヨーチ"
     },
     {
       "id": "inokuchi-47544",
@@ -211,8 +251,8 @@
       "packSize": 20,
       "sourceUrl": "https://www.inokuchi.net/item/dagashi/47443.html",
       "seriesId": null,
-      "category": "その他",
-      "categoryHint": null
+      "category": "グミ・キャンディ",
+      "categoryHint": "チュー"
     },
     {
       "id": "inokuchi-47318",
@@ -301,8 +341,8 @@
       "packSize": 12,
       "sourceUrl": "https://www.inokuchi.net/item/dagashi/46303.html",
       "seriesId": null,
-      "category": "飲料",
-      "categoryHint": "ヨーグル"
+      "category": "その他",
+      "categoryHint": null
     },
     {
       "id": "inokuchi-46195",
@@ -355,6 +395,26 @@
       "categoryHint": null
     },
     {
+      "id": "inokuchi-45700",
+      "name": "プーさんいちごチョコマシュマロ",
+      "price": 15,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/45700.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "マシュマロ"
+    },
+    {
+      "id": "inokuchi-45697",
+      "name": "ハローキティチョコマシュマロ",
+      "price": 15,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/45697.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "マシュマロ"
+    },
+    {
       "id": "inokuchi-45501",
       "name": "推しの子フーセンガム 当り付",
       "price": 12,
@@ -372,7 +432,7 @@
       "sourceUrl": "https://www.inokuchi.net/item/dagashi/45410.html",
       "seriesId": null,
       "category": "スナック",
-      "categoryHint": "ポテト"
+      "categoryHint": "フライ"
     },
     {
       "id": "inokuchi-45231",
@@ -391,8 +451,8 @@
       "packSize": 30,
       "sourceUrl": "https://www.inokuchi.net/item/dagashi/42865.html",
       "seriesId": "umaibo",
-      "category": "せんべい・おつまみ",
-      "categoryHint": "ビーフ"
+      "category": "スナック",
+      "categoryHint": "うまい棒"
     },
     {
       "id": "inokuchi-18401",
@@ -431,8 +491,8 @@
       "packSize": 12,
       "sourceUrl": "https://www.inokuchi.net/item/dagashi/44770.html",
       "seriesId": null,
-      "category": "その他",
-      "categoryHint": null
+      "category": "グミ・キャンディ",
+      "categoryHint": "マシュマロ"
     },
     {
       "id": "inokuchi-44767",
@@ -470,6 +530,36 @@
       "price": 90,
       "packSize": 30,
       "sourceUrl": "https://www.inokuchi.net/item/dagashi/44675.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-44651",
+      "name": "すっぱいぶどうにご用心",
+      "price": 40,
+      "packSize": 20,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/44651.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-44648",
+      "name": "すっぱいソーダにご用心",
+      "price": 40,
+      "packSize": 20,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/44648.html",
+      "seriesId": null,
+      "category": "その他",
+      "categoryHint": null
+    },
+    {
+      "id": "inokuchi-44645",
+      "name": "すっぱいレモンにご用心",
+      "price": 40,
+      "packSize": 20,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/44645.html",
       "seriesId": null,
       "category": "その他",
       "categoryHint": null
@@ -513,6 +603,26 @@
       "seriesId": null,
       "category": "グミ・キャンディ",
       "categoryHint": "キャンディ"
+    },
+    {
+      "id": "inokuchi-43522",
+      "name": "ロングネックマシュマロ",
+      "price": 40,
+      "packSize": 12,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/43522.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "マシュマロ"
+    },
+    {
+      "id": "inokuchi-43520",
+      "name": "ましゅろー",
+      "price": 15,
+      "packSize": 30,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/43520.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "ましゅろ"
     },
     {
       "id": "inokuchi-43273",
@@ -571,8 +681,8 @@
       "packSize": 50,
       "sourceUrl": "https://www.inokuchi.net/item/dagashi/42079.html",
       "seriesId": null,
-      "category": "その他",
-      "categoryHint": null
+      "category": "グミ・キャンディ",
+      "categoryHint": "コンペイ糖"
     },
     {
       "id": "inokuchi-18429",
@@ -601,8 +711,8 @@
       "packSize": 30,
       "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/18430.html",
       "seriesId": null,
-      "category": "せんべい・おつまみ",
-      "categoryHint": "さん太郎"
+      "category": "スナック",
+      "categoryHint": "玉葱さん太郎"
     },
     {
       "id": "inokuchi-18431",
@@ -621,8 +731,8 @@
       "packSize": 30,
       "sourceUrl": "https://www.inokuchi.net/item/dagashi/18405.html",
       "seriesId": null,
-      "category": "せんべい・おつまみ",
-      "categoryHint": "さん太郎"
+      "category": "スナック",
+      "categoryHint": "ラーメン屋さん太郎"
     },
     {
       "id": "inokuchi-18406",
@@ -631,8 +741,8 @@
       "packSize": 30,
       "sourceUrl": "https://www.inokuchi.net/item/dagashi/18406.html",
       "seriesId": null,
-      "category": "せんべい・おつまみ",
-      "categoryHint": "さん太郎"
+      "category": "スナック",
+      "categoryHint": "やきそば屋さん太郎"
     },
     {
       "id": "inokuchi-39792",
@@ -651,8 +761,8 @@
       "packSize": 30,
       "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/39283.html",
       "seriesId": "umaibo",
-      "category": "チョコ",
-      "categoryHint": "チョコ"
+      "category": "スナック",
+      "categoryHint": "うまい棒"
     },
     {
       "id": "inokuchi-39019",
@@ -671,8 +781,8 @@
       "packSize": 36,
       "sourceUrl": "https://www.inokuchi.net/item/dagashi/38662.html",
       "seriesId": null,
-      "category": "その他",
-      "categoryHint": null
+      "category": "グミ・キャンディ",
+      "categoryHint": "チュー"
     },
     {
       "id": "inokuchi-19095",
@@ -712,7 +822,7 @@
       "sourceUrl": "https://www.inokuchi.net/item/dagashi/24317.html",
       "seriesId": "toho-potato-fry",
       "category": "スナック",
-      "categoryHint": "ポテト"
+      "categoryHint": "フライ"
     },
     {
       "id": "inokuchi-36594",
@@ -722,7 +832,7 @@
       "sourceUrl": "https://www.inokuchi.net/item/dagashi/36594.html",
       "seriesId": "toho-potato-fry",
       "category": "スナック",
-      "categoryHint": "ポテト"
+      "categoryHint": "フライ"
     },
     {
       "id": "inokuchi-36591",
@@ -732,7 +842,7 @@
       "sourceUrl": "https://www.inokuchi.net/item/dagashi/36591.html",
       "seriesId": "toho-potato-fry",
       "category": "スナック",
-      "categoryHint": "ポテト"
+      "categoryHint": "フライ"
     },
     {
       "id": "inokuchi-18504",
@@ -781,8 +891,8 @@
       "packSize": 40,
       "sourceUrl": "https://www.inokuchi.net/item/dagashi/19229.html",
       "seriesId": null,
-      "category": "その他",
-      "categoryHint": null
+      "category": "くじ・当たり付き",
+      "categoryHint": "当て"
     },
     {
       "id": "inokuchi-19591",
@@ -791,8 +901,8 @@
       "packSize": 60,
       "sourceUrl": "https://www.inokuchi.net/item/dagashi/19591.html",
       "seriesId": null,
-      "category": "その他",
-      "categoryHint": null
+      "category": "くじ・当たり付き",
+      "categoryHint": "当て"
     },
     {
       "id": "inokuchi-19337",
@@ -845,14 +955,34 @@
       "categoryHint": "あめ"
     },
     {
+      "id": "inokuchi-18476",
+      "name": "3本きなこ飴棒",
+      "price": 35,
+      "packSize": 15,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/18476.html",
+      "seriesId": null,
+      "category": "グミ・キャンディ",
+      "categoryHint": "飴"
+    },
+    {
       "id": "inokuchi-32110",
       "name": "4個入りトンガリ菓子",
       "price": 50,
-      "packSize": 50,
+      "packSize": 4,
       "sourceUrl": "https://www.inokuchi.net/item/dagashi/32110.html",
       "seriesId": null,
       "category": "その他",
       "categoryHint": null
+    },
+    {
+      "id": "inokuchi-31068",
+      "name": "2枚入りおにぎりせんべい",
+      "price": 28,
+      "packSize": 2,
+      "sourceUrl": "https://www.inokuchi.net/item/dagashi/31068.html",
+      "seriesId": null,
+      "category": "せんべい・おつまみ",
+      "categoryHint": "せんべい"
     },
     {
       "id": "inokuchi-18483",
@@ -951,8 +1081,8 @@
       "packSize": 60,
       "sourceUrl": "https://www.inokuchi.net/item/dagashi/19272.html",
       "seriesId": null,
-      "category": "スナック",
-      "categoryHint": "太郎"
+      "category": "せんべい・おつまみ",
+      "categoryHint": "わさびのり太郎"
     },
     {
       "id": "inokuchi-18411",
@@ -1011,8 +1141,8 @@
       "packSize": 40,
       "sourceUrl": "https://www.inokuchi.net/item/dagashi/21426.html",
       "seriesId": null,
-      "category": "グミ・キャンディ",
-      "categoryHint": "飴"
+      "category": "くじ・当たり付き",
+      "categoryHint": "当て"
     },
     {
       "id": "inokuchi-39984",
@@ -1021,8 +1151,8 @@
       "packSize": 40,
       "sourceUrl": "https://www.inokuchi.net/item/dagashi/39984.html",
       "seriesId": null,
-      "category": "グミ・キャンディ",
-      "categoryHint": "飴"
+      "category": "くじ・当たり付き",
+      "categoryHint": "当て"
     },
     {
       "id": "inokuchi-18841",
@@ -1031,8 +1161,8 @@
       "packSize": 30,
       "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/18841.html",
       "seriesId": "orion-mini",
-      "category": "その他",
-      "categoryHint": null
+      "category": "ラムネ・タブレット",
+      "categoryHint": "オリオン ミニ"
     },
     {
       "id": "inokuchi-18842",
@@ -1041,8 +1171,8 @@
       "packSize": 30,
       "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/18842.html",
       "seriesId": "orion-mini",
-      "category": "飲料",
-      "categoryHint": "コーラ"
+      "category": "ラムネ・タブレット",
+      "categoryHint": "オリオン ミニ"
     },
     {
       "id": "inokuchi-19304",
@@ -1051,8 +1181,8 @@
       "packSize": 10,
       "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/19304.html",
       "seriesId": null,
-      "category": "その他",
-      "categoryHint": null
+      "category": "グミ・キャンディ",
+      "categoryHint": "ミルキー"
     },
     {
       "id": "inokuchi-19295",
@@ -1112,7 +1242,7 @@
       "sourceUrl": "https://www.inokuchi.net/item/dagashi/28100.html",
       "seriesId": "umaibo",
       "category": "スナック",
-      "categoryHint": "コーン"
+      "categoryHint": "うまい棒"
     },
     {
       "id": "inokuchi-18387",
@@ -1131,8 +1261,8 @@
       "packSize": 30,
       "sourceUrl": "https://www.inokuchi.net/item/dagashi/18394.html",
       "seriesId": "umaibo",
-      "category": "せんべい・おつまみ",
-      "categoryHint": "たこ"
+      "category": "スナック",
+      "categoryHint": "うまい棒"
     },
     {
       "id": "inokuchi-19972",
@@ -1292,7 +1422,7 @@
       "sourceUrl": "https://www.inokuchi.net/item/dagashibyprice/18435.html",
       "seriesId": null,
       "category": "せんべい・おつまみ",
-      "categoryHint": "いか"
+      "categoryHint": "甘いか太郎"
     },
     {
       "id": "inokuchi-18916",
@@ -1302,7 +1432,7 @@
       "sourceUrl": "https://www.inokuchi.net/item/dagashi/18916.html",
       "seriesId": null,
       "category": "くじ・当たり付き",
-      "categoryHint": "くじ"
+      "categoryHint": "当て"
     },
     {
       "id": "inokuchi-20067",
@@ -1421,8 +1551,8 @@
       "packSize": 50,
       "sourceUrl": "https://www.inokuchi.net/item/dagashi/19644.html",
       "seriesId": null,
-      "category": "飲料",
-      "categoryHint": "ジュース"
+      "category": "その他",
+      "categoryHint": null
     },
     {
       "id": "inokuchi-18391",
@@ -1461,8 +1591,8 @@
       "packSize": 80,
       "sourceUrl": "https://www.inokuchi.net/item/dagashi/23990.html",
       "seriesId": null,
-      "category": "グミ・キャンディ",
-      "categoryHint": "あめ"
+      "category": "くじ・当たり付き",
+      "categoryHint": "当て"
     },
     {
       "id": "inokuchi-34363",

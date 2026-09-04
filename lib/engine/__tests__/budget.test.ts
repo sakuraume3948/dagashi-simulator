@@ -103,8 +103,8 @@ describe("境界ケース", () => {
   });
 
   it("10d. カテゴリ指定の結果が0件なら何も買えない", () => {
-    // 「飲料」の最安は20円。10円しか無ければ買えない。
-    const opts: BudgetOptions = { maxPerItem: 3, maxPerSeries: 0, categories: ["飲料"] };
+    // 「チョコ」の最安は25円。10円しか無ければ買えない。
+    const opts: BudgetOptions = { maxPerItem: 3, maxPerSeries: 0, categories: ["チョコ"] };
     const r = selectByBudget(DAGASHI_DATA, 10, opts, createRng(1));
     expect(r.lines).toHaveLength(0);
   });
@@ -142,6 +142,13 @@ describe("体験の妥当性", () => {
 describe("シリーズ上限", () => {
   const UMAIBO = DAGASHI_DATA.filter((d) => d.seriesId === "umaibo");
 
+  /**
+   * データに実在するシリーズIDを検算に使う。
+   * 存在しないIDを渡すと seriesCount が常に 0 を返し、
+   * 「0 <= 上限」で必ず通る何も検証しないテストになるため。
+   */
+  const SERIES_IDS = [...new Set(DAGASHI_DATA.map((d) => d.seriesId).filter((s) => s !== null))];
+
   /** 結果からシリーズ単位の合計個数を数える。 */
   function seriesCount(result: { lines: { item: (typeof DAGASHI_DATA)[number]; qty: number }[] }, seriesId: string) {
     return result.lines
@@ -149,18 +156,20 @@ describe("シリーズ上限", () => {
       .reduce((sum, l) => sum + l.qty, 0);
   }
 
-  it("23. シリーズ上限3のとき、うまい棒は味を問わず合計3本まで", () => {
+  it("23. シリーズ上限3のとき、どのシリーズも味を問わず合計3本まで", () => {
+    expect(SERIES_IDS.length).toBeGreaterThan(1); // 検算するシリーズが実在すること
     const opts: BudgetOptions = { maxPerItem: 3, maxPerSeries: 3, categories: [] };
     for (let seed = 0; seed < 300; seed++) {
       const r = selectByBudget(DAGASHI_DATA, 2000, opts, createRng(seed));
-      expect(seriesCount(r, "umaibo")).toBeLessThanOrEqual(3);
-      expect(seriesCount(r, "tirol")).toBeLessThanOrEqual(3);
+      for (const seriesId of SERIES_IDS) {
+        expect(seriesCount(r, seriesId), `シリーズ ${seriesId} が上限を超えた`).toBeLessThanOrEqual(3);
+      }
     }
   });
 
   it("24. シリーズ上限が無い(0)なら、味ごとに商品上限まで買える", () => {
     const opts: BudgetOptions = { maxPerItem: 3, maxPerSeries: 0, categories: [] };
-    // うまい棒3種 × 3本 = 最大9本。巨大予算なら必ず上限まで届く
+    // うまい棒は16種あるので 16 × 3 = 48本。巨大予算なら必ず上限まで届く
     const r = selectByBudget(DAGASHI_DATA, 1_000_000, opts, createRng(1));
     expect(seriesCount(r, "umaibo")).toBe(UMAIBO.length * 3);
   });
