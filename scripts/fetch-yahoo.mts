@@ -30,6 +30,7 @@
 import { mkdirSync, readFileSync, writeFileSync, existsSync } from "node:fs";
 import path from "node:path";
 import { acceptableJan } from "./jan.mts";
+import { majority } from "./majority.mts";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const CACHE_DIR = path.join(ROOT, "data/.cache/yahoo");
@@ -147,18 +148,6 @@ async function search(id: string, query: string): Promise<Hit[]> {
   return hits;
 }
 
-/** 最頻値と、その一致率を返す。 */
-function majority(values: (string | undefined)[]): { value: string | null; agreed: number; total: number } {
-  const valid = values.filter((v): v is string => Boolean(v && v.trim()));
-  if (valid.length === 0) return { value: null, agreed: 0, total: values.length };
-
-  const counts = new Map<string, number>();
-  for (const v of valid) counts.set(v, (counts.get(v) ?? 0) + 1);
-
-  const [value, agreed] = [...counts.entries()].sort((a, b) => b[1] - a[1])[0];
-  return { value, agreed, total: values.length };
-}
-
 type Enriched = {
   id: string;
   /** 楽天との突き合わせ材料。"_" 始まりなので最終データには入らない。 */
@@ -208,14 +197,25 @@ async function main(): Promise<void> {
     done++;
 
     const jan = majority(hits.map((h) => acceptableJan(h.janCode)));
+    const usableBrand = (h: Hit): string | undefined =>
+      h.brand?.name && !BRAND_NOISE.includes(h.brand.name) ? h.brand.name : undefined;
+
+    // ★正規化は多数決の「前」に行う。
+    //   「オリオン（お菓子）」と「オリオン」を別の値として数えると票が割れ、
+    //   本当は多数派なのに MIN_BRAND_AGREEMENT を下回って捨てられてしまう。
     const brand = majority(
-      hits.map((h) => (BRAND_NOISE.includes(h.brand?.name ?? "") ? undefined : h.brand?.name)),
+      hits.map((h) => {
+        const raw = usableBrand(h);
+        return raw === undefined ? undefined : normalizeMaker(raw);
+      }),
     );
+    // 判定には使わない、人間が確認するための生の値。
+    const brandRaw = majority(hits.map(usableBrand));
     const genre = majority(hits.map((h) => h.genreCategory?.name));
 
     // メーカー名として採用するか判定する。
     // 一致率が低いもの、商品ブランド名にすぎないものは捨てる。
-    const normalized = brand.value ? normalizeMaker(brand.value) : null;
+    const normalized = brand.value;
     let maker: string | null = null;
     let rejectReason = "";
     if (!normalized) {
@@ -246,7 +246,7 @@ async function main(): Promise<void> {
         topName: hits[0]?.name ?? null,
         janAgreement: `${jan.agreed}/${jan.total}`,
         brandAgreement: `${brand.agreed}/${brand.total}`,
-        brandRaw: brand.value,
+        brandRaw: brandRaw.value,
         brandRejected: rejectReason || null,
         genre: genre.value,
       },

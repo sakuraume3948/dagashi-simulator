@@ -33,6 +33,7 @@
 import { mkdirSync, readFileSync, writeFileSync, existsSync } from "node:fs";
 import path from "node:path";
 import { acceptableJan } from "./jan.mts";
+import { majority } from "./majority.mts";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const CACHE_DIR = path.join(ROOT, "data/.cache/rakuten");
@@ -187,22 +188,6 @@ async function search(id: string, query: string): Promise<RakutenProduct[]> {
 function looksLikeMerchandise(p: RakutenProduct): boolean {
   const text = `${p.genreName ?? ""} ${p.productName ?? ""}`;
   return NOT_FOOD_KEYWORDS.some((k) => text.includes(k));
-}
-
-/** 最頻値とその一致数。 */
-function majority(values: (string | undefined)[]): {
-  value: string | null;
-  agreed: number;
-  total: number;
-} {
-  const valid = values.filter((v): v is string => Boolean(v && v.trim()));
-  if (valid.length === 0) return { value: null, agreed: 0, total: values.length };
-
-  const counts = new Map<string, number>();
-  for (const v of valid) counts.set(v, (counts.get(v) ?? 0) + 1);
-
-  const [value, agreed] = [...counts.entries()].sort((a, b) => b[1] - a[1])[0];
-  return { value, agreed, total: values.length };
 }
 
 type Enriched = {

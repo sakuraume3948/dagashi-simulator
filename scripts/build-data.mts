@@ -33,7 +33,7 @@ const OUTPUT_PATH = path.join(ROOT, "lib/data.ts");
  *
  * さらに強い上書きが必要なら data/overrides.json を使う。
  */
-const SOURCE_PRIORITY = ["inokuchi", "yaokin", "yahoo", "rakuten"];
+const SOURCE_PRIORITY = ["inokuchi", "yahoo", "rakuten"];
 
 type SourceItem = {
   id: string;
@@ -149,18 +149,12 @@ type Rejected = { id: string; name: string; reason: string };
 function validate(items: Merged[]): { valid: Merged[]; rejected: Rejected[] } {
   const valid: Merged[] = [];
   const rejected: Rejected[] = [];
-  const seenIds = new Set<string>();
-
   for (const item of items) {
     const name = item.name ?? "(名前なし)";
     const reject = (reason: string) => rejected.push({ id: item.id, name, reason });
 
     if (item.exclude === true) {
       reject("overrides で exclude: true が指定されている");
-      continue;
-    }
-    if (seenIds.has(item.id)) {
-      reject("IDが重複している");
       continue;
     }
     // ★必須なのは name と price だけ。
@@ -170,6 +164,12 @@ function validate(items: Merged[]): { valid: Merged[]; rejected: Rejected[] } {
       continue;
     }
     // カテゴリが決まらないものは「その他」に寄せる（除外はしない）
+    // カテゴリが決まらないものは「その他」に寄せる（除外はしない）。
+    // ★書いてあるのに定義に無い場合は警告する。overrides.json のカテゴリ名を
+    //   打ち間違えたとき、黙って「その他」になると気づけないため。
+    if (item.category && !(CATEGORIES as readonly string[]).includes(item.category)) {
+      console.warn(`  ⚠ ${item.id} のカテゴリが未定義: ${item.category} → その他に変更`);
+    }
     if (!item.category || !(CATEGORIES as readonly string[]).includes(item.category)) {
       item.category = "その他";
     }
@@ -195,7 +195,6 @@ function validate(items: Merged[]): { valid: Merged[]; rejected: Rejected[] } {
       }
     }
 
-    seenIds.add(item.id);
     valid.push(item);
   }
 
