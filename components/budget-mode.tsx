@@ -27,7 +27,10 @@ export function BudgetMode({ items }: { items: Dagashi[] }) {
   const [maxPerItem, setMaxPerItem] = useState(3);
   const [maxPerSeries, setMaxPerSeries] = useState(0);
   const [categories, setCategories] = useState<Category[]>([...CATEGORIES]);
-  const [result, setResult] = useState<CartResult | null>(null);
+  const [outcome, setOutcome] = useState<{
+    result: CartResult;
+    budget: number;
+  } | null>(null);
 
   // 全カテゴリが選択されている場合はエンジンに空配列を渡す（＝全カテゴリの意味）
   const effectiveCategories =
@@ -63,14 +66,16 @@ export function BudgetMode({ items }: { items: Dagashi[] }) {
   function handleRun() {
     // 乱数の種はクリック時に決める。エンジン自身は Math.random を触らない。
     const rng = createRng();
-    setResult(
-      selectByBudget(
+    // 実行に使った予算を結果と一緒に表示する
+    setOutcome({
+      result: selectByBudget(
         items,
         budget,
         { maxPerItem, maxPerSeries, categories: effectiveCategories },
         rng,
       ),
-    );
+      budget,
+    });
   }
 
   return (
@@ -164,7 +169,7 @@ export function BudgetMode({ items }: { items: Dagashi[] }) {
         )}
       </div>
 
-      {result && <BudgetResult result={result} budget={budget} />}
+      {outcome && <BudgetResult result={outcome.result} budget={outcome.budget} />}
     </div>
   );
 }
