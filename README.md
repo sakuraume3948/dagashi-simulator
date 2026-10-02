@@ -2,6 +2,8 @@
 
 駄菓子屋での買い物を再現する Web アプリケーション。予算を決めてお任せで買い物をする「予算モード」と、10連ガチャのように駄菓子を引く「ガチャモード」の 2 つがある。
 
+🎮 **公開URL**: [https://dagashi-simulator.vercel.app](https://dagashi-simulator.vercel.app)
+
 商品データは実在の駄菓子 156 件。価格は駄菓子問屋の希望小売価格を取得したもので、想像で決めた値は含まない。
 
 ## 機能
@@ -37,6 +39,8 @@
 | コンポーネント | shadcn/ui（Base UI ベース） |
 | テスト | Vitest 4 |
 | Lint | ESLint 9 |
+| ホスティング | Vercel |
+| パフォーマンス計測 | Vercel Speed Insights |
 
 動作確認環境: Node.js 22.17.0 / npm 11.6.2
 
