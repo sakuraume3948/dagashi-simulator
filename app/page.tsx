@@ -31,7 +31,7 @@ export default function Home() {
       <header className="mb-8">
         <h1 className="text-2xl font-bold sm:text-3xl">🍬 駄菓子シミュレータ</h1>
         <p className="mt-1 text-sm text-muted-foreground">
-          予算内でランダムに買い物をしたり、10連ガチャを引いたりできます。
+          君だけの最強駄菓子セットを作ろう！
         </p>
       </header>
 
