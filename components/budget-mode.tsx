@@ -23,7 +23,7 @@ const ITEM_LIMIT_PRESETS = [1, 2, 3, 5, 0];
 const SERIES_LIMIT_PRESETS = [1, 2, 3, 5, 10, 0];
 
 export function BudgetMode({ items }: { items: Dagashi[] }) {
-  const [budget, setBudget] = useState(500);
+  const [budget, setBudget] = useState(300);
   const [maxPerItem, setMaxPerItem] = useState(3);
   const [maxPerSeries, setMaxPerSeries] = useState(0);
   const [categories, setCategories] = useState<Category[]>([...CATEGORIES]);
