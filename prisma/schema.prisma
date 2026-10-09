@@ -1,0 +1,17 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Favorite {
+  anonId    String   // 匿名ID（CookieのUUID）
+  dagashiId String   // 駄菓子ID
+  ipHash    String   // ハッシュ化したIP
+  createdAt DateTime @default(now())
+
+  @@id([anonId, dagashiId])
+  @@index([dagashiId])
+}
