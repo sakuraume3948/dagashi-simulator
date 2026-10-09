@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { BudgetMode } from "@/components/budget-mode";
 import { GachaMode } from "@/components/gacha-mode";
+import { CatalogMode } from "@/components/catalog-mode";
 import { FavoritesProvider } from "@/components/favorites-context";
 import { getAllDagashi } from "@/lib/repository";
 import type { Dagashi } from "@/lib/types";
@@ -31,9 +32,9 @@ export default function Home() {
     <FavoritesProvider>
       <main className="mx-auto w-full max-w-5xl px-4 py-8 sm:px-6 sm:py-12">
         <header className="mb-8">
-          <h1 className="text-2xl font-bold sm:text-3xl">🍬 駄菓子シミュレータ</h1>
+          <h1 className="text-2xl font-bold sm:text-3xl">駄菓子シミュレータ</h1>
           <p className="mt-1 text-sm text-muted-foreground">
-            予算内でランダムに買い物をしたり、10連ガチャを引いたりできます。
+            君だけの最強駄菓子パックを作ろう！
           </p>
         </header>
 
@@ -44,12 +45,16 @@ export default function Home() {
             <TabsList className="mb-6">
               <TabsTrigger value="budget">予算モード</TabsTrigger>
               <TabsTrigger value="gacha">ガチャモード</TabsTrigger>
+              <TabsTrigger value="catalog">駄菓子図鑑</TabsTrigger>
             </TabsList>
             <TabsContent value="budget">
               <BudgetMode items={items} />
             </TabsContent>
             <TabsContent value="gacha">
               <GachaMode items={items} />
+            </TabsContent>
+            <TabsContent value="catalog">
+              <CatalogMode items={items} />
             </TabsContent>
           </Tabs>
         )}
