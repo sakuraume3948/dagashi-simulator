@@ -1,4 +1,8 @@
+"use client";
+
+import { Heart } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { useFavorites } from "@/components/favorites-context";
 import { cn } from "@/lib/utils";
 import type { Category, Dagashi } from "@/lib/types";
 
@@ -32,14 +36,46 @@ type Props = {
 };
 
 export function DagashiCard({ item, qty }: Props) {
+  const { isFavorite, getCount, toggle } = useFavorites();
+  const favorited = isFavorite(item.id);
+  const count = getCount(item.id);
+
   return (
     <div
       className={cn(
-        "flex flex-col gap-2 rounded-lg border-2 bg-card p-3 transition-shadow hover:shadow-md",
+        "relative flex flex-col gap-2 rounded-lg border-2 bg-card p-3 transition-shadow hover:shadow-md",
         priceTierClass(item.price),
       )}
     >
-      <div className="flex items-center justify-center rounded-md bg-muted/50 py-4 text-4xl">
+      <div className="relative flex items-center justify-center rounded-md bg-muted/50 py-4 text-4xl">
+        {/* お気に入り（♡）ボタンと登録数 */}
+        <button
+          type="button"
+          onClick={(e) => {
+            e.stopPropagation();
+            toggle(item.id);
+          }}
+          aria-label={
+            favorited
+              ? `${item.name}をお気に入りから解除`
+              : `${item.name}をお気に入りに追加`
+          }
+          className={cn(
+            "absolute top-1.5 right-1.5 inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs font-medium transition-colors shadow-xs backdrop-blur-xs",
+            favorited
+              ? "bg-rose-100 text-rose-600 dark:bg-rose-950/70 dark:text-rose-300"
+              : "bg-background/80 text-muted-foreground hover:bg-background hover:text-foreground",
+          )}
+        >
+          <Heart
+            className={cn(
+              "h-3.5 w-3.5 transition-transform active:scale-125",
+              favorited && "fill-current",
+            )}
+          />
+          <span className="tabular-nums text-[11px] font-semibold">{count}</span>
+        </button>
+
         {item.imageUrl ? (
           // 将来スクレイピングで入る画像は外部ドメインになるため、
           // next/image ではなく素の img を使う（next.config の設定を不要にするため）
