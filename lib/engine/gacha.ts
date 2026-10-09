@@ -17,7 +17,7 @@ import type { Dagashi, GachaOptions, GachaResult } from "../types";
  *   101円超は 0.5% 止まりで、代わりに 10〜20円が 78%→58% に動く）。
  *   高額商品を増やすか、下の item.weight で個別に持ち上げるかの判断が必要。
  */
-export const GACHA_EXPONENT = 2;
+export const GACHA_EXPONENT = 1.35;
 
 /**
  * 1商品あたりのガチャ重み。
