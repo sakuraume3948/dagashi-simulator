@@ -57,6 +57,8 @@
 
 動作確認環境: Node.js 22.17.0 / npm 11.6.2
 
+システム構成図および各技術の役割・アーキテクチャ詳細は [ARCHITECTURE.md](ARCHITECTURE.md) を参照。
+
 ## セットアップ
 
 ```bash
